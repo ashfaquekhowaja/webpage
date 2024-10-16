@@ -1,0 +1,39 @@
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  main h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  main ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  main ul li {
+    margin-bottom: 15px;
+  }
+  
+  footer {
+    margin-top: 50px;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  

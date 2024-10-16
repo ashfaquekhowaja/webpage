@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #eef;
+  }
+  
+  .hero img {
+    max-width: 100%;
+  }
+  
+  .register-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c00;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .sponsors-container {
+    padding: 20px;
+  }
+  
+  footer {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Center the entire page content */
+.center-content {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
+    flex-direction: column;  /* Stack items vertically */
+    min-height: 100vh;       /* Ensure it takes full viewport height */
+    text-align: center;      /* Center text */
+    padding: 20px;           /* Add padding for mobile devices */
+  }
+  /* For very small devices (mobile phones) */
+@media only screen and (max-width: 600px) {
+    .center-content {
+      padding: 10px;
+    }
+    
+    img {
+      max-width: 80%; /* Image will take up 80% of the screen width on small devices */
+    }
+  }
+  
+  /* For larger devices (like desktops) */
+  @media only screen and (min-width: 601px) {
+    .center-content {
+      padding: 20px;
+    }
+  
+    img {
+      max-width: 600px; /* Limit the maximum width of the image on larger screens */
+    }
+  }
+  

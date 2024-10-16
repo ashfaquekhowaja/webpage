@@ -1,0 +1,23 @@
+title: "Ashfaque Khowaja's Website"
+description: "PhD Student at SUSTech"
+baseurl: "" # The subpath of your site, e.g. /blog
+url: "" # Your website URL
+
+# Personal Info
+author: 
+  name: "Ashfaque Khowaja"
+  pronouns: "He/His"
+  position: "PhD Student in Intelligent Manufacturing and Robotics"
+  university: "Southern University of Science and Technology, Shenzhen, China"
+  advisor: "Prof. Seungwoo Je"
+  profile_image: "/assets/images/image.jpg"
+  
+# Social Links
+social_links:
+  google_scholar: "https://scholar.google.com"
+  orcid: "https://orcid.org"
+  email: "mailto:ashfaque.khowaja@example.com"
+  cv: "/assets/files/ashfaque-khowaja-cv.pdf"
+
+# Build settings
+theme: minima

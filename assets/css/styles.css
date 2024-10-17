@@ -43,3 +43,46 @@ body {
     scroll-behavior: smooth;
   }
   
+  /* For mobile phones */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  header {
+    font-size: 18px;
+  }
+}
+
+/* For tablets */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+  header {
+    font-size: 20px;
+  }
+}
+
+/* For laptops/desktops */
+@media only screen and (min-width: 769px) {
+  body {
+    font-size: 18px;
+  }
+  header {
+    font-size: 22px;
+  }
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+}
+
+.column {
+  width: 50%; /* Adjust for different layouts */
+}

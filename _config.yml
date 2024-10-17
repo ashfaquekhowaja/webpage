@@ -1,6 +1,6 @@
 title: "Ashfaque Khowaja's Website"
 description: "PhD Student at SUSTech"
-baseurl: "https://ashfaque_khowaja.github.io/" # The subpath of your site, e.g. /blog
+baseurl: "" # The subpath of your site, e.g. /blog
 url: "" # Your website URL
 
 # Personal Info

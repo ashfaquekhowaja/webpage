@@ -3,8 +3,14 @@ body {
   }
   
   header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header stays on top */
+    background-color: white; /* Add a background color if needed */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
   }
+  
   
   main h2 {
     border-bottom: 2px solid #007bff;

@@ -6,35 +6,56 @@
   <title>Ashfaque Khowaja Webpage</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="{{ 'assets/css/styles.css' | relative_url }}">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <!-- Header Section -->
-  <header class="bg-light py-3" style="position: fixed; top: 0; width: 100%; z-index: 1000; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <div>
-          <a href="#">
-            <img src="assets/img/logo.jpeg" alt="Profile Picture" class="rounded-circle" width="50">
-          </a>
-          <span class="ms-3 fw-bold">Ashfaque Khowaja He/His</span>
-        </div>
-        <nav>
-          <a href="#about" class="text-dark mx-2">About Me</a>
-          <a href="#education" class="text-dark mx-2">Education</a>
-          <a href="#publications" class="text-dark mx-2">Publications</a>
-        </nav>
+   
+  <header>
+    <div class="container header-content">
+      <!-- Logo and Title -->
+      <div class="d-flex align-items-center">
+        <img src="assets/img/logo.jpeg" alt="Profile Picture" class="rounded-circle logo me-2">
+        <span class="fw-bold d-md-none">Ashfaque Khowaja</span>
+        <span class="fw-bold d-none d-md-block">Ashfaque Khowaja He/His</span>
       </div>
+
+      <!-- Hamburger Icon for Mobile -->
+      <div class="hamburger d-md-none" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- Navigation Links for Large Screens -->
+      <nav class="d-none d-md-flex">
+        <a href="#about" class="text-dark mx-2">About Me</a>
+        <a href="#education" class="text-dark mx-2">Education</a>
+        <a href="#publications" class="text-dark mx-2">Publications</a>
+        <a href="#courses" class="text-dark mx-2">Courses</a>
+        <a href="#languages" class="text-dark mx-2">Languages</a>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="collapse navbar-collapse" id="mobileMenu">
+      <nav class="bg-light p-3">
+        <a href="#about" class="text-dark d-block mb-2">About Me</a>
+        <a href="#education" class="text-dark d-block mb-2">Education</a>
+        <a href="#publications" class="text-dark d-block mb-2">Publications</a>
+        <a href="#courses" class="text-dark d-block mb-2">Courses</a>
+        <a href="#languages" class="text-dark d-block">Languages</a>
+      </nav>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="container mt-5">
+  <main class="container mt-5 pt-5">
     <!-- About Section -->
     <section id="about" class="mb-5">
       <h2>About Me</h2>
-      <div class="d-flex">
-        <img src="assets\img\image.jpg" alt="Ashfaque Khowaja" class="rounded img-thumbnail me-4" width="200">
+      <div class="d-flex flex-column flex-md-row align-items-center">
+        <img src="assets/img/image.jpg" alt="Ashfaque Khowaja" class="rounded img-thumbnail mb-3 mb-md-0 me-md-4 img-fluid" style="max-width: 200px;">
         <div>
           <p>Hi! I am Ashfaque Khowaja, a first-year PhD student in the <a href="https://designschool.sustech.edu.cn/">School of Design</a> at <a href="http://www.sustech.edu.cn/en/">Southern University of Science and Technology</a> (SUSTech). 
             My research interest is in <strong>Human-Computer Interaction (HCI),</strong> mainly interactions using <strong> haptics.</strong></p>
@@ -60,75 +81,80 @@
     </section>
 
     <!-- Research Publications Section -->
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-          <li>
-            <strong>Khowaja</strong>, A., Zou, B., & Kui, X.Y. 
-            <a href="https://doi.org/10.1016/j.imavis.2024.105193" target="_blank">"Enhancing Cervical Cancer Diagnosis: Integrated Attention-Transformer System with Weakly Supervised Learning."</a> 
-            Image and Vision Computing. IF: 4.2 
-            (Accepted on 17th July 2024)
-          </li>
-          <li>
-            <strong>Khowaja</strong>, A., Zou, B., & Kui, X.Y. 
-            <a href="https://www.researchgate.net/publication/382361030_CerviNet_A_Novel_Approach_for_Pap-smear_Images_Analysis_for_Cervical_Cancer_Classification?_sg=wNRpXRVPcX4CbhxZx1JhyFsDD3UToAFvbi0sHq8aHs8e1I6GlMqt0tawSIQiiZet5cf5bmRC0KteThtVv0Jn8W9rM0jxYqXjIySlp1En.ok1xOzKw7hyCGw0MarjiLfrrx2yrXAQhdrE6ZZX7G0mO6enbmSO2lYYswhUQoYuB7igZxJ40m77SvvEm6LJKpA&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImhvbWUiLCJwYWdlIjoiX2RpcmVjdCJ9fQ" target="_blank">"CerviNet: A Novel Approach for Pap-smear Images Analysis for Cervical Cancer Classification."</a> 
-            International Symposium on Bioinformatics Research and Applications (ISBRA). [CCF-C Conference] 
-            (Accepted on 10th May 2024)
-          </li>
-          <li>
-            Talpur, D., Ali Raza, <strong>Khowaja</strong>, A. 
-            <a href="https://www.vfast.org/journals/index.php/VTCS/article/view/1812" target="_blank">"DeepCervixNet: An Advanced Deep Learning Approach for Cervical Cancer Classification in Pap Smear Images."</a> 
-            VAWKUM Transactions on Computer Sciences, 2024; 12(1), 136-148.
-          </li>
-          <li>
-            <strong>Khowaja</strong>, A., Zou, B., & Kui, X.Y. 
-            <a href="https://ieeexplore.ieee.org/abstract/document/10488648" target="_blank">"Cervix Visionator ELM: A Novel Approach to Early Detection of Cervical Cancer."</a> 
-            8th International Conference on Control, Robotics, and Cybernetics (CRC 2023).
-          </li>
-          <li>
-            Talpur, D., Shaikh, S., <strong>Khowaja</strong>, A., Adnan, S., & Ghulam, A. 
-            <a href="https://www.isisn.org/BR-19-3-2022/1414-1422-19(3)2022BR22-189.pdf" target="_blank">"Accurate prediction of snare protein sequence using machine learning."</a> 
-            Bioscience Research, 19, 1414–1422 (2022).
-          </li>
-        </ul>
-      </section>
-      
-<!-- Online Courses and Certifications Section -->
-<section id="courses" class="mb-5">
-    <h2>Online Courses and Certifications</h2>
-    <ul>
-      <li><strong>Google Data Analytics</strong> – Google, 2022</li>
-      <li><strong>Machine Learning Specialization</strong> – Stanford, 2022</li>
-      <li><strong>Computer Vision Basics</strong> – The State University of New York, 2022</li>
-      <li><strong>Introduction to Data Science in Python</strong> – University of Michigan, 2022</li>
-    </ul>
-  </section>
-  
-<!-- Languages Section -->
-<section id="languages" class="mb-5">
-    <h2>Languages</h2>
-    <ul>
-      <li><strong>English</strong> | Proficient</li>
-      <li><strong>Chinese</strong> | Proficient | HSK 4</li>
-      <li><strong>Urdu</strong> | Native</li>
-      <li><strong>Sindhi</strong> | Native</li>
-      <li><strong>Hindi</strong> | Listening & Speaking</li>
-    </ul>
-  </section>
+    <section id="publications" class="mb-5">
+      <h2>Publications</h2>
+      <ul>
+        <li>
+          <strong>Khowaja</strong>, A., Zou, B., & Kui, X.Y. 
+          <a href="https://doi.org/10.1016/j.imavis.2024.105193" target="_blank">"Enhancing Cervical Cancer Diagnosis: Integrated Attention-Transformer System with Weakly Supervised Learning."</a> 
+          Image and Vision Computing. IF: 4.2 (Accepted on 17th July 2024)
+        </li>
+        <li>
+          <strong>Khowaja</strong>, A., Zou, B., & Kui, X.Y. 
+          <a href="https://www.researchgate.net/publication/382361030_CerviNet_A_Novel_Approach_for_Pap-smear_Images_Analysis_for_Cervical_Cancer_Classification?_sg=wNRpXRVPcX4CbhxZx1JhyFsDD3UToAFvbi0sHq8aHs8e1I6GlMqt0tawSIQiiZet5cf5bmRC0KteThtVv0Jn8W9rM0jxYqXjIySlp1En.ok1xOzKw7hyCGw0MarjiLfrrx2yrXAQhdrE6ZZX7G0mO6enbmSO2lYYswhUQoYuB7igZxJ40m77SvvEm6LJKpA&_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6ImhvbWUiLCJwYWdlIjoiX2RpcmVjdCJ9fQ" target="_blank">"CerviNet: A Novel Approach for Pap-smear Images Analysis for Cervical Cancer Classification."</a> 
+          International Symposium on Bioinformatics Research and Applications (ISBRA) [CCF-C Conference] (Accepted on 10th May 2024)
+        </li>
+        <li>
+          Talpur, D., Ali Raza, <strong>Khowaja</strong>, A. 
+          <a href="https://www.vfast.org/journals/index.php/VTCS/article/view/1812" target="_blank">"DeepCervixNet: An Advanced Deep Learning Approach for Cervical Cancer Classification in Pap Smear Images."</a> 
+          VAWKUM Transactions on Computer Sciences, 2024; 12(1), 136-148.
+        </li>
+        <li>
+          <strong>Khowaja</strong>, A., Zou, B., & Kui, X.Y. 
+          <a href="https://ieeexplore.ieee.org/abstract/document/10488648" target="_blank">"Cervix Visionator ELM: A Novel Approach to Early Detection of Cervical Cancer."</a> 
+          8th International Conference on Control, Robotics, and Cybernetics (CRC 2023).
+        </li>
+        <li>
+          Talpur, D., Shaikh, S., <strong>Khowaja</strong>, A., Adnan, S., & Ghulam, A. 
+          <a href="https://www.isisn.org/BR-19-3-2022/1414-1422-19(3)2022BR22-189.pdf" target="_blank">"Accurate prediction of snare protein sequence using machine learning."</a> 
+          Bioscience Research, 19, 1414–1422 (2022).
+        </li>
+      </ul>
+    </section>
 
-  
+    <!-- Online Courses and Certifications Section -->
+    <section id="courses" class="mb-5">
+      <h2>Online Courses and Certifications</h2>
+      <ul>
+        <li><strong>Google Data Analytics</strong> – Google, 2022</li>
+        <li><strong>Machine Learning Specialization</strong> – Stanford University, 2022</li>
+        <li><strong>Computer Vision Basics</strong> – The State University of New York, 2022</li>
+        <li><strong>Introduction to Data Science in Python</strong> – University of Michigan, 2022</li>
+      </ul>
+    </section>
 
+    <!-- Languages Section -->
+    <section id="languages" class="mb-5">
+      <h2>Languages</h2>
+      <ul>
+        <li><strong>English</strong> | Proficient</li>
+        <li><strong>Chinese</strong> | Proficient | HSK 4</li>
+        <li><strong>Urdu</strong> | Native</li>
+        <li><strong>Sindhi</strong> | Native</li>
+        <li><strong>Hindi</strong> | Listening & Speaking</li>
+      </ul>
+    </section>
   </main>
 
   <!-- Footer Section -->
-  <footer class="bg-dark text-white py-3 mt-auto">
+  <footer class="bg-dark text-white py-3">
     <div class="container text-center">
       <p>&copy; Ashfaque Khowaja Webpage 2024</p>
       <p>Designed by Ashfaque Khowaja</p>
     </div>
   </footer>
 
-  <!-- JS Scripts -->
+ <!-- JS Scripts for Bootstrap and Hamburger Toggle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Hamburger Menu Toggle
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>

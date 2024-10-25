@@ -1,88 +1,133 @@
+/* General Styling */
 body {
-    font-family: 'Lato', sans-serif;
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensures the header stays on top */
-    background-color: white; /* Add a background color if needed */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
-  }
-  
-  
-  main h2 {
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-  
-  main ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  main ul li {
-    margin-bottom: 15px;
-  }
-  
-  footer {
-    margin-top: 50px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* For mobile phones */
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-  header {
-    font-size: 18px;
-  }
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* For tablets */
-@media only screen and (max-width: 768px) {
-  body {
-    font-size: 16px;
-  }
-  header {
-    font-size: 20px;
-  }
+header {
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
-/* For laptops/desktops */
-@media only screen and (min-width: 769px) {
-  body {
-    font-size: 18px;
-  }
-  header {
-    font-size: 22px;
-  }
+
+main h2 {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-img, video {
+main ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main ul li {
+  margin-bottom: 15px;
+}
+
+footer {
+  margin-top: 50px;
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Images */
+img {
   max-width: 100%;
   height: auto;
 }
 
-.container {
-  width: 100%;
-  padding: 0 15px;
+/* Logo Styling */
+.logo {
+  width: 50px;
+  height: auto;
 }
 
-.column {
-  width: 50%; /* Adjust for different layouts */
+/* Responsive Container */
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/* Flexbox Layout for Header */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Flexbox Layout for Main Sections */
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Hide Hamburger by Default */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  flex-direction: column;
+  cursor: pointer;
+  position: absolute; 
+  top: 10px; 
+  right: 20px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Show Hamburger on Small Screens */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .d-md-none {
+    display: block !important;
+  }
+
+  .d-md-flex {
+    display: none !important;
+  }
+
+  .navbar-collapse {
+    display: block;
+  }
+}
+
+/* Hamburger Toggle Effect */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }

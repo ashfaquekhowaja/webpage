@@ -20,7 +20,7 @@ span {
 }
 
 span:hover {
-  color: blue;
+  color: rgb(0, 255, 42);
 }
 
 main h2 {

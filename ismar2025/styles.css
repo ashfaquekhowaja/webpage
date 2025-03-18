@@ -1,0 +1,139 @@
+
+/* Main Content Styling */
+.main-content {
+    display: flex;               /* Use flexbox for layout */
+    flex-direction: column;      /* Stack items vertically */
+    align-items: center;         /* Center items horizontally */
+    justify-content: center;     /* Center items vertically */
+    text-align: center;          /* Center the text */
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 800px;            /* Limit the width of content */
+    margin: 0 auto;              /* Center the content horizontally */
+}
+
+/* Heading Styling */
+h2 {
+    margin: 0;              /* Add some margin for spacing */
+    font-size: 2em;            /* Slightly larger font for readability */
+
+}
+h3 {
+    margin: 10px 0;              /* Add some margin for spacing */
+    font-size: 1.5em;            /* Slightly larger font for readability */
+}
+/* Paragraph Styling */
+p {
+    font-size: 1.1em;            /* Slightly larger font for readability */
+    line-height: 1.6;            /* Increase line height for readability */
+    margin: 15px 0;              /* Add space between paragraphs */
+    text-align: justify;         /* Justify text for both left and right alignment */
+
+}
+
+
+
+/* Center the Get in Touch section */
+.get-in-touch {
+    text-align: center; /* Center all the text */
+    margin-top: 30px; /* Add some space above the section */
+    margin-bottom: 30px; /* Add some space below the section */
+}
+
+/* Basic styling for the container and table */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 3vw;
+}
+
+.chairs-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.chairs-category {
+    margin-bottom: 30px;
+}
+
+.chairs-category h3 {
+    font-size: 1.4em;
+    border-left: 4px solid #FFCC00;
+    padding-left: 10px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.chairs p {
+    font-size: 1.1em;
+    margin: 5px 0;
+    padding-left: 10px;
+    color: #555;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #ccc;
+    margin: 30px 0;
+}
+
+/* Default styles (for desktop) */
+
+body {
+    font-size: 16px;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  /* Tablet view */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .container {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 480px) {
+    body {
+      font-size: 12px;
+      padding: 5px;
+    }
+  
+    .container {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+  
+
+ 

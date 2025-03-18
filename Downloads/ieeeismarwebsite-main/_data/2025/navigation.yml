@@ -1,0 +1,22 @@
+- title: Contribute
+  url: "javascript:void(0)"
+  children:
+    - title: Call for Papers
+      url: "2025/contribute/papers"
+    - title: Call for Poster Papers
+      url: "2025/contribute/posters"
+    - title: Call for Workshops
+      url: "2025/contribute/workshops"
+    - title: Author Guidelines
+      url: "2025/contribute/guidelines/authors"
+    - title: Submission Guidelines
+      url: "2025/contribute/guidelines/submissions"
+- title: Sponsorship
+  url: "2025/sponsorship"
+- title: Committee
+  url: "javascript:void(0)"
+  children:
+    - title: Organizing Committee
+      url: "2025/committee/organizing"
+    - title: Standardization Committee
+      url: "2025/committee/standardization"

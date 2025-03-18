@@ -1,0 +1,998 @@
+/* Variables */
+:root {
+    --nav-height: 70px; /* Navbar height */
+}
+
+/* Centered content for main sections */
+.center-content {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center;    /* Center items horizontally */
+    text-align: center;     /* Center text inside */
+    margin: 0 auto;        /* Center the container itself */
+}
+
+
+/* Body styling */
+body {
+    padding-top: 80px;          /* Add padding to the body for spacing */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #fff; /* Background color */
+    position: fixed;        /* Fixed position */
+    top: 0;                 /* Stick to the top */
+    width: 100%;            /* Full width */
+    z-index: 1000;          /* Bring it to the front */
+    height: var(--nav-height);           /* Set a specific height for the navbar */
+    display: flex;          /* Use flexbox for layout */
+    align-items: center;    /* Center items vertically */
+    padding: 0 20px;        /* Padding on the sides */
+    justify-content: center; /* Space between logo and links */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+}
+
+/* Optional: Change shadow on scroll for a dynamic effect */
+.navbar.scrolled {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4); /* Darker shadow when scrolled */
+}
+
+
+/* Container for header content */
+.container {
+    display: flex;
+    max-width: 1200px;     /* Max width for the content */
+    margin: 0 auto;        /* Center the container */
+}
+
+/* Logo Styling */
+.logo {
+    width: 160px;
+    height: 48px;
+   /* height: 50px;            /* Set a height for the logo */
+    margin-right: 570px;      /* Add space between logo and navigation */
+    /*display: inline-block;   /* Make sure the logo stays inline */
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 768px) {
+    .logo {
+        width: 160px;
+        height: 48px;
+       /* height: 40px;        /* Reduce the logo height slightly for smaller screens */
+        margin-right: 0;     /* Remove the large right margin on smaller screens */
+    }
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px; /* Adds spacing between each list item (nav link) */
+}
+/* Link Styling */
+.nav-links li a {
+    text-decoration: none;      /* Remove underline from links */
+    color: #000;               /* Change link color */
+    font-weight: normal;         /* Optional: make links bold */
+    font-size: 15px;           /* Set font size */
+    font-family: 'Poppins', sans-serif; /* Change font family */
+    padding: 0 10px;          /* Add padding to each link */
+    display: block;            /* Make the links block-level elements */
+    font-weight: 600; /* Regular weight */
+    line-height: 24px;
+    letter-spacing: -0.18px; /* Adjusted to match the value provided */
+    text-align: left;
+    text-underline-position: from-font; /* This might not work in all browsers, so check compatibility */
+    text-decoration-skip-ink: none; /* Ensures text decoration doesn't affect ink */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    text-transform: uppercase; 
+}
+
+
+/* Red hover effect */
+.nav-links li a:hover {
+    background-color: rgb(190, 54, 54);      /* Red background on hover */
+    color: white;               /* White text on hover */
+    border-radius: 4px;         /* Optional: Add rounded corners */
+}
+
+
+/* Dropdown container */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%; /* Position below the parent link */
+    left: 0;
+    background-color: #fff;
+    min-width: 250px; /* Increase width to fit longer subpage titles */
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none; /* Remove bullet points in the dropdown */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+/* Nested Dropdown container */
+.dropdown-content .dropdown-content {
+    left: calc(100% + 10px); /* Position to the right of the parent dropdown while accounting for padding */
+    top: 0; /* Align with the top of the parent dropdown */
+    margin-left: 1px; /* Small gap between parent and child dropdown */
+}
+
+/* Remove bullet points and styling for subpages */
+.dropdown-content li {
+    padding: 5px 10px;
+    list-style: none;
+}
+
+/* Style for dropdown links */
+.dropdown-content li a {
+    color: #000; /* Text color */
+    padding: 5px;
+    display: block;
+    font-size: 16px; /* Adjust font size */
+    font-weight: normal; /* Make the text unbold */
+    text-align: left; /* Align the text to the left */
+    white-space: nowrap; /* Prevent text from wrapping */
+    text-transform: none;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hide nested dropdown by default */
+.dropdown .dropdown-content li .dropdown-content {
+    display: none; 
+}
+
+/* Show nested dropdown on hover */
+.dropdown .dropdown-content li:hover .dropdown-content {
+    display: block;
+}
+
+/* Remove arrow for subpages */
+.dropdown-content li a::after {
+    content: "";  /* No arrow for subpages */
+}
+
+/* Optional hover effect for dropdown links */
+.dropdown-content li a:hover {
+    background-color: white;
+    color: #e18181; /* Optional: change text color on hover */
+}
+
+
+/* Hero Section */
+.hero {
+    position: relative; /* Allows positioning of child elements */
+    height: 70vh; /* Adjusted height to make the image smaller */
+    width: 100vw; /* Ensure it stretches the full width */
+    min-height: 600px; 
+    flex-direction: column; /* Stack content vertically */
+    display: flex; /* Use flexbox for vertical and horizontal centering of the text */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    text-align: center; /* Centers the text */
+    color: white; /* Makes the text white to contrast with the image */
+    margin-top: 0; /* Ensure no extra margin from the top */
+    margin-bottom: 0; /* Ensure no extra margin from the bottom */
+    padding: 0; /* Ensure no extra padding */
+    z-index: 1; /* Keeps the text above the image */
+    overflow: hidden; /* Prevents the image from overflowing */
+}
+
+.hero-logo {
+    width: 20vw; /* Responsive width (15% of the viewport width) */
+    max-width: 200px; /* Maximum size for larger screens */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center the logo */
+}
+
+
+/* Hero Image */
+.hero-image {
+    position: absolute; /* Absolute positioning to place it behind the text */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the image fill the width */
+    height: 100%; /* Ensure it fills the container's height */
+    object-fit: cover; /* Ensures the image covers the area while maintaining aspect ratio */
+    z-index: -1; /* Places the image behind the content */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+
+/* Dark Overlay */
+.hero::before {
+    content: ''; /* Empty content for the overlay */
+    position: absolute; /* Position overlay above the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Dark transparent background */
+    z-index: 0; /* Keeps the overlay below the text but above the image */
+}
+
+/* Content styling (heading, subheading, description) */
+.hero .content {
+    position: relative; /* Absolute positioning to place content inside the hero section */
+    z-index: 1; /* Keeps the text above the image */
+    padding: 0 20px; /* Optional: Adds padding around the text */
+    text-align: center; /* Center-align the text content */
+    color: white; /* Ensures text is visible against the background */
+    max-width: 900px; /* Limit width for larger screens */
+    width: 100%; /* Ensure it’s responsive */
+    box-sizing: border-box;
+}
+
+
+/* Heading styles */
+.hero .heading {
+    font-size: 3rem; /* Adjust the font size */
+    margin: 0.5rem 0;
+    line-height: 0.8;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Subheading styles */
+.hero .subheading {
+    font-size: 1.5rem; /* Adjust the font size */
+    margin: 1rem 0;
+    line-height: 0.4;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* Description styling */
+.hero .description {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    max-width: 1000px; /* Optional, to limit the width of the description */
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400; 
+
+}
+
+/* Responsive Styles */
+
+/* For screens smaller than 1024px (medium devices) */
+@media screen and (max-width: 1024px) {
+    .hero {
+        height: 60vh; /* Adjust height for medium screens */
+    }
+
+    .hero-logo {
+        width: 25vw; /* Adjust logo width */
+        max-width: 150px;
+    }
+
+    .hero .heading {
+        font-size: 2.5rem;
+    }
+
+    .hero .subheading {
+        font-size: 1.2rem;
+    }
+
+    .hero .description {
+        font-size: 1rem;
+    }
+
+    .hero .content {
+        padding-top: 30px; /* Add some space at the top */
+    }
+}
+
+/* For screens smaller than 768px (tablets and small devices) */
+@media screen and (max-width: 768px) {
+    .hero {
+        height: 50vh; /* Reduce height for smaller screens */
+    }
+
+    .hero-logo {
+        width: 30vw; /* Smaller logo width */
+        max-width: 120px;
+    }
+
+    .hero .heading {
+        font-size: 2rem;
+    }
+
+    .hero .subheading {
+        font-size: 1rem;
+    }
+
+    .hero .description {
+        font-size: 0.9rem;
+    }
+
+    .hero .content {
+        padding-top: 40px; /* Add more space at the top */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media screen and (max-width: 480px) {
+    .hero {
+        height: 40vh; /* Further reduce height on small mobile screens */
+    }
+
+    .hero-logo {
+        width: 35vw; /* Even smaller logo width */
+        max-width: 100px;
+    }
+
+    .hero .heading {
+        font-size: 1.5rem;
+    }
+
+    .hero .subheading {
+        font-size: 0.85rem;
+    }
+
+    .hero .description {
+        font-size: 0.75rem;
+    }
+
+    .hero .content {
+        padding-top: 50px; /* Increase padding-top for very small screens */
+    }
+}
+
+/* Container for the video and link */
+.video-container {
+    width: 100%;              /* Allow the video container to take full width */
+    max-width: 900px;         /* Reduce max-width for narrower video */
+    margin: 0 auto;           /* Center the container */
+    padding: 0 15px;          /* Add some padding on sides */
+    text-align: left;         /* Align the venue text and link to the left */
+}
+
+/* Styling the YouTube video iframe */
+.video {
+    width: 100%;              /* Make video full width */
+    height: 60vh;             /* Increase height to make it taller */
+    max-height: 600px;        /* Set a max height to prevent it from being too tall */
+}
+
+/* Responsive Styles */
+
+/* For screens larger than 768px */
+@media (min-width: 768px) {
+    .video-container {
+        max-width: 800px;  /* Reduce max-width for narrower video */
+        padding: 0;        /* Remove padding for better alignment */
+    }
+
+    .video {
+        height: 65vh;      /* Increase height for larger screens */
+    }
+
+    .venue-text, .link-with-icon {
+        font-size: 1.2rem; /* Increase font size for better readability */
+    }
+
+    .link-with-icon svg {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    .video-container {
+        padding: 0 10px;   /* Add padding for smaller screens */
+    }
+
+    .video {
+        height: 50vh;      /* Set a taller height for smaller screens */
+    }
+
+    .venue-text, .link-with-icon {
+        font-size: 1rem;   /* Adjust font size for smaller screens */
+    }
+
+    .link-with-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+/* For very small screens (max-width 480px) */
+@media (max-width: 480px) {
+    .video-container {
+        max-width: 100%;   /* Full width for very small screens */
+        padding: 0 5px;    /* Reduce padding */
+    }
+
+    .video {
+        height: 45vh;      /* Set a proportional height for very small screens */
+    }
+
+    .venue-text, .link-with-icon {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    .link-with-icon svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+/* Flex container for venue text and link */
+.venue-container {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center;
+    margin-top: 10px;            /* Add space above the venue text */
+}
+
+/* Styling for venue text */
+.venue-text {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Styling for the link */
+.link-with-icon {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    margin-left: 4px;
+    font-size: 1.1rem;
+}
+
+.link-with-icon:hover {
+    color: #0056b3;
+}
+
+/* SVG icon styling */
+.link-with-icon svg {
+    margin-left: 4px;
+    width: 18px;
+    height: 18px;
+    fill: currentColor; /* Inherit color from the link */
+}
+
+
+
+/* Styling for the enhanced heading */
+.heading {
+    font-size: 40px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    color: black; /* Set text color to black */
+    text-align: center; /* Center-align */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Make text uppercase */
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+    text-align: center;
+}
+
+.subheading {
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    color: black; /* Set text color to black */
+    text-align: center; /* Center-align */
+    margin-top: 30px; /* Margin above the subheading */
+    margin-bottom: 20px; /* Margin below the subheading */
+    text-transform: sentencecase; /* Make text sentencecase */
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+    text-align: center;
+}
+
+
+/* Description Styling */
+.description {
+    margin-top: 20px;          /* Add margin above the description */
+    text-align: center;       /* Optional: Justify text for better readability */
+    line-height: 1.6;          /* Increase line height for better readability */
+    width: 100%;          /* Limit the width of the description */
+    font-size: 20px;
+    font-size: 16px;
+    text-align: center;
+
+}
+
+/* New Section Below Hero Section */
+.announcement {
+    padding: 20px 0;
+    /*background-color: #f8f8f8; /* Light background color for contrast */
+    text-align: center;
+    margin-bottom: 20px; /* Add space between announcement and next section */
+    margin-top: 20px;
+}
+
+.announcement h2 {
+    font-size: 2rem;
+    color: #333; /* Dark color for the heading */
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+    font-weight: 600;
+
+}
+
+.announcement p {
+    font-size: 1.2rem;
+    color: #555; /* Slightly lighter color for paragraph text */
+    line-height: 1.6;
+    max-width: 900px; /* Optional: to limit the paragraph width */
+    margin: 0 auto; /* Centers the paragraph */
+    font-family: 'Poppins', sans-serif; /* Use a modern font */
+
+}
+
+/* Responsive Design */
+
+/* For screens smaller than 768px (tablets and small screens) */
+@media screen and (max-width: 768px) {
+    .announcement h2 {
+        font-size: 1.6rem; /* Smaller font size for headings */
+    }
+
+    .announcement p {
+        font-size: 1rem; /* Smaller font size for paragraph text */
+        padding: 0 10px; /* Add padding to avoid text touching the edges on small screens */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media screen and (max-width: 480px) {
+    .announcement h2 {
+        font-size: 1.4rem; /* Even smaller font size for mobile devices */
+    }
+
+    .announcement p {
+        font-size: 0.9rem; /* Smaller font size for mobile paragraph text */
+        padding: 0 15px; /* Padding on mobile devices */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 32px;      /* Decrease font size on medium screens */
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .subheading {
+        font-size: 20px;      /* Decrease font size for subheading */
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .description {
+        font-size: 15px;      /* Slightly reduce font size for better readability */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 28px;      /* Further reduce font size for small screens */
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .subheading {
+        font-size: 18px;      /* Smaller font size for subheading */
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    .description {
+        font-size: 14px;      /* Smaller font size for description */
+        line-height: 1.4;     /* Adjust line height for smaller text */
+        margin-top: 10px;     /* Reduce margin for smaller screens */
+    }
+}
+
+/* Important Dates Section */
+.important-dates-section {
+    background-color: #225888; /* Grey background for section */
+    padding: 40px; /* Add padding for spacing */
+    color: White; /* Dark text color for readability */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    margin: 30px 0; /* Optional: Adds margin between sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: Adds subtle shadow around the section */
+    text-align: center; /* Centers the title */
+    margin-bottom: 20px; /* Add space between announcement and next section */
+    margin-top: 20px;
+}
+
+/* Title styling */
+.important-dates-title {
+    font-size: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: White; /* Dark color for the title */
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Table styling */
+.important-dates {
+    width: 80%;
+    padding-top: 20px;
+    margin: 0 auto; /* Auto margin to horizontally center the table */
+    border-collapse: collapse; /* Ensures borders don't double */
+    background-color: white; /* White background for the table */
+    border-radius: 8px; /* Optional: Adds rounded corners to the table */
+    box-shadow: 0 4px 8px rgba(35, 27, 27, 0.1); /* Optional: Adds a subtle shadow to the table */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Table header styling */
+.important-dates thead {
+    background-color: White; /* Dark background for table header */
+    color: white; /* White text in header */
+    text-align: center;
+
+}
+
+.important-dates th,
+.important-dates td {
+    padding: 12px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Dark text for table content */
+}
+
+.important-dates th {
+    font-size: 1.1rem; /* Header font size */
+    color: white;
+}
+
+.important-dates td {
+    font-size: 1rem; /* Regular font size for table cells */
+}
+
+/* Styling for table rows */
+.important-dates tr:nth-child(even) {
+    background-color: white; /* Light grey for alternate rows */
+}
+
+.important-dates tr:hover {
+    background-color: #e2e2e2; /* Light grey on hover for rows */
+}
+
+/* Responsive Styles */
+
+/* For screens smaller than 768px (tablets and small screens) */
+@media screen and (max-width: 768px) {
+    .important-dates-title {
+        font-size: 1.4rem; /* Smaller title font size */
+    }
+
+    .important-dates th, .important-dates td {
+        padding: 10px; /* Smaller padding for small screens */
+        font-size: 0.9rem; /* Slightly smaller font size */
+    }
+
+    .important-dates-section {
+        padding: 20px; /* Reduced padding for small screens */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media screen and (max-width: 480px) {
+    .important-dates-title {
+        font-size: 1.5rem; /* Even smaller title font size for mobile */
+    }
+
+    .important-dates th, .important-dates td {
+        padding: 8px; /* Smaller padding */
+        font-size: 0.85rem; /* Smaller font size */
+    }
+
+    .important-dates-section {
+        padding: 10px; /* Smaller padding for mobile */
+    }
+
+    .important-dates tr {
+        font-size: 0.9rem; /* Smaller font size for rows */
+    }
+}
+
+/* For larger screens (desktops) */
+@media screen and (min-width: 1200px) {
+    .important-dates-title {
+        font-size: 2rem; /* Larger title font size for desktops */
+    }
+
+    .important-dates th, .important-dates td {
+        padding: 14px; /* More padding for larger screens */
+        font-size: 1.1rem; /* Larger font size for readability */
+    }
+
+    .important-dates-section {
+        padding: 50px; /* More padding for large screens */
+    }
+}
+
+/* Video Section Styling */
+.video-container {
+    text-align: center; /* Center everything inside the container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Full viewport height */
+    width: 100%; /* Full viewport width */
+    padding: 0; /* Add padding for spacing */
+    box-sizing: border-box; /* Include padding in height and width calculation */
+    margin-top: 40px;
+    margin-bottom: 20px; /* Add space between announcement and next section */
+}
+
+/* Styling for the YouTube video iframe */
+.video {
+    width: 200%; /* Full width of the container */
+    height: 480px; /* Full height (80% of the viewport height) */
+    max-width: 1060px; /* Limit max-width for large screens */
+    max-height: 480px; /* Ensure it doesn't exceed 80% of viewport height */
+    border: none; /* Remove any iframe border */
+    margin-bottom: 20px; /* Adds space between video and venue text */
+}
+
+/* Responsive Design for Mobile (Screen widths smaller than 768px) */
+@media screen and (max-width: 768px) {
+    .video {
+        width: 100%; /* Ensure the video takes full width on smaller screens */
+        height: 60vh; /* Adjust height to 60% of the viewport height on smaller screens */
+    }
+}
+
+/* Further adjustments for very small screens (max-width 480px) */
+@media screen and (max-width: 480px) {
+    .video {
+        width: 100%; /* Full width */
+        height: 50vh; /* Further adjust height for small screens */
+    }
+}
+
+/* Venue Section Layout (Left for venue, Right for map) */
+.venue-section {
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: flex-start;
+    gap: 50px; /* Space between the venue details and the map */
+    padding: 0 20px;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the entire section */
+    margin-bottom: 40px; /* Add space between announcement and next section */
+    transform: translateX(0); /* Ensure no translation for better layout */
+}
+
+/* Styling for venue details */
+.venue-details {
+    flex: 1; /* Allow the venue details to take up available space */
+    font-size: 1.1rem;
+    color: #333;
+    max-width: 50%; /* Limit the width of venue details */
+    padding: 20px;
+    transform: none; /* Ensure no left translation */
+}
+
+.venue-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.venue-name {
+    font-weight: bold; /* Make venue name bold */
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.venue-details p {
+    margin: 8px 0; /* Add space between lines */
+    font-family: 'Poppins', sans-serif;
+}
+
+.venue-details a {
+    color: #1D4ED8; /* Blue color for the link */
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.venue-details a:hover {
+    text-decoration: underline;
+}
+
+/* Google Map Styling */
+.google-map {
+    flex: 1; /* Allow the map to take up remaining space */
+    max-width: 50%; /* Limit the map's width to 50% of the container */
+}
+
+/* For screens smaller than 768px (tablets and small screens) */
+@media screen and (max-width: 768px) {
+    .venue-section {
+        flex-direction: column; /* Stack the venue details and map vertically */
+        gap: 20px; /* Reduce space between the venue and map */
+    }
+
+    .venue-details {
+        max-width: 100%; /* Full width for venue details on small screens */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .google-map {
+        max-width: 100%; /* Full width for the map */
+    }
+}
+
+/* For screens smaller than 480px (mobile devices) */
+@media screen and (max-width: 480px) {
+    .venue-details {
+        font-size: 1rem; /* Slightly smaller font size for mobile devices */
+    }
+
+    .venue-title {
+        font-size: 1.3rem; /* Smaller font size for titles */
+    }
+
+    .venue-name {
+        font-size: 1rem; /* Smaller font size for venue name */
+    }
+
+    .google-map {
+        height: 300px; /* Adjust map height for smaller screens */
+    }
+}
+
+
+.footer {
+    position: relative; /* Enables positioning of content inside the footer */
+    height: 250px; /* Fixed height for footer */
+    width: 100vw; /* Ensures the footer spans the full width */
+    text-align: center; /* Centers the text horizontally */
+    overflow: hidden; /* Prevents content from spilling outside the footer */
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);  /* Add a top shadow instead of a translucent background */
+    background-color: white; /* Ensure background is white (footer img's background) */
+    z-index: -3; /* Places the footer-background behind the footer img*/ 
+}
+
+.footer img {
+    width: 100%; /* Ensures the image spans the full width of the footer */
+    height: 100%; /* Ensures the image fills the footer's height without leaving gaps */
+    object-fit: contain; /* Ensures the entire image fits within the footer without cropping -> maintain image ratio */
+    position: absolute; /* Positions the image inside the footer */
+    top: 0; /* Aligns the image to the top of the footer */
+    left: 0; /* Aligns the image to the left of the footer */
+    z-index: -2; /* Places the image behind the overlay and text */
+}
+
+.footer-overlay {
+    position: absolute; /* Positions the overlay on top of the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent dark background */
+    z-index: -1; /* Places the overlay between the image and text */
+}
+
+.footer-content {
+    position: relative; /* Ensures the text stays above the overlay and image */
+    font-size: 16px; /* Adjust text size as needed */
+    padding: 20px; /* Adds spacing around the text */
+    display: inline-block; /* Prevents the text background from spanning the entire width */
+    border-radius: 5px; /* Optional: Adds rounded corners to the text background */
+    max-width: 90%; /* Keeps the text block's width manageable */
+    margin: 0 auto; /* Centers the text block */
+    z-index: 1; /* Ensures the text stays on top of the overlay */
+    font-weight: 600; 
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Dark Overlay */
+/* Temporarily removed the dark overlay effect by setting the alpha value to zero */
+.footer::before {
+    content: ''; /* Empty content for the overlay */
+    position: absolute; /* Position overlay above the image */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Dark transparent background (This line has no visible effect) */
+    z-index: 0; /* Keeps the overlay below the text but above the image */
+}
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        height: 150px; /* Adjust height for smaller screens */
+    }
+
+    .footer-content {
+        font-size: 14px; /* Adjust text size */
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        height: 120px; /* Further adjust height for extra small screens */
+    }
+
+    .footer-content {
+        font-size: 12px; /* Smaller text size */
+        padding: 10px; /* Smaller padding */
+    }
+}
+
+
+/* Hide Hamburger Menu by Default */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute; 
+    top: 10px; 
+    right: 20px; 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger menu on small screens */
+        margin-left: auto;
+    }
+
+    .nav-links {
+        display: none; /* Hide links initially */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when hamburger is clicked */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 20px; /* Slightly larger font for mobile */
+    }
+}
+

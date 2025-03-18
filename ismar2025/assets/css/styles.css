@@ -1,0 +1,373 @@
+/* Centered content for main sections */
+.center-content {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center;    /* Center items horizontally */
+    text-align: center;     /* Center text inside */
+    margin: 0 auto;        /* Center the container itself */
+}
+
+/* Body styling */
+body {
+    padding-top: 80px;          /* Add padding to the body for spacing */
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #fff; /* Background color */
+    position: fixed;        /* Fixed position */
+    top: 0;                 /* Stick to the top */
+    width: 100%;            /* Full width */
+    z-index: 1000;          /* Bring it to the front */
+    height: 70px;           /* Set a specific height for the navbar */
+    display: flex;          /* Use flexbox for layout */
+    align-items: center;    /* Center items vertically */
+    padding: 0 20px;        /* Padding on the sides */
+    justify-content: center; /* Space between logo and links */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transition: box-shadow 0.3s ease; /* Smooth transition for shadow effect */
+}
+
+/* Optional: Change shadow on scroll for a dynamic effect */
+.navbar.scrolled {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4); /* Darker shadow when scrolled */
+}
+
+
+/* Container for header content */
+.container {
+    display: flex;
+    max-width: 1200px;     /* Max width for the content */
+    margin: 0 auto;        /* Center the container */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: flex-start; /* Align items to the start */
+}
+
+/* Logo Styling */
+.logo {
+    height: 50px;            /* Set a height for the logo */
+    margin-right: 350px;      /* Add space between logo and navigation */
+    display: inline-block;   /* Make sure the logo stays inline */
+}
+
+
+/* Container for header content */
+.header-content {
+    display: flex;           /* Use flexbox for alignment */
+    align-items: center;     /* Center items vertically */
+    padding: 20px;          /* Add padding for spacing */
+    background-color: #fff; /* Set the background color */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+}
+
+
+/* Navigation Links Styling */
+.nav-links {
+    list-style-type: none;     /* Remove bullets from the list */
+    display: flex;             /* Use flexbox for the list */
+    gap: 2px;                /* Space between links */
+    margin: 150;                /* Remove default margin */
+    padding: 0;               /* Remove default padding */
+}
+
+/* Link Styling */
+.nav-links li a {
+    text-decoration: none;      /* Remove underline from links */
+    color: #000;               /* Change link color */
+    font-weight: normal;         /* Optional: make links bold */
+    font-size: 24px;           /* Set font size */
+    font-family: Arial, sans-serif; /* Change font family */
+    padding: 0 10px;          /* Add padding to each link */
+    display: block;            /* Make the links block-level elements */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+
+/* Red hover effect */
+.nav-links li a:hover {
+    background-color: rgb(190, 54, 54);      /* Red background on hover */
+    color: white;               /* White text on hover */
+    border-radius: 4px;         /* Optional: Add rounded corners */
+}
+
+/* Logo Wrapper Styling */
+.title-logo-wrapper {
+    display: flex;             /* Flexbox for alignment */
+    align-items: center;       /* Center items vertically */
+}
+
+/* Main Content Styling */
+.main-content {
+    display: flex;             /* Use flexbox for centering */
+    flex-direction: column;    /* Stack items vertically */
+    align-items: center;       /* Center items horizontally */
+    justify-content: center;   /* Center items vertically */
+    text-align: center;        /* Ensure text is centered */
+    padding: 20px;       /* Add padding for spacing */
+    box-sizing: border-box;    /* Ensure padding doesn't affect width */
+    min-height: calc(100vh - 140px); /* Full height minus header & footer */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;             /* Flexbox for layout */
+    flex-direction: column;    /* Stack image and content vertically */
+    align-items: center;       /* Center content horizontally */
+    justify-content: center;   /* Center content vertically */
+    text-align: center;        /* Center-align the text */
+    max-width: 800px;         /* Optional: Limit max width for the hero section */
+    width: 60%;               /* Ensure it takes full width */
+}
+
+/* Hero Section */
+.hero img {
+    max-width: 100%;           /* Ensure the image is responsive */
+    height: auto;              /* Maintain image aspect ratio */
+    display: block;            /* Remove any extra spacing around image */
+    margin-bottom: 20px;       /* Add spacing below the image */
+}
+
+/* Content inside the hero section */
+.hero .content {
+    margin-top: 20px;          /* Space between image and content */
+    width: 100%;
+    max-width: 800px;          /* Optional: Limit max width for better readability */
+    font-size: 20px;
+}
+
+
+/* General Navigation Styles */
+.nav-links {
+    list-style: none;  /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+    padding: 10px;
+}
+
+/* Style for links */
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    display: inline-block;  /* Ensures dropdown arrow aligns properly */
+}
+
+
+/* Styling for the enhanced heading */
+.fancy-heading {
+    font-size: 50px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    background: repeating-linear-gradient(90deg, #6a11cb, #2575fc);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the fill transparent */
+    text-align: center; /* Center-align */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase; /* Make text uppercase */
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    font-family: 'Montserrat', sans-serif; /* Use a modern font */
+}
+
+.fancy-subheading {
+    font-size: 30px; /* Increase font size */
+    font-weight: bold; /* Make it bold */
+    background: repeating-linear-gradient(90deg, #0a090b, #050506);
+    -webkit-background-clip: text; /* Clip the background to the text */
+    -webkit-text-fill-color: transparent; /* Make the fill transparent */
+    text-align: center; /* Center-align */
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-transform: sentencecase; /* Make text sentencecase */
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+    font-family: 'Montserrat', sans-serif; /* Use a modern font */
+}
+
+/* Description Styling */
+.description {
+    margin-top: 20px;          /* Add margin above the description */
+    text-align: justify;       /* Optional: Justify text for better readability */
+    line-height: 1.6;          /* Increase line height for better readability */
+    max-width: 800px;          /* Limit the width of the description */
+    font-size: 20px;
+}
+
+
+/* Ensure clear layout after aside */
+.main-content::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #555;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Center the Important Dates title */
+.important-dates-title {
+    text-align: center;
+    font-size: 24px;  /* Adjust the font size */
+    color: #333;      /* Adjust the text color */
+    font-weight: bold;
+    margin-bottom: 20px;  /* Add some space below the title */
+}
+
+.important-dates {
+    width: 100%;  /* Full width table */
+    border-collapse: collapse;  /* Remove space between table borders */
+    margin: 20px 0;  /* Add some space above and below the table */
+    font-family: 'Arial', sans-serif;  /* Use a clean font */
+    text-align: center;  
+}
+
+.important-dates th, .important-dates td {
+    padding: 12px 15px;  /* Add some padding to cells */
+    border: 1px solid #ddd;  /* Add light border around cells */
+}
+
+.important-dates th {
+    background-color: #f4f4f4;  /* Light background for table header */
+    font-weight: bold;  /* Bold text for table header */
+    color: #333;  /* Dark color for header text */
+}
+
+.important-dates td {
+    background-color: #fff;  /* White background for table cells */
+    color: #555;  /* Darker gray text for table content */
+}
+
+.important-dates tbody tr:nth-child(even) {
+    background-color: #f9f9f9;  /* Light gray background for alternating rows */
+}
+
+
+/* Styling the Sponsor Section */
+.sponsors-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       /* Center the content horizontally */
+    max-width: 800px;          /* Limit the width for better readability */
+    margin: 0 auto;            /* Center the section within the page */
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: justify;       /* Justify the text */
+}
+
+/* Headings for sponsor levels */
+.sponsors-section h3 {
+    font-size: 1.8em;          /* Increase heading size */
+    margin-top: 30px;          /* Space above each section */
+    margin-bottom: 10px;       /* Space below the heading */
+    text-align: center;        /* Center align headings */
+}
+
+/* Paragraphs (e.g., contribution descriptions) */
+.sponsors-section p {
+    font-size: 1.2em;          /* Slightly larger than default paragraph text */
+    line-height: 1.5;          /* Increase line spacing for readability */
+    margin: 10px 0;
+    text-align: center;        /* Center align paragraphs */
+}
+
+/* Lists (for sponsor benefits) */
+.sponsors-section ul {
+    list-style-type: disc;     /* Use default bullet points */
+    padding-left: 20px;        /* Indent the list slightly */
+    margin: 10px 0;
+    text-align: left;          /* Align list items to the left */
+}
+
+/* List Items */
+.sponsors-section ul li {
+    font-size: 1.1em;          /* Make list item text a bit larger */
+    line-height: 1.5;          /* Increase spacing between list items */
+    margin-bottom: 5px;        /* Space between each bullet point */
+}
+
+
+/* General Navigation Bar Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+}
+
+.logo img {
+    height: 50px;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Links for Desktop */
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+/* Hide Hamburger Menu by Default */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Show hamburger menu on small screens */
+    }
+
+    .nav-links {
+        display: none; /* Hide links initially */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when hamburger is clicked */
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 20px; /* Slightly larger font for mobile */
+    }
+}
+
+

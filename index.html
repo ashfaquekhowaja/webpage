@@ -15,36 +15,49 @@
     <div class="container header-content">
       <!-- Logo and Title -->
       <div class="d-flex align-items-center">
-        <img src="assets/img/logo.jpeg" alt="Profile Picture" class="rounded-circle logo me-2">
+        <img src="assets/img/logo.jpeg" alt="Profile Picture" class="rounded-circle logo me-2">   <!-- Change the loo -->
         <span class="fw-bold d-md-none">Ashfaque Khowaja</span>
         <span class="fw-bold d-none d-md-block">Ashfaque Khowaja He/His</span>
       </div>
 
       <!-- Hamburger Icon for Mobile -->
-      <div class="hamburger d-md-none" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <button class="navbar-toggler d-md-none" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#mobileMenu" 
+              aria-controls="mobileMenu" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
 
       <!-- Navigation Links for Large Screens -->
       <nav class="d-none d-md-flex">
-        <a href="#about" class="text-dark mx-2">About Me</a>
-        <a href="#education" class="text-dark mx-2">Education</a>
-        <a href="#publications" class="text-dark mx-2">Publications</a>
-        <a href="#courses" class="text-dark mx-2">Courses</a>
-        <a href="#languages" class="text-dark mx-2">Languages</a>
+        <a href="#about" class="mx-2">About Me</a>
+        <a href="#education" class="mx-2">Education</a>
+        <a href="#publications" class="mx-2">Publications</a>
+        <a href="#courses" class="mx-2">Courses</a>
+        <a href="#languages" class="mx-2">Languages</a>
       </nav>
+      
+      <button class="theme-button">
+        <span class="theme-icon"></span>
+        <span class="theme-text">Switch to Dark Mode</span>
+      </button>
+      
     </div>
+
+<!-- Hamburger Icon for Mobile -->
+<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
 
     <!-- Mobile Menu -->
     <div class="collapse navbar-collapse" id="mobileMenu">
-      <nav class="bg-light p-3">
-        <a href="#about" class="text-dark d-block mb-2">About Me</a>
-        <a href="#education" class="text-dark d-block mb-2">Education</a>
-        <a href="#publications" class="text-dark d-block mb-2">Publications</a>
-        <a href="#courses" class="text-dark d-block mb-2">Courses</a>
-        <a href="#languages" class="text-dark d-block">Languages</a>
+      <nav class="p-3">
+        <a href="#about" class="d-block mb-2">About Me</a>
+        <a href="#education" class="d-block mb-2">Education</a>
+        <a href="#publications" class="d-block mb-2">Publications</a>
+        <a href="#courses" class="d-block mb-2">Courses</a>
+        <a href="#languages" class="d-block">Languages</a>
       </nav>
     </div>
   </header>
@@ -156,5 +169,32 @@
       mobileMenu.classList.toggle('show');
     });
   </script>
+
+<script>
+  // Theme Toggle Script Only
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector(".theme-button");
+    const body = document.body;
+    
+    if (localStorage.getItem("theme") === "dark") {
+      body.classList.add("dark-mode");
+      toggleButton.textContent = "Switch to Light Mode";
+    } else {
+      body.classList.add("light-mode");
+      toggleButton.textContent = "Switch to Dark Mode";
+    }
+    
+    toggleButton.addEventListener("click", function () {
+      body.classList.toggle("dark-mode");
+      body.classList.toggle("light-mode");
+      const isDarkMode = body.classList.contains("dark-mode");
+      toggleButton.textContent = isDarkMode 
+        ? "Switch to Light Mode" 
+        : "Switch to Dark Mode";
+      localStorage.setItem("theme", body.classList.contains("dark-mode") ? "dark" : "light");
+    });
+  });
+</script>
+
 </body>
 </html>

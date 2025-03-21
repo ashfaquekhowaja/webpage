@@ -26,15 +26,6 @@
         <span class="fw-bold d-none d-md-block">Ashfaque Khowaja He/His</span>
       </div>
 
-      <!-- Hamburger Icon for Mobile -->
-      <button class="navbar-toggler d-md-none" type="button" 
-              data-bs-toggle="collapse" data-bs-target="#mobileMenu" 
-              aria-controls="mobileMenu" aria-expanded="false" 
-              aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-
       <!-- Navigation Links for Large Screens -->
       <nav class="d-none d-md-flex">
         <a href="#about" class="mx-2">About Me</a>
@@ -43,19 +34,20 @@
         <a href="#courses" class="mx-2">Courses</a>
         <a href="#languages" class="mx-2">Languages</a>
       </nav>
-      
+
+          <!-- Right Side Controls -->
+    <div class="header-controls">
       <button class="theme-button">
+        <span class="theme-text">Switch to</span>
         <span class="theme-icon"></span>
-        <span class="theme-text">Switch to Dark Mode</span>
       </button>
-      
+      <button class="navbar-toggler d-md-none" type="button" 
+              data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
-
-<!-- Hamburger Icon for Mobile -->
-<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#mobileMenu" aria-controls="mobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-
+  </div>
+   
     <!-- Mobile Menu -->
     <div class="collapse navbar-collapse" id="mobileMenu">
       <nav class="p-3">
@@ -184,19 +176,16 @@
     
     if (localStorage.getItem("theme") === "dark") {
       body.classList.add("dark-mode");
-      toggleButton.textContent = "Switch to Light Mode";
+      body.classList.remove("light-mode");
     } else {
       body.classList.add("light-mode");
-      toggleButton.textContent = "Switch to Dark Mode";
+      body.classList.remove("dark-mode");
     }
     
     toggleButton.addEventListener("click", function () {
       body.classList.toggle("dark-mode");
       body.classList.toggle("light-mode");
-      const isDarkMode = body.classList.contains("dark-mode");
-      toggleButton.textContent = isDarkMode 
-        ? "Switch to Light Mode" 
-        : "Switch to Dark Mode";
+ 
       localStorage.setItem("theme", body.classList.contains("dark-mode") ? "dark" : "light");
     });
   });

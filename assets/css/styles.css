@@ -104,27 +104,85 @@ img {
   margin: 0 auto;
 }
 
-/* Flexbox Layout for Header */
+/* Header Layout */
 .header-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  padding: 10px 15px;
 }
 
-/* Theme Button */
+.title-text {
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Add/Update these styles */
 .theme-button {
   background: none;
-  border: 1px solid black;
-  color: black;
-  padding: 5px 10px;
-  cursor: pointer;
+  border: 1px solid;
+  padding: 5px 15px;
+  border-radius: 20px;
   transition: all 0.3s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
+.theme-icon::before {
+  content: '🌓';
+  display: block;
+  font-size: 1.2rem;
+}
+
+body.dark-mode .theme-icon::before {
+  content: '☀️';
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .theme-text {
+    display: none;
+  }
+  
+  .theme-button {
+    padding: 5px;
+    width: 40px;
+    justify-content: center;
+  }
+  
+  .theme-icon::before {
+    position: relative;
+    left: -40px; /* Negative values move left */
+  }
+}
+
+/* Dark Mode Colors */
 body.dark-mode .theme-button {
   border-color: white;
   color: white;
 }
+
+body.light-mode .theme-button {
+  border-color: black;
+  color: black;
+}
+
+/* Remove conflicting hamburger styles */
+.hamburger {
+  display: none !important; /* Remove duplicate hamburger */
+}
+
 
 /* Hamburger Icon */
 .navbar-toggler {

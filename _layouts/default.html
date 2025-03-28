@@ -3,6 +3,17 @@
 <head>
   {% include head.html %}
 </head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND6YYE0T6N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ND6YYE0T6N');
+</script>
+
 <body>
   {% include header.html %}
   <script src="{{ '/assets/js/main.js' | relative_url }}"  defer></script>

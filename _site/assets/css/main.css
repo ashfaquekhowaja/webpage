@@ -332,3 +332,69 @@ a {
     object-position: center center; /* Ensures the face is centered */
     display: block; /* Removes extra space under image */
 }
+
+/* Image Gallery Styles */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.gallery-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.gallery-image:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .image-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .gallery-image {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+.button {
+  display: inline-block;
+  padding: 1rem / 2 1rem;
+  background-color: 1rem;
+  color: blue;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  
+  &:hover {
+    background-color: darken(--secondary-colorr, 10%);
+    text-decoration: none;
+  }
+  
+  &.small {
+    padding: 1rem / 4 1rem / 2;
+    font-size: 0.9rem;
+  }
+}
+
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 1rem * 2 0;
+  
+  .highlight-box {
+    padding: 1rem;
+    border-radius: 4px;
+  }
+}

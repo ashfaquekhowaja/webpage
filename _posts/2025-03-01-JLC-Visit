@@ -1,11 +1,11 @@
 ---
 layout: post
-title: ""
+title: "Jialichuang Visit"
 date: 2025-03-01
 categories: news research
 ---
 
-I visited [Jialichuang (JLC)](https://www.jlcpcb.com/), a leading PCB manufacturer in **Zhuhai, Guangdong, China**, for a full-day tour of their facilities. The visit provided an in-depth look at their step-by-step **PCB production process**, including fabrication, quality control, and **Surface Mount Technology (SMT) assembly**, offering valuable insights into large-scale PCB manufacturing.
+I recently visited [Jialichuang (JLC)](https://www.jlcpcb.com/), a leading PCB manufacturer in **Zhuhai, Guangdong, China**, for a full-day tour of their facilities. The visit provided an in-depth look at their step-by-step **PCB production process**, including fabrication, quality control, and **Surface Mount Technology (SMT) assembly**, offering valuable insights into large-scale PCB manufacturing.
 
 <div class="image-gallery">
   <img src="{{ 'assets/img/JLC1.jpg' | relative_url }}" 
@@ -24,6 +24,3 @@ I visited [Jialichuang (JLC)](https://www.jlcpcb.com/), a leading PCB manufactur
        alt="Finished PCBs" 
        class="gallery-image">
 </div>
-
-
-<!-- Read the full paper [here](link-to-paper). -->

@@ -4,8 +4,6 @@ title:
 permalink: /news/
 ---
 
-## Latest Updates
-
 {% for item in site.data.news %}
 <div class="news-item">
   <h3>{{ item.title }}</h3>

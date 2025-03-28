@@ -299,7 +299,7 @@ a {
   [data-theme="dark"] {
     a {
       /* text-decoration: underline;  /* Extra visibility in dark mode */
-      text-underline-offset: 3px; */
+      text-underline-offset: 3px; 
       text-decoration-color: var(--secondary-color);
     }
     
@@ -312,7 +312,7 @@ a {
   .hero {
     text-align: center;
     padding: 2rem 0;
-    font-weight: 1000;
+    font-weight: 700;
   }
 
   

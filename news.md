@@ -1,29 +1,23 @@
 ---
-layout: post
-title: ""
-date: 2025-03-01
-categories: news research
+layout: page
+title: 
+permalink: /news/
 ---
 
-I visited [Jialichuang (JLC)](https://www.jlcpcb.com/), a leading PCB manufacturer in **Zhuhai, Guangdong, China**, for a full-day tour of their facilities. The visit provided an in-depth look at their step-by-step **PCB production process**, including fabrication, quality control, and **Surface Mount Technology (SMT) assembly**, offering valuable insights into large-scale PCB manufacturing.
+## Latest Updates
 
-<div class="image-gallery">
-  <img src="{{ 'assets/img/JLC1.jpg' | relative_url }}" 
-       alt="PCB Manufacturing Process" 
-       class="gallery-image">
+{% for item in site.data.news %}
+<div class="news-item">
+  <h3>{{ item.title }}</h3>
+  <p class="news-date">{{ item.date | date: "%B %d, %Y" }}</p>
   
-  <img src="{{ 'assets/img/JLC2.jpg' | relative_url }}" 
-       alt="Quality Control" 
-       class="gallery-image">
-       
-  <img src="{{ 'assets/img/JLC3.jpg' | relative_url }}" 
-       alt="SMT Assembly" 
-       class="gallery-image">
-       
-  <img src="{{ 'assets/img/JLC4.jpg' | relative_url }}" 
-       alt="Finished PCBs" 
-       class="gallery-image">
+  <div class="news-gallery">
+    {% for img in item.images %}
+      <img src="{{ img.path | relative_url }}" alt="{{ img.alt }}" loading="lazy">
+    {% endfor %}
+  </div>
+  
+  <p>{{ item.excerpt }}</p>
 </div>
-
-
-<!-- Read the full paper [here](link-to-paper). -->
+<hr>
+{% endfor %}

@@ -45,11 +45,16 @@ title: Home
     <a href="/projects" class="button small">View Project</a>
   </div> -->
   
-  <div class="highlight-box">
-    <h3>Recent News</h3>
-    {% assign latest_news = site.posts | first %}
-    <p>{{ latest_news.title }}</p>
-    <p>{{ latest_news.date | date: "%b %Y" }}</p>
-    <a href="{{ latest_news.url }}" class="button small">Read News</a>
+<div class="highlight-box">
+  <h3>Recent News</h3>
+  {% assign latest_news = site.data.news | first %}
+  <p>{{ latest_news.title }}</p>
+  <p>{{ latest_news.date | date: "%b %Y" }}</p>
+  <div class="news-images">
+    {% for img in latest_news.images limit:1 %}
+      <img src="{{ img.path | relative_url }}" alt="{{ img.alt }}" width="200">
+    {% endfor %}
   </div>
+  <a href="{{ latest_news.url }}" class="button small">Read News</a>
+</div>
 </section>

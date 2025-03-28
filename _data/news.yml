@@ -1,0 +1,14 @@
+- title: "Visited PCB Manufacturing Facility"
+  date: 2025-03-1
+  excerpt: "I visited Jialichuang (JLC), a leading PCB manufacturer in Zhuhai, Guangdong, China, for a full-day tour of their facilities. The visit provided an in-depth look at their step-by-step PCB production process, including fabrication, quality control, and Surface Mount Technology (SMT) assembly, offering valuable insights into large-scale PCB manufacturing."
+  images:
+    - path: "assets/img/JLC1.jpg"
+      alt: "PCB production line"
+    - path: "assets/img/JLC2.jpg"
+      alt: "Quality control"
+    - path: "assets/img/JLC3.jpg"
+      alt: "PCB production line"
+    - path: "assets/img/JLC4.jpg"
+      alt: "Quality control"
+  url: "/news/"
+

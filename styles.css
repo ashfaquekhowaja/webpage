@@ -1,9 +1,0 @@
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000; /* Ensures the header stays on top */
-    background-color: white; /* Add a background color if needed */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
-  }
-  

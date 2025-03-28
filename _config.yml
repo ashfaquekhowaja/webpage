@@ -1,23 +1,24 @@
-title: "Ashfaque Khowaja's Website"
-description: "PhD Student at SUSTech"
-baseurl: "" # The subpath of your site, e.g. /blog
-url: "https://ashfaquekhowaja.github.io/webpage/" # Your website URL
+title: Ashfaque Khowaja
 
-# Personal Info
-author: 
-  name: "Ashfaque Khowaja"
-  pronouns: "He/His"
-  position: "PhD Student in Intelligent Manufacturing and Robotics"
-  university: "Southern University of Science and Technology, Shenzhen, China"
-  advisor: "Prof. Seungwoo Je"
-  profile_image: "/assets/images/image.jpg"
-  
-# Social Links
-social_links:
-  google_scholar: "https://scholar.google.com"
-  orcid: "https://orcid.org"
-  email: "mailto:ashfaque.khowaja@example.com"
-  cv: "/assets/files/ashfaque-khowaja-cv.pdf"
+baseurl: ""
+url: "ashfaquekhowaja.com"
+email: khowaja.ashfaqali@hotmail.com
+github_url: https://github.com/ashfaquekhowaja
+twitter_url: https://x.com/AshfaqueKhowaja
+linkedin_username: ashfaquekhowaja/
+google_scholar_id: P9J0bO4AAAAJ
+orcid_id: 0009-0007-0352-3316
 
 # Build settings
 theme: minima
+plugins:
+  # - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sass-converter
+
+# Optional
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

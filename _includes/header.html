@@ -1,40 +1,22 @@
-<header class="navbar">
-    <!-- Logo Section -->
-    <img src="{{ '/assets/img/ISMAR_logo_24.png' | relative_url }}" alt="Logo" class="logo">
-
-    <!-- Navigation Links -->
-    <ul class="nav-links">
-        <li><a href="home">Home</a></li>
-        <li><a href="sponsors">Sponsors</a></li>
-        <li><a href="organizers">Organizers</a></li>
-
-    </ul>
-    <script src="{{'assets\js\functions.js' | relative_url }}"></script>
-</header>
-  <!-- Main content -->
-  <div class="main-content">
-    <div class="hero">
-        <img src="assets/img/ISMAR_Banner_24-4.png" alt="Banner Image">
-            <section class="description">
-                <p>IEEE International Symposium on Mixed and Augmented Reality (ISMAR) is the premier conference for Augmented Reality (AR), Mixed Reality (MR) and Virtual Reality (VR), which attracts the world’s leading researchers from both academia and industry. ISMAR explores the advances in commercial and research activities related to AR, MR, and VR by continuing to expand its scope over the past several years. The conference will include two days of workshops, tutorials, and contests and three days of scientific papers, posters, and demonstration presentations. In addition, exhibitions will be arranged to promote the interactions and exchange between industry and academia.
-              
-              ISMAR 2025 will be hosted in a hybrid mode! We look forward to seeing all of you at the conference.</p>
-              </section>
+<header class="site-header">
+    <div class="wrapper">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+      
+      <nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+  
+        <div class="trigger">
+          {% for item in site.data.navigation %}
+            <a class="page-link" href="{{ item.link | relative_url }}">{{ item.name }}</a>
+          {% endfor %}
         </div>
+      </nav>
     </div>
-
-    <!-- Sponsors section -->
-    <aside class="sponsors">
-        <h2>Sponsors</h2>
-        <ul>
-            <li><img src="assets\img\Meta-Logo-4-1536x402.png" alt="Meta"></li>
-            <li><img src="assets\img\qualcomn-1-1536x315.png" alt="Qualcomm"></li>
-            <!-- Add more sponsors here -->
-        </ul>
-    </aside>
-</div>
-
-<footer>
-    IEEE ISMAR 2025 | Greater Seattle Area | October 2025
-</footer>
-</body>
+  </header>

@@ -1,0 +1,29 @@
+// Custom Color Palette
+$primary-color: #2c3e50;
+$secondary-color: #3498db;
+$text-color: #333;
+$background-color: #ffffff;
+$light-gray: #f5f5f5;
+$dark-gray: #777;
+
+// Modern Color Functions (replaces lighten/darken)
+@use "sass:color";
+
+$primary-light: color.scale($primary-color, $lightness: 40%);
+$primary-dark: color.scale($primary-color, $lightness: -25%);
+
+// Fonts
+$font-stack: "Helvetica Neue", Arial, sans-serif;
+$heading-font: "Georgia", serif;
+
+// Spacing
+$spacing-unit: 1rem;
+$container-width: 1200px;
+
+// Breakpoints
+$mobile: 768px;
+
+// Navbar colors (light theme)
+$navbar-bg: #d6bcbc;      // White background
+$navbar-text: #000509;    // Dark text
+$navbar-hover: #3498db;   // Blue hover color

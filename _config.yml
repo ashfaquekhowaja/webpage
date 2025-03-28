@@ -1,24 +1,17 @@
 title: Ashfaque Khowaja
-
+description: >
+  Your professional description in 1-2 sentences.
 baseurl: ""
-url: "ashfaquekhowaja.com"
-email: khowaja.ashfaqali@hotmail.com
-github_url: https://github.com/ashfaquekhowaja
-twitter_url: https://x.com/AshfaqueKhowaja
-linkedin_username: ashfaquekhowaja/
-google_scholar_id: P9J0bO4AAAAJ
-orcid_id: 0009-0007-0352-3316
+url: "https://yourdomain.com"
+email: your.email@example.com
+github_username: yourusername
+twitter_username: yourusername
+linkedin_username: yourusername
+google_scholar_id: YOUR_ID_HERE
+orcid_id: YOUR-ORCID-ID
 
 # Build settings
 theme: minima
 plugins:
-  # - jekyll-feed
+  - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-sass-converter
-
-# Optional
-defaults:
-  - scope:
-      path: ""
-    values:
-      layout: default

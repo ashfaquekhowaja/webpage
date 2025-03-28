@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about
 ---
-
-## Biography
 
 I am a PhD student at Southern University of Science and Technology (SUSTech), China, currently working under the supervision of [Prof. Seungwoo Je](https://immersivedesignresearch.com/seungwoo) at the [Immersive Design Group](https://immersivedesignresearch.com/). My research focuses on computer vision, embedded systems, and haptic technologies.
 

@@ -12,4 +12,3 @@ Throughout my academic journey, I have been honored with several scholarships an
 **{{ award.organization }}** – *{{ award.year }}*  
 {{ award.description }}
 {% endfor %}
-

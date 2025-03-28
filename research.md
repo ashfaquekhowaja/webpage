@@ -1,10 +1,8 @@
 ---
 layout: page
-title: Research
+title: Research Interests
 permalink: /research
 ---
-
-## Research Interests
 
 My broad research interests lie in computer vision, embedded systems, and haptic technologies, with a focus on developing innovative solutions for medical image processing, human-computer interaction, and intelligent sensing systems. I am particularly interested in exploring deep learning-based computer vision applications, real-time embedded AI systems, and haptic feedback mechanisms to enhance user experiences in healthcare, virtual reality, and robotics.
 

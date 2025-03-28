@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | </title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<script>
+    // Prevent FOUC
+    (function() {
+      const savedTheme = localStorage.getItem('theme');
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
+      document.documentElement.setAttribute('data-theme', initialTheme);
+    })();
+  </script>
+
+
+  </head>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar">
+        <!-- Title on the left -->
+        <div class="navbar-brand">
+          <a href="/">Ashfaque Khowaja</a>
+        </div>
+  
+        <!-- Hamburger menu button (mobile only) -->
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+  
+        <!-- Navigation links and theme toggle -->
+        <div class="navbar-menu">
+          <ul class="nav-links">
+            
+              <li>
+                <a href="/" class="active">
+                  Home
+                </a>
+              </li>
+            
+              <li>
+                <a href="/about" >
+                  About Me
+                </a>
+              </li>
+            
+              <li>
+                <a href="/awards" >
+                  Awards
+                </a>
+              </li>
+            
+              <li>
+                <a href="/research" >
+                  Research
+                </a>
+              </li>
+            
+            <li>
+              <button class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="icon">🌙</span>
+                <span class="sr-only">Toggle theme</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <script src="/assets/js/main.js"  defer></script>
+
+  <main class="container">
+    <div class="home">
+  <section class="hero">
+  <div class="hero-content">
+   <div class="profile-image">
+  <div class="profile-image-container">
+    <img src="/assets/img/image.jpg" alt="Ashfaque Khowaja" />
+  </div>
+</div>
+    <h1></h1>
+    <p class="subtitle">PhD in Intelligent Manufacturing and Robotics</p>
+  </div>
+</section>
+
+<section class="about">
+  <h2>About Me</h2>
+  <p>Hi! I am Ashfaque Khowaja, a first-year PhD student in the <a href="https://designschool.sustech.edu.cn/">School of Design</a> at <a href="http://www.sustech.edu.cn/en/">Southern University of Science and Technology (SUSTech)</a>. My research interest is in <strong>Human-Computer Interaction (HCI)</strong>, mainly interactions using haptics.</p>
+
+<p>I am currently working under the supervision of <a href="https://immersivedesignresearch.com/seungwoo">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/">Immersive Design Group</a> at SUSTech.</p>
+  
+  <div class="quick-links">
+    <a href="/about" class="button">Full Bio</a>
+    <a href="/research" class="button">My Research</a>
+    <a href="/assets/CV.pdf" class="button">Download CV</a>
+  </div>
+</section>
+
+<section class="highlights">
+  <div class="highlight-box">
+    <h3>Latest Publication</h3>
+    
+    <p>Enhancing cervical cancer diagnosis: Integrated attention-transformer system with weakly supervised learning</p>
+    <p><em>Image and Vision Computing</em> (2024)</p>
+    <a href="https://doi.org/10.1016/j.imavis.2024.105193" class="button small">Read More</a>
+  </div>
+  
+  <!-- <div class="highlight-box">
+    <h3>Current Project</h3>
+    
+    <p></p>
+    <p></p>
+    <a href="/projects" class="button small">View Project</a>
+  </div> -->
+  
+  <div class="highlight-box">
+    <h3>Recent News</h3>
+    
+    <p></p>
+    <p></p>
+    <a href="" class="button small">Read News</a>
+  </div>
+</section>
+
+  <!-- Omit posts section -->
+</div>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Ashfaque Khowaja</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

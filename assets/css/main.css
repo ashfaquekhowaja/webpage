@@ -1,0 +1,334 @@
+/* Variables */
+:root {
+    --primary-color: #2c3e50;       /* Dark blue for text */
+    --secondary-color: #3498db;     /* Bright blue for accents */
+    --link-color: #1a73e8;         /* Standard link blue */
+    --link-hover: #0d5bba;         /* Slightly darker blue */
+    --bg-color: #ffffff;            /* White background */
+    --text-color: #333333;          /* Dark gray text */
+    --footer-bg: #2c3e50;
+    --footer-text: #ffffff;
+    --white: white;
+  }
+  
+  /* Dark mode */
+  [data-theme="dark"] {
+    --primary-color: #e0e0e0;       /* Light gray for text */
+    --secondary-color: #64b5f6;     /* Light blue for accents */
+    --link-color: #8ab4f8;          /* Softer blue for links */
+    --link-hover: #bbdefb;          /* Lighter hover state */
+    --bg-color: #121212;            /* Dark background */
+    --text-color: #e0e0e0;          /* Light text */
+    --header-bg: #2c3e50;
+    --footer-bg: #121212;
+  }
+  
+  /* Base styles */
+  body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Layout */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  /* Header */
+  .site-header {
+    background: var(--footer-bg);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+
+  [data-theme="dark"] .site-header {
+    background: var(--header-bg);
+    color: var(--footer-text-dark);
+  }
+  
+ /* Navbar layout */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--bg-color);
+  }
+  
+  .navbar-brand a {
+    color: var(--bg-color);
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--bg-color);
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+  
+  
+  [data-theme="dark"] .nav-links a {
+    color: var(--text-color);
+  }
+  
+  /* Keep your existing theme toggle styles */
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    padding: 0;
+  }
+  
+  [data-theme="dark"] .theme-toggle {
+    color: var(--text-color);
+  }
+  
+  [data-theme="dark"] .nav-links a {
+    color: white;
+  }
+  
+  /* Theme toggle */
+html {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .theme-toggle {
+    background: var(--primary-color);
+    color: var(--bg-color);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  [data-theme="dark"] .theme-toggle {
+    background: var(--text-color);
+    color: var(--bg-color);
+  }
+
+  .content-wrapper {
+    flex: 1 0 auto; /* Grow and shrink as needed, but don't shrink below content */
+    padding: 20px 0;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  /* Footer */
+  .site-footer {
+    flex-shrink: 0; /* Prevent footer from shrinking */
+    background: var(--footer-bg);
+    color: var(--footer-text);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: auto; /* Push to bottom */
+    width: 100%;
+  }
+
+  [data-theme="dark"] .site-footer {
+    background: var(--header-bg);
+    color: var(--footer-text-dark);
+  }
+
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .header-content {
+      flex-direction: column;
+    }
+  }
+
+  /* Hamburger menu styles */
+.hamburger {
+    display: none; /* Hidden by default on desktop */
+    padding: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  .hamburger-box {
+    width: 24px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  .hamburger-inner {
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
+  }
+  
+  
+  .hamburger-inner::before,
+  .hamburger-inner::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: whitesmoke;
+    position: absolute;
+    left: 0;
+    transition: transform 0.2s ease;
+  }
+  
+  .hamburger-inner::before {
+    top: -6px;
+  }
+  
+  .hamburger-inner::after {
+    bottom: -6px;
+  }
+  
+  [data-theme="dark"] .hamburger-inner,
+  [data-theme="dark"] .hamburger-inner::before,
+  [data-theme="dark"] .hamburger-inner::after {
+    background-color: var(--text-color);
+  }
+  
+  /* Active state for hamburger */
+  .hamburger.active .hamburger-inner {
+    background-color: transparent;
+  }
+  
+  .hamburger.active .hamburger-inner::before {
+    transform: translateY(6px) rotate(45deg);
+  }
+  
+  .hamburger.active .hamburger-inner::after {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+  
+  /* Mobile menu styles */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+    
+    .navbar-menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      height: 100vh;
+      background-color: var(--bg-color);
+      padding: 80px 20px 20px;
+      transition: right 0.3s ease;
+      z-index: 1000;
+    }
+    
+    .navbar-menu.active {
+      right: 0;
+    }
+    
+    .nav-links {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links a {
+        color: black;
+        font-size: 1.2rem;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+      }
+    }
+    
+
+  /* Link styles (works in both modes) */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-weight: 2000;
+    
+    &:hover {
+      color: var(--link-hover);
+      text-decoration: underline;
+    }
+  }
+  
+  /* Special cases */
+  [data-theme="dark"] {
+    a {
+      /* text-decoration: underline;  /* Extra visibility in dark mode */
+      text-underline-offset: 3px; */
+      text-decoration-color: var(--secondary-color);
+    }
+    
+    /* Fix for visited links */
+    a:visited {
+      color: var(--link-color);
+    }
+  }
+
+  .hero {
+    text-align: center;
+    padding: 2rem 0;
+    font-weight: 1000;
+  }
+
+  
+  .profile-image {
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 50%; /* Optional: makes it circular */
+    position: relative; /* Needed for proper image positioning */
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This is the magic property */
+    object-position: center center; /* Ensures the face is centered */
+    display: block; /* Removes extra space under image */
+}

@@ -1,17 +1,10 @@
-- name: Home
-  link: /
-  
-- name: About
-  link: /about
-  
-- name: Research
-  link: /research
-  
-# - name: Projects
-#   link: /projects
-  
-# - name: News
-#   link: /news
-  
-- name: Awards
-  link: /awards
+# Main navigation links (appears in header/footer)
+main:
+  - name: "Home"
+    url: "/"
+  - name: "About Me"
+    url: "/about"
+  - name: "Awards"
+    url: "/awards"
+  - name: "Research"
+    url: "/research"

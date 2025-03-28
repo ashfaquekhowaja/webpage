@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /feed.xml
-Disallow: /private/
-Sitemap: {{ site.url }}/sitemap.xml

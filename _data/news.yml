@@ -49,13 +49,13 @@
       date: 2025-03-20
       excerpt: "I attended the <strong>4th Global Language Day</strong> event at <strong>SUSTech</strong>, where I presented <strong>Sindhi</strong>, my mother tongue. I introduced guests to a few Sindhi phrases and had the opportunity to connect with people from diverse countries and linguistic backgrounds."
       images:
-        - path: "assets/img/LDay1.webp"
+        - path: "assets/img/Lday1.webp"
           alt: "Sindhi language"
-        - path: "assets/img/LDay2.webp"
+        - path: "assets/img/Lday2.webp"
           alt: "Sindhi language"
-        - path: "assets/img/LDay3.webp"
+        - path: "assets/img/Lday3.webp"
           alt: "Sindhi language"
-        - path: "assets/img/LDay4.webp"
+        - path: "assets/img/Lday4.webp"
           alt: "Sindhi language"
       url: "/news/"
 

@@ -13,7 +13,7 @@
   url: "/news/"
 
 - title: "KiCon Asia 2024"
-  date: 2024-11-14
+  date: 2024-11-16
   excerpt: "I attended a one-day workshop followed by the two-day KiCad Asia 2024 Conference in Shenzhen. It was a great opportunity to connect with professionals in electronics and PCB design. I also gained valuable insights into KiCad and its upcoming version 9.0."
   images:
     - path: "assets/img/Kicon1.webp"

@@ -8,9 +8,9 @@ I am a PhD student at Southern University of Science and Technology (SUSTech), C
 
 I earned my Bachelor’s degree in Computer Science from [Guilin University of Electronic Technology](https://www.guet.edu.cn/caaueii_english/2023/0203/c3718a32091/page.htm), followed by a Master’s degree from [Central South University](https://en.csu.edu.cn/). During my Master’s, I conducted research in medical image processing, specifically exploring deep learning techniques for cervical cancer classification. My work in this area led to several publications in peer-reviewed journals and conferences.
 
-Currently, I am investigating Electric Impedance Tomography (EIT) and its applications in medical and HCI. Alongside my research, I serve as a Teaching Assistant, assisting undergraduate students in AI hardware and embedded systems.
+Currently, I am researching on Electric Impedance Tomography (EIT) and its applications in medical and HCI. Alongside my research, I served as a Teaching Assistant for fall 2024 semeter, assisting undergraduate students in AI hardware and embedded systems, the course name was "Responsive Systems".
 
-My technical expertise includes PCB design, STM32, ESP32, CH32V003 microcontrollers, and AI-driven embedded systems. I am also actively involved in academic conferences such as CHI and IEEE ISMAR.
+My technical expertise includes PCB design, STM32, ESP32, CH32V003 microcontrollers, and AI-driven embedded systems. I am also actively involved in academic conferences and workshops to share my research and knowledge with others.
 
 Beyond my academic and research pursuits, I enjoy creating [videos and vlogs](https://www.youtube.com/@AshfaqueKhowaja) about life in China, sharing my experiences and insights with a wider audience.
 

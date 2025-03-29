@@ -2,13 +2,13 @@
   date: 2025-03-1
   excerpt: "I visited Jialichuang (JLC), a leading PCB manufacturer in Zhuhai, Guangdong, China, for a full-day tour of their facilities. The visit provided an in-depth look at their step-by-step PCB production process, including fabrication, quality control, and Surface Mount Technology (SMT) assembly, offering valuable insights into large-scale PCB manufacturing."
   images:
-    - path: "assets/img/JLC1.jpg"
+    - path: "assets/img/JLC1.webp"
       alt: "PCB production line"
-    - path: "assets/img/JLC2.jpg"
+    - path: "assets/img/JLC2.webp"
       alt: "Quality control"
-    - path: "assets/img/JLC3.jpg"
+    - path: "assets/img/JLC3.webp"
       alt: "PCB production line"
-    - path: "assets/img/JLC4.jpg"
+    - path: "assets/img/JLC4.webp"
       alt: "Quality control"
   url: "/news/"
 
@@ -16,12 +16,12 @@
   date: 2024-11-14
   excerpt: "I attended a one-day workshop followed by the two-day KiCad Asia 2024 Conference in Shenzhen. It was a great opportunity to connect with professionals in electronics and PCB design. I also gained valuable insights into KiCad and its upcoming version 9.0."
   images:
-    - path: "assets/img/Kicon1.jpeg"
+    - path: "assets/img/Kicon1.webp"
       alt: "KiCad workshop"
-    - path: "assets/img/Kicon2.jpeg"
+    - path: "assets/img/Kicon2.webp"
       alt: "KiCad workshop"
-    - path: "assets/img/Kicon3.jpeg"
+    - path: "assets/img/Kicon3.webp"
       alt: "KiCad workshop"
-    - path: "assets/img/Kicon4.jpeg"
+    - path: "assets/img/Kicon4.webp"
       alt: "KiCad workshop"
   url: "/news/"

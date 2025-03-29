@@ -61,16 +61,3 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const profileImg = document.querySelector('.profile-image img');
-    if (profileImg) {
-        // Adjust these values until face is centered
-        profileImg.style.objectPosition = 'center 30%';
-        
-        // Optional: Log for debugging
-        console.log('Image loaded. Dimensions:', 
-                   profileImg.naturalWidth, 'x', 
-                   profileImg.naturalHeight);
-    }
-});

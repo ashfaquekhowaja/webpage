@@ -7,7 +7,7 @@ title: Home
   <div class="hero-content">
    <div class="profile-image">
   <div class="profile-image-container">
-    <img src="{{ 'assets/img/profile.png' | relative_url }}" alt="Ashfaque Khowaja">
+    <img src="{{ 'assets/img/Profile.png' | relative_url }}" alt="Ashfaque Khowaja">
   </div>
 </div>
     <h1>{{ site.title }}</h1>

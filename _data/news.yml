@@ -12,6 +12,21 @@
       alt: "Quality control"
   url: "/news/"
 
+
+- title: "Scalable HCI 2025"
+  date: 2025-01-09
+  excerpt: "I volunteered for Scalable HCI from 6th to 9th January 2025 at the School of Design, SUSTech, assisting with event organization and engaging with researchers in human-computer interaction."
+  images:
+    - path: "assets/img/HCI1.webp"
+      alt: "KiCad workshop"
+    - path: "assets/img/HCI2.webp"
+      alt: "KiCad workshop"
+    - path: "assets/img/HCI3.webp"
+      alt: "KiCad workshop"
+    - path: "assets/img/HCI4.webp"
+      alt: "KiCad workshop"
+  url: "/news/"
+
 - title: "KiCon Asia 2024"
   date: 2024-11-16
   excerpt: "I attended a one-day workshop followed by the two-day KiCad Asia 2024 Conference in Shenzhen. It was a great opportunity to connect with professionals in electronics and PCB design. I also gained valuable insights into KiCad and its upcoming version 9.0."
@@ -25,3 +40,4 @@
     - path: "assets/img/kicon4.webp"
       alt: "KiCad workshop"
   url: "/news/"
+

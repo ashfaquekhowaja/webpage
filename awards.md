@@ -8,7 +8,7 @@ Throughout my academic journey, I have been honored with several scholarships an
 
 
 {% for award in site.data.awards %}
-### {{ award.title }}
-**{{ award.organization }}** – *{{ award.year }}*  
-{{ award.description }}
+- ### {{ award.title }}
+  **{{ award.organization }}** – *{{ award.year }}*  
+  {{ award.description }}
 {% endfor %}

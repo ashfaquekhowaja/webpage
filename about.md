@@ -33,3 +33,13 @@ Beyond my academic and research pursuits, I enjoy creating [videos and vlogs](ht
 3. Urdu - Native
 4. Sindhi - Native
 5. Hindi - Listening & Speaking
+
+
+## Volunteer Experience
+
+- **Volunteer**, Scalable HCI 2025, SUSTech, China. [See More](/news/)
+
+## Teaching Assistant Experience
+
+- **Responsive Systems**, Fall 2024, SUSTech, China.
+

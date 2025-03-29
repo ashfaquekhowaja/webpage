@@ -1,30 +1,32 @@
 - title: "Enhancing cervical cancer diagnosis: Integrated attention-transformer system with weakly supervised learning"
-  authors: "Ashfaque Khowaja, Beiji Zou, Xiaoyan Kui"
+  authors: "<strong>Ashfaque Khowaja</strong>, Beiji Zou, Xiaoyan Kui"
   journal: "Image and Vision Computing"
   year: 2024
   link: "https://doi.org/10.1016/j.imavis.2024.105193"
   abstract: "Cervical cancer screening through cytopathological images is challenging due to the complexity of cancer cells, leading to high misdiagnosis rates. This study introduces the Integrated Attention-Transformer System (IATS), a novel framework that enhances accuracy by combining Vision Transformers (ViT), Token-to-Token mechanisms, and SeNet-integrated CNNs. Unlike traditional CNNs, IATS effectively captures both global and local features, improving cancer cell identification. A weighted voting mechanism further refines predictions, reducing misdiagnosis risk. The framework achieves 98.44% accuracy on the Mendeley dataset and 95.88% on SIPaKMeD, outperforming 25 deep learning models and surpassing the best CNN model by 2.5%. These results highlight IATS’s potential to revolutionize cervical cancer screening, with future work focusing on computational efficiency and clinical integration."
 
 - title: "DeepCervixNet: An Advanced Deep Learning Approach for Cervical Cancer Classification in Pap Smear Images"
-  authors: "Dhani Bux Talpur, Ali Raza, Ashfaque Khowaja, Asadullah Shah"
+  authors: "Dhani Bux Talpur, Ali Raza, <strong>Ashfaque Khowaja</strong>, Asadullah Shah"
   journal: "VAWKUM Transactions on Computer Sciences"
   year: 2024
   link: "https://www.vfast.org/journals/index.php/VTCS/article/view/1812"
 
 - title: "Accurate prediction of Snare Protein Sequence using Machine Learning"
-  authors: "Dani Bux Talpur, Salahuddin Shaikh, Ashfaque Khowaja, Saifullah Adnan, Ali Ghulam"
+  authors: "Dani Bux Talpur, Salahuddin Shaikh, <strong>Ashfaque Khowaja</strong>, Saifullah Adnan, Ali Ghulam"
   journal: "Bioscience Research"
   year: 2022
   link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=P9J0bO4AAAAJ&citation_for_view=P9J0bO4AAAAJ:Tyk-4Ss8FVUC"
   
+# Conference Papers
+
 - title: "CerviNet: A Novel Approach for Pap-smear Images Analysis for Cervical Cancer Classification"
-  authors: "Ashfaque Khowaja, Beiji Zou, Xiaoyan Kui"
+  authors: "<strong>Ashfaque Khowaja</strong>, Beiji Zou, Xiaoyan Kui"
   conference: "International Symposium on Bioinformatics Research and Applications (ISBRA)"
   year: 2024
   link: "https://www.researchgate.net/publication/382361030_CerviNet_A_Novel_Approach_for_Pap-smear_Images_Analysis_for_Cervical_Cancer_Classification"
 
 - title: "Cervix Visionator ELM: A Novel Approach to Early Detection of Cervical Cancer"
-  authors: "Ashfaque Khowaja, Beiji Zou, Xiaoyan Kui"
+  authors: <strong>Ashfaque Khowaja</strong>, Beiji Zou, Xiaoyan Kui"
   conference: "2023 8th International Conference on Control, Robotics and Cybernetics (CRC)"
   year: 2024
   link: "https://ieeexplore.ieee.org/document/10488648"

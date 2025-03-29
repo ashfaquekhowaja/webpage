@@ -8,26 +8,33 @@ My broad research interests lie in computer vision, embedded systems, and haptic
 
 ## Publications
 
-### Journal Articles
+<h3 class="underlined">Journal Articles</h3>
+
+{% assign journal_count = 1 %}
 {% for pub in site.data.publications %}
   {% if pub.journal %}
   <div class="publication">
-    <h4>{{ pub.title }}</h4>
+    <h4>{{ journal_count }}. {{ pub.title }}</h4>
     <p>{{ pub.authors }}</p>
     <p><em>{{ pub.journal }}</em>, {{ pub.year }}</p>
     {% if pub.link %}<a href="{{ pub.link }}" class="button small">View Publication</a>{% endif %}
   </div>
+  {% assign journal_count = journal_count | plus: 1 %}
   {% endif %}
 {% endfor %}
 
-### Conference Papers
+
+<h3 class="underlined">Conference Papers</h3>
+
+{% assign conference_count = 1 %}
 {% for pub in site.data.publications %}
   {% if pub.conference %}
   <div class="publication">
-    <h4>{{ pub.title }}</h4>
+    <h4>{{ conference_count }}. {{ pub.title }}</h4>
     <p>{{ pub.authors }}</p>
     <p><em>{{ pub.conference }}</em>, {{ pub.year }}</p>
     {% if pub.link %}<a href="{{ pub.link }}" class="button small">View Publication</a>{% endif %}
   </div>
+  {% assign conference_count = conference_count | plus: 1 %}
   {% endif %}
 {% endfor %}

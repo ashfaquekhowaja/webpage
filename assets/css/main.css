@@ -321,15 +321,16 @@ a {
     height: 350px;
     overflow: hidden;
     margin: 30px auto;
-    border-radius: 50%; /* Optional: makes it circular */
-    position: relative; /* Needed for proper image positioning */
+    border-radius: 50%;
+    position: relative; /* Needed for proper positioning */
+    display: block; /* Ensures proper centering */
 }
 
 .profile-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* This is the magic property */
-    object-position: center center; /* Ensures the face is centered */
+    object-fit: cover;
+    object-position: center center; /* Start with perfect center */
     display: block; /* Removes extra space under image */
 }
 
@@ -441,6 +442,47 @@ a {
 h3.underlined {
   text-decoration: underline;
 }
-
+/* Publication styles Headlines */
 .publication h4 { margin-bottom: 0.2em; }
 .publication p { margin-top: 0; margin-bottom: 0.2em; }
+
+
+/* News Page Styles */
+.news-category {
+  margin-bottom: 3rem;
+}
+
+.news-category h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-item {
+  margin-bottom: 2rem;
+}
+
+.news-date {
+  color: #666;
+  font-style: italic;
+  margin-top: -0.8rem;
+}
+
+.news-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.news-image {
+  max-height: 200px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.news-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0066cc;
+}

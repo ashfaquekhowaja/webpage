@@ -7,7 +7,7 @@ title: Home
   <div class="hero-content">
    <div class="profile-image">
   <div class="profile-image-container">
-    <img src="{{ 'assets/img/image.jpg' | relative_url }}" alt="Ashfaque Khowaja">
+    <img src="{{ 'assets/img/profile.png' | relative_url }}" alt="Ashfaque Khowaja">
   </div>
 </div>
     <h1>{{ site.title }}</h1>
@@ -47,14 +47,28 @@ title: Home
   
 <div class="highlight-box">
   <h3>Recent News</h3>
-  {% assign latest_news = site.data.news | first %}
-  <p>{{ latest_news.title }}</p>
-  <p>{{ latest_news.date | date: "%b %Y" }}</p>
+  {% comment %} Get all research items and sort by date (newest first) {% endcomment %}
+  {% assign research_news = site.data.news | where: "category", "Research and Academic Activities" | first %}
+  {% assign latest_research = research_news.items | sort: "date" | reverse | first %}
+  
+  <h4>{{ latest_research.title }}</h4>
+  <p class="news-date">{{ latest_research.date | date: "%b %d, %Y" }}</p>
+  
   <div class="news-images">
-    {% for img in latest_news.images limit:1 %}
-      <img src="{{ img.path | relative_url }}" alt="{{ img.alt }}" width="200">
-    {% endfor %}
+    {% if latest_research.images.size > 0 %}
+      {% assign first_image = latest_research.images | first %}
+      <img src="{{ first_image.path | relative_url }}" 
+           alt="{{ first_image.alt }}" 
+           width="200"
+           class="news-thumbnail"
+           loading="lazy">
+    {% endif %}
   </div>
-  <a href="{{ latest_news.url }}" class="button small">Read News</a>
+  
+  <p class="news-excerpt">{{ latest_research.excerpt | truncate: 120 }}</p>
+  
+  <a href="{{ latest_research.url | default: '/news/' }}" class="button small">
+    Read More
+  </a>
 </div>
 </section>

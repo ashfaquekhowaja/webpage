@@ -1,0 +1,10 @@
+- title: "Eye Massager"
+  description: "I am currently working on an industry project for an eye massager, where I am responsible for PCB design. We have tested multiple versions of the boards, including the LED board, controller board, and power board. After finalizing the first prototype, we are now focused on improving the product's quality. I will share pictures once the project is completed."
+  year: 2024
+  start_date: "Novemeber 2024"
+  end_date: "Present"  # or specific month if completed
+  status: "In Progress"
+  technologies: "KiCad, 3D printing, CH32V003 microcontroller"
+  # github: "username/repo"
+  # image: "project-screenshot.jpg"
+

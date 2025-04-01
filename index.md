@@ -37,13 +37,14 @@ title: Home
     <a href="{{ latest_pub.link }}" class="button small">Read More</a>
   </div>
   
-  <!-- <div class="highlight-box">
-    <h3>Current Project</h3>
-    {% assign current_project = site.data.projects | first %}
-    <p>{{ current_project.title }}</p>
-    <p>{{ current_project.description | truncate: 100 }}</p>
-    <a href="/projects" class="button small">View Project</a>
-  </div> -->
+  <div class="highlight-box">
+  <h3>Current Project</h3>
+  {% assign current_project = site.data.projects | first %}
+  <h4>{{ current_project.title }}</h4>
+  <p>{{ current_project.description | truncate: 100 }}</p>
+  <p><strong>Status:</strong> {{ current_project.status }} ({{ current_project.start_date }} - {{ current_project.end_date }})</p>
+  <a href="/projects" class="button small">View Project</a>
+  </div>
   
 <div class="highlight-box">
   <h3>Recent News</h3>

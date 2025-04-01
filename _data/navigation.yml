@@ -8,5 +8,8 @@ main:
     url: "/awards"
   - name: "Research"
     url: "/research"
+  - name: "Projects"
+    url: "/projects"
   - name: "News"
     url: "/news"
+

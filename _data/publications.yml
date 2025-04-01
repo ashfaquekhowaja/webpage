@@ -19,6 +19,12 @@
   
 # Conference Papers
 
+- title: "End-to-End Transformer Architecture with Novel Ensemble Learning Method Integrating CT Scans and Clinical Narratives for Brain Stroke Diagnosis"
+  authors: "Junaid Abdul Wahid, Muhammad Ayoub, Mingliang Xu, Xiaoheng Jiang, Shi Lei, Lifeng Li, Shabir Hussain, <strong>Ashfaque Khowaja</strong>, Yufei Gao"
+  conference: "Computer Graphics International Conference"
+  year: 2024
+  link: "https://link.springer.com/chapter/10.1007/978-3-031-82024-3_11"
+
 - title: "CerviNet: A Novel Approach for Pap-smear Images Analysis for Cervical Cancer Classification"
   authors: "<strong>Ashfaque Khowaja</strong>, Beiji Zou, Xiaoyan Kui"
   conference: "International Symposium on Bioinformatics Research and Applications (ISBRA)"

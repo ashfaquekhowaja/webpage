@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Latest Updates and News
+title: News Bulletins
 permalink: /news/
 ---
 
@@ -28,7 +28,7 @@ permalink: /news/
   </div>
   
   {% unless forloop.last %}
-    <hr class="news-divider">
+    <hr class="news-divider" style="margin: -50px -50px;">
   {% endunless %}
   {% endfor %}
 </div>

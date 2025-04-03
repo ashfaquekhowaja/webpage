@@ -17,7 +17,7 @@ title: Home
 
 <section class="about">
   <h2>About Me</h2>
-  <p>Hi! I am Ashfaque Khowaja, a first-year PhD student in the <a href="https://designschool.sustech.edu.cn/">School of Design</a> at <a href="http://www.sustech.edu.cn/en/">Southern University of Science and Technology (SUSTech)</a>. My research interest is in <strong>Human-Computer Interaction (HCI)</strong>, mainly interactions using haptics.</p>
+  <p>Hi! I am Ashfaque Khowaja, a first-year PhD student in the <a href="https://designschool.sustech.edu.cn/">School of Design</a> at <a href="http://www.sustech.edu.cn/en/">Southern University of Science and Technology (SUSTech)</a>. My research focuses on computer vision, embedded systems, and haptic technologies.</p>
 
 <p>I am currently working under the supervision of <a href="https://immersivedesignresearch.com/seungwoo">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/">Immersive Design Group</a> at SUSTech.</p>
   
@@ -64,7 +64,7 @@ title: Home
     <h4>{{ latest_pub.title }}</h4>
     <p><em>{{ latest_pub.journal }}</em> ({{ latest_pub.year }})</p>
         <div class="pub-image">
-      <img src="{{ 'assets\img\paper.jpg' | relative_url }}" 
+      <img src="{{ 'assets/img/paper.webp' | relative_url }}" 
            alt="Research Publication" 
            width="400"
            class="news-thumbnail" 

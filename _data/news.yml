@@ -29,6 +29,20 @@
           alt: "Scalable HCI"
       url: "/news/"
 
+    - title: "Chinese CHI 2024"
+      date: 2024-11-23
+      excerpt: "I attended the <strong>12th International Symposium of Chinese CHI</strong> at <strong>SUSTech, Shenzhen</strong>, where I listened to various talks and explored the latest research in the field of HCI in China."
+      images:
+        - path: "assets/img/ChineseCHI1.webp"
+          alt: "ChineseCHI"
+        - path: "assets/img/ChineseCHI2.webp"
+          alt: "ChineseCHI"
+        - path: "assets/img/ChineseCHI3.webp"
+          alt: "ChineseCHI"
+        - path: "assets/img/ChineseCHI4.webp"
+          alt: "ChineseCHI"
+      url: "/news/"
+
     - title: "KiCon Asia 2024"
       date: 2024-11-16
       excerpt: "I attended a one-day workshop followed by the two-day <strong>KiCad Asia 2024 Conference</strong> in <strong>Shenzhen</strong>. It was a great opportunity to connect with professionals in electronics and PCB design. I also gained valuable insights into KiCad and its upcoming <strong>version 9.0</strong>."
@@ -42,6 +56,39 @@
         - path: "assets/img/kicon4.webp"
           alt: "KiCad workshop"
       url: "/news/"
+
+    - title: "South Korea Visit 2024"
+      date: 2024-11-07
+      excerpt: "From <strong>October 31 to November 6, 2024</strong>, I was in <strong>South Korea</strong>, where I visited a research center in <strong>Daejeon</strong>, attended the <strong>2024 Design 3.0 Forum</strong>, participated in a workshop titled <strong>Listening Through the Body</strong>, visited <strong>KAIST</strong>, and engaged with researchers at <strong>KAIST</strong> to explore potential future collaborations. I also attended the <strong>2024 KSDS Fall International Conference</strong>."
+      images:
+        - path: "assets/img/Korea1.webp"
+          alt: "Korean Trip"
+        - path: "assets/img/Korea2.webp"
+          alt: "Korean Trip"
+        - path: "assets/img/Korea3.webp"
+          alt: "Korean Trip"
+        - path: "assets/img/Korea4.webp"
+          alt: "Korean Trip"
+        - path: "assets/img/Korea5.webp"
+          alt: "Korean Trip"
+        - path: "assets/img/Korea6.webp"
+          alt: "Korean Trip"
+      url: "/news/"
+
+    - title: "Global Youth Camp 2024"
+      date: 2024-07-03
+      excerpt: "Before formally joining <strong>SUSTech</strong> in <strong>September 2024</strong>, I participated in the <strong>2024 Global Youth Summer Camp</strong> at <strong>SUSTech</strong> from <strong>July 1 to July 3</strong>. During the camp, I had the opportunity to interact with current and prospective students, visit various labs and explore the campus to learn about the research environment and campus life. Additionally, we visited <strong>Mindray</strong>, a leading medical equipment manufacturer in <strong>Shenzhen</strong>."
+      images:
+        - path: "assets/img/Camp1.webp"
+          alt: "SUSTech Summer Camp"
+        - path: "assets/img/Camp2.webp"
+          alt: "SUSTech Summer Camp"
+        - path: "assets/img/Camp3.webp"
+          alt: "SUSTech Summer Camp"
+        - path: "assets/img/Camp4.webp"
+          alt: "SUSTech Summer Camp"
+      url: "/news/"
+
 
 - category: "Extra Curriculum Activities"
   items:

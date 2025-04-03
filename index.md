@@ -24,7 +24,7 @@ title: Home
   <div class="quick-links">
     <a href="/about" class="button">Full Bio</a>
     <a href="/research" class="button">My Research</a>
-    <a href="{{ '/assets/CV.pdf' | relative_url }}" class="button">Download CV</a>
+    <a href="{{ '/assets/CV.pdf' | relative_url }}" class="button">Resume</a>
   </div>
 </section>
 

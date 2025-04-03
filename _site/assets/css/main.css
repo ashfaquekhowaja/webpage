@@ -486,3 +486,81 @@ h3.underlined {
   margin-top: 0.5rem;
   color: #0066cc;
 }
+
+
+/* Index Page Highlight Box */
+.highlight-box {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--card-bg, white);
+  color: var(--text-color, #333);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--shadow-color, rgba(0,0,0,0.08));
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 1px solid var(--border-color, rgba(0,0,0,0.05));
+}
+
+/* Dark Mode - Using Your Variables */
+[data-theme="dark"] {
+  --card-bg: #1e1e1e; /* Slightly lighter than bg-color for contrast */
+  --text-color: var(--primary-color, #e0e0e0);
+  --shadow-color: rgba(0,0,0,0.4);
+  --border-color: rgba(255,255,255,0.1);
+  
+  .highlight-box {
+    background: var(--card-bg);
+    color: var(--primary-color);
+    
+    em {
+      color: var(--secondary-color); /* Use your accent color for journal names */
+    }
+  }
+  
+  .news-thumbnail {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    opacity: 0.9; /* Slight transparency for better blending */
+    transition: opacity 0.3s ease;
+  }
+  
+  .news-thumbnail:hover {
+    opacity: 1;
+  }
+}
+
+/* Rest of your existing styles... */
+.pub-image {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.news-thumbnail {
+  max-width: 100%;
+  height: auto;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow-color, rgba(0,0,0,0.1));
+  transition: 
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .news-thumbnail {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+/* Hover effects */
+.highlight-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px var(--shadow-color, rgba(0,0,0,0.2));
+}
+
+.news-thumbnail:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px var(--shadow-color, rgba(0,0,0,0.2));
+}

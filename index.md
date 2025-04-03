@@ -25,15 +25,52 @@ title: Home
     <a href="/about" class="button">Full Bio</a>
     <a href="/research" class="button">My Research</a>
     <a href="{{ '/assets/CV.pdf' | relative_url }}" class="button">Resume</a>
+
+    <!-- Academic Profiles -->
+    <a href="https://scholar.google.com/citations?user=YOUR_PROFILE_ID" aria-label="Google Scholar">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+      <a href="https://orcid.org/YOUR_ORCID_ID" aria-label="ORCID">
+        <i class="ai ai-orcid"></i>
+      </a>
+      
+      <!-- Contact -->
+      <a href="mailto:khowaja.ashfaqali@hotmail.com" aria-label="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
+      
+      <!-- Social Media -->
+      <a href="https://github.com/ashfaquekhowaja" aria-label="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/ashfaquekhowaja/" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.youtube.com/@AshfaqueKhowaja" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://x.com/AshfaqueKhowaja" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
   </div>
+
+  
 </section>
 
 <section class="highlights">
   <div class="highlight-box">
     <h3>Latest Publication</h3>
     {% assign latest_pub = site.data.publications | first %}
-    <p>{{ latest_pub.title }}</p>
+    <h4>{{ latest_pub.title }}</h4>
     <p><em>{{ latest_pub.journal }}</em> ({{ latest_pub.year }})</p>
+        <div class="pub-image">
+      <img src="{{ 'assets\img\paper.jpg' | relative_url }}" 
+           alt="Research Publication" 
+           width="400"
+           class="news-thumbnail" 
+           loading="lazy">
+    </div>
+    
     <a href="{{ latest_pub.link }}" class="button small">Read More</a>
   </div>
   

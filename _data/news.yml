@@ -138,3 +138,17 @@
         - path: "assets/img/Moon4.webp"
           alt: "Mooncake"
       url: "/news/"
+
+    - title: "International Cultural Day 2023"
+      date: 2023-12-16
+      excerpt: "I attended my very first large social gathering after three years of the Covid-19 lockdown in China. The event, the <strong>International Cultural Day</strong>, was a celebration of global diversity, featuring over <strong>50 country stalls</strong>. We proudly represented our country's culture by showcasing traditional foods and clothing to guests and fellow students."
+      images:
+        - path: "assets/img/Cultural_Day1.webp"
+          alt: "Cultural Day"
+        - path: "assets/img/Cultural_Day2.webp"
+          alt: "Cultural Day"
+        - path: "assets/img/Cultural_Day3.webp"
+          alt: "Cultural Day"
+        - path: "assets/img/Cultural_Day4.webp"
+          alt: "Cultural Day"
+      url: "/news/"

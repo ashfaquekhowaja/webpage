@@ -24,7 +24,7 @@ Beyond my academic and research pursuits, I enjoy creating [videos and vlogs](ht
 
 ## Skills
 
-- **Tools and Softwares**: Python, KiCad, SQL, PowerBI, R Languag, Latex, Origin.
+- **Tools and Softwares**: Python, KiCad, SQL, PowerBI, R Languag, Latex.
 - **Technical Skills**: Technical Reports and Documentation, Research and Data Analysis, Data Visualization, Database Management, Statistical Analysis 
 - **Personal Skills**:  Communication, Teamwork, Public speaking, Complaint handling, Team management, Adaptability, Organization
 - **Languages**: 

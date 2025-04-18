@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | Ashfaque Khowaja</title>
+    <title>Get in Touch | Ashfaque Khowaja</title>
     <link rel="stylesheet" href="/assets/css/main.css">
     <link rel="icon" href="/assets/img/favicon.jpeg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -78,7 +78,7 @@
           <ul class="nav-links">
             
               <li>
-                <a href="/" class="active">
+                <a href="/" >
                   Home
                 </a>
               </li>
@@ -133,109 +133,57 @@
   <script src="/assets/js/main.js"  defer></script>
 
   <main class="container">
-    <div class="home">
-  <section class="hero">
-  <div class="hero-content">
-   <div class="profile-image">
-  <div class="profile-image-container">
-    <img src="/assets/img/Profile.png" alt="Ashfaque Khowaja" />
-  </div>
-</div>
-    <h1>Ashfaque Khowaja</h1>
-    <p class="subtitle">PhD in Intelligent Manufacturing and Robotics</p>
-  </div>
-</section>
+    <article class="post">
 
-<section class="about">
-  <h2>About Me</h2>
-  <p>Hi! I am Ashfaque Khowaja, a first-year PhD student in the <a href="https://designschool.sustech.edu.cn/">School of Design</a> at <a href="http://www.sustech.edu.cn/en/">Southern University of Science and Technology (SUSTech)</a>. My research focuses on computer vision, embedded systems, and haptic technologies.</p>
+  <header class="post-header">
+    <h1 class="post-title">Get in Touch</h1>
+  </header>
 
-<p>I am currently working under the supervision of <a href="https://immersivedesignresearch.com/seungwoo">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/">Immersive Design Group</a> at SUSTech.</p>
-  
-  <div class="quick-links">
-    <a href="/about" class="button">Full Bio</a>
-    <a href="/research" class="button">My Research</a>
-    <a href="/assets/CV.pdf" class="button">Resume</a>
-
-    <!-- Academic Profiles -->
-    <a href="https://scholar.google.com/citations?user=YOUR_PROFILE_ID" aria-label="Google Scholar">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-      <a href="https://orcid.org/YOUR_ORCID_ID" aria-label="ORCID">
-        <i class="ai ai-orcid"></i>
-      </a>
-      
-      <!-- Contact -->
-      <a href="mailto:khowaja.ashfaqali@hotmail.com" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      
-      <!-- Social Media -->
-      <a href="https://github.com/ashfaquekhowaja" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/ashfaquekhowaja/" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.youtube.com/@AshfaqueKhowaja" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://x.com/AshfaqueKhowaja" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
-  </div>
-
-  
-</section>
-
-<section class="highlights">
-  <div class="highlight-box">
-    <h3>Latest Publication</h3>
-    
-    <h4>Enhancing cervical cancer diagnosis: Integrated attention-transformer system with weakly supervised learning</h4>
-    <p><em>Image and Vision Computing</em> (2024)</p>
-        <div class="pub-image">
-      <img src="/assets/img/paper.webp" alt="Research Publication" width="400" class="news-thumbnail" loading="lazy" />
+  <div class="post-content">
+    <div class="contact-form">
+  <form action="https://formspree.io/f/manegddw" method="POST">
+    <div class="intro-text">
+      <p>If you have any questions, suggestions, ideas, or want to collaborate, I'd love to hear from you! Feel free to write to me using the form below, and I'll get back to you as soon as possible.</p>
     </div>
-    
-    <a href="https://doi.org/10.1016/j.imavis.2024.105193" class="button small">Read More</a>
-  </div>
-  
-  <div class="highlight-box">
-  <h3>Current Project</h3>
-  
-  <h4>Eye Massager</h4>
-  <p>I am currently working on an industry project for an eye massager, where I am responsible for PCB...</p>
-  <p><strong>Status:</strong> In Progress (Novemeber 2024 - Present)</p>
-  <a href="/projects" class="button small">View Project</a>
-  </div>
-  
-<div class="highlight-box">
-  <h3>Recent News</h3>
-  
-  
-  
-  
-  <h4>Visited PCB Manufacturing Facility</h4>
-  <p class="news-date">Mar 01, 2025</p>
-  
-  <div class="news-images">
-    
-      
-      <img src="/assets/img/JLC1.webp" alt="PCB production line" width="200" class="news-thumbnail" loading="lazy" />
-    
-  </div>
-  
-  <p class="news-excerpt">I visited <strong>Jialichuang (JLC)</strong>, a leading PCB manufacturer in <strong>Zhuhai, Guangdong, China</strong>...</p>
-  
-  <a href="/news/" class="button small">
-    Read More
-  </a>
-</div>
-</section>
 
-  <!-- Omit posts section -->
+    <!-- Row 1: First Name + Last Name -->
+    <div class="form-row">
+      <div class="form-group form-half">
+        <label for="first-name">First Name*</label>
+        <input type="text" id="first-name" name="first-name" required="" />
+      </div>
+      <div class="form-group form-half">
+        <label for="last-name">Last Name*</label>
+        <input type="text" id="last-name" name="last-name" required="" />
+      </div>
+    </div>
+
+    <!-- Row 2: Country + Email -->
+    <div class="form-row">
+      <div class="form-group form-half">
+        <label for="country">Country*</label>
+        <input type="text" id="country" name="country" required="" />
+      </div>
+      <div class="form-group form-half">
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" required="" />
+      </div>
+    </div>
+
+    <!-- Row 3: Message (full width) -->
+    <div class="form-group">
+      <label for="message">Message*</label>
+      <textarea id="message" name="message" rows="5" required=""></textarea>
+    </div>
+
+    <button type="submit">Send Message</button>
+  </form>
 </div>
+
+
+  </div>
+
+</article>
   </main>
   
   <footer class="site-footer">

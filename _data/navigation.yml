@@ -12,4 +12,5 @@ main:
     url: "/projects"
   - name: "News"
     url: "/news"
-
+  - name: "Contact Me"
+    url: "/contact"

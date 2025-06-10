@@ -668,3 +668,16 @@ button:hover {
     margin-bottom: 15px;
   }
 }
+
+.project-image, .project-video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 15px;
+  display: block;
+}
+
+.video-caption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+}

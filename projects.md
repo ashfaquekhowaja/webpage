@@ -17,11 +17,26 @@ permalink: /projects/
         <p><strong>Technologies:</strong> {{ project.technologies }}</p>
       {% endif %}
       {% if project.github %}
-        <a href="https://github.com/{{ project.github }}" class="button">View on GitHub</a>
+      <div class="github-link">
+        <a href="https://github.com/{{ project.github }}" class="button" target="_blank">View on GitHub</a>
+      </div>
       {% endif %}
-      {% if project.image %}
-        <img src="/assets/images/{{ project.image }}" alt="{{ project.title }}" class="project-image">
+     {% if project.images %}
+      <div class="project-images">
+        {% for img in project.images %}
+          <img src="/assets/img/{{ img }}" alt="{{ project.title }} image" class="news-image">
+        {% endfor %}
+      </div>
       {% endif %}
+      {% if project.video %}
+        <video class="project-video" controls>
+        <source src="/assets/Video/{{ project.video }}" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      {% endif %}
+      {% if project.video_caption %}
+          <figcaption class="video-caption">{{ project.video_caption }}</figcaption>
+        {% endif %}
     </div>
       {% unless forloop.last %}
     <hr class="news-divider">

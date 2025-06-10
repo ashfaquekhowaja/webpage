@@ -1,3 +1,17 @@
+- title: "Automated Guided Vehicle (AGV)"
+  description: "This project was completed as part of our course Innovative Design Theory and Application. We are a team of four members and developed an initial prototype of an AGV (Automated Guided Vehicle). Given the limited time available during the course, we did our best to build a functional prototype. Below is a video and some pictures of our project. For more details, feel free to visit our GitHub repository using the link below."
+  year: 2025
+  start_date: "April 2025"
+  end_date: "June 2025"  # or specific month if completed
+  status: "completed"
+  technologies: "Arduino, 3D printing, Seed Xiao microcontroller"
+  github: "ashfaquekhowaja/Campanion_Robot_Project"
+  images: 
+  - "Project1.jpg"
+  - "Project2.jpg"
+  video: "Video.mp4"
+  video_caption: Testing the left, right, and center movement.
+
 - title: "Eye Massager"
   description: "I am currently working on an industry project for an eye massager, where I am responsible for PCB design. We have tested multiple versions of the boards, including the LED board, controller board, and power board. After finalizing the first prototype, we are now focused on improving the product's quality. I will share pictures once the project is completed."
   year: 2024
@@ -7,4 +21,3 @@
   technologies: "KiCad, 3D printing, CH32V003 microcontroller"
   # github: "username/repo"
   # image: "project-screenshot.jpg"
-

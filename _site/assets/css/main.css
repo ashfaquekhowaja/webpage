@@ -583,6 +583,7 @@ h3.underlined {
 .intro-text p {
   margin: 0;
   font-size: 1.05rem;
+  text-emphasis-color: var(--secondary-color);
 }
 
 .form-group {
@@ -638,6 +639,7 @@ button:hover {
   .intro-text {
     margin-bottom: 30px;
     font-size: 1.1rem;
+    color: var(--text-color);
   }
 
   .form-row {
@@ -678,6 +680,6 @@ button:hover {
 
 .video-caption {
   font-size: 0.9em;
-  color: #555;
+  color: var(--text-color);
   margin-top: 5px;
 }

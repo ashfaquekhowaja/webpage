@@ -10,9 +10,14 @@ title: Home
     <img src="{{ 'assets/img/Profile.png' | relative_url }}" alt="Ashfaque Khowaja">
   </div>
 </div>
-    <h1 class="site-title">
+   <h1 class="site-title">
   {{ site.title }}
-  <button id="pronounce-btn" aria-label="Hear pronunciation" title="Hear pronunciation">🔊</button>
+  <span id="pronounce-btn"
+        role="button"
+        aria-label="Hear pronunciation"
+        title="Hear pronunciation">
+    🔊
+  </span>
 </h1>
     <p class="subtitle">PhD in Intelligent Manufacturing and Robotics</p>
   </div>

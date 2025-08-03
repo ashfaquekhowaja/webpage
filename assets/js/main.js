@@ -61,3 +61,13 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
   });
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('pronounce-btn');
+  if (!btn) return;
+  btn.addEventListener('click', () => {
+    const utter = new SpeechSynthesisUtterance('Ashfaq Khawaja');
+    window.speechSynthesis.speak(utter);
+  });
+});

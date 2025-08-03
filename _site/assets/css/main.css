@@ -684,17 +684,17 @@ button:hover {
   margin-top: 5px;
 }
 
-#pronounce-btn {
-  all: unset;
-  cursor: pointer;
-  font-size: 1em;
-  line-height: 1;
-  margin-left: 0.5rem;
-  display: inline-block;
+h1.site-title > #pronounce-btn {
+  all: unset !important;     /* nuke all theme defaults */
+  cursor: pointer !important;
+  font-size: 1em !important;
+  line-height: 1 !important;
+  margin-left: 0.5rem !important;
+  display: inline-block !important;
 }
-#pronounce-btn:hover {
-  opacity: 0.7;
+h1.site-title > #pronounce-btn:hover {
+  opacity: 0.7 !important;
 }
-#pronounce-btn:focus {
-  outline: 2px solid #999;
+h1.site-title > #pronounce-btn:focus {
+  outline: 2px solid #999 !important;
 }

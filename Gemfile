@@ -32,3 +32,8 @@ end
 
 # Optional but recommended for Sass
 gem "sass-embedded", "~> 1.69"
+gem "csv", "~> 3.3"
+
+gem "base64", "~> 0.3.0"
+
+gem "rexml", "~> 3.4"

@@ -2,22 +2,37 @@
   description: "This project was completed as part of our course Innovative Design Theory and Application. We are a team of four members and developed an initial prototype of an AGV (Automated Guided Vehicle). Given the limited time available during the course, we did our best to build a functional prototype. Below is a video and some pictures of our project. For more details, feel free to visit our GitHub repository using the link below."
   year: 2025
   start_date: "April 2025"
-  end_date: "June 2025"  # or specific month if completed
+  end_date: "June 2025"
   status: "completed"
-  technologies: "Arduino, 3D printing, Seed Xiao microcontroller"
+  technologies: ["Arduino", "3D printing", "Seed Xiao microcontroller"]
   github: "ashfaquekhowaja/Campanion_Robot_Project"
+  cover_image: "/assets/img/AGV/cover-picture.jpg"
   images: 
-  - "Project1.jpg"
-  - "Project2.jpg"
+    - "/assets/img/AGV/image1.jpg"
+    - "/assets/img/AGV/image2.jpg"
   video: "Video.mp4"
-  video_caption: Testing the left, right, and center movement.
+  video_caption: "Testing the left, right, and center movement."
+  team_members: ["Ashfaque Khowaja", "Muhammad Umaru", "Jiang Weitao", "Zhu Junxi"]
+  tags: ["#Robotics", "#Automation", "#Prototype"]
+  category: "Robotics"
 
-- title: "Eye Massager"
-  description: "I am currently working on an industry project for an eye massager, where I am responsible for PCB design. We have tested multiple versions of the boards, including the LED board, controller board, and power board. After finalizing the first prototype, we are now focused on improving the product's quality. I will share pictures once the project is completed."
-  year: 2024
-  start_date: "Novemeber 2024"
-  end_date: "Present"  # or specific month if completed
-  status: "In Progress"
-  technologies: "KiCad, 3D printing, CH32V003 microcontroller"
-  # github: "username/repo"
-  # image: "project-screenshot.jpg"
+- title: "LED Beauty Device"
+  description: "This product is an LED beauty device designed for MIMETICS's skin-patch, combining multiple wavelength LED light sources with phototherapy technology to treat eye skin issues. The design thoughtfully caters to individual user needs, offering different light modes with various colors and combinations, to provide targeted beauty benefits and improve the overall user experience."
+  start_date: "November 2024"
+  end_date: "March 2025"
+  status: "Completed"
+  technologies: ["KiCad", "3D printing", "CH32V003 microcontroller"]
+  video: "https://www.youtube.com/embed/EJQiy3knZaw?si=NMKzQ8ug_d73hrRt"
+  cover_image: "/assets/img/LED-Beauty/cover-image.jpg"
+  images: 
+    - "/assets/img/LED-Beauty/image1.jpg"
+    - "/assets/img/LED-Beauty/image2.jpg"
+    - "/assets/img/LED-Beauty/image3.jpg"
+    - "/assets/img/LED-Beauty/image4.jpg"
+    - "/assets/img/LED-Beauty/image5.jpg"
+    - "/assets/img/LED-Beauty/image6.jpg"
+  team_members: ["Ashfaque Khowaja", "Weitao Jiang", "Yingjie Chang", "Jiale Chen", "Paul Hamilton", "Seungwoo Je (PI)"]
+  tags: ["#Product", "#Industry project", "#LED", "#Beauty Tech"]
+  category: "Product Design"
+
+

@@ -140,64 +140,221 @@
   </header>
 
   <div class="post-content">
-    <div class="projects-container">
+    <div class="projects-hero">
+  <h1>My Projects</h1>
+  <p>Explore my portfolio of innovative projects spanning robotics, product design, and technology solutions.</p>
+</div>
+
+<div class="projects-grid">
   
-    <div class="project-box">
-      <h3>Automated Guided Vehicle (AGV)</h3>
-      <p class="project-meta">
-        <span class="project-dates">April 2025 - June 2025</span> | 
-        <span class="project-status">completed</span>
-      </p>
-      <p>This project was completed as part of our course Innovative Design Theory and Application. We are a team of four members and developed an initial prototype of an AGV (Automated Guided Vehicle). Given the limited time available during the course, we did our best to build a functional prototype. Below is a video and some pictures of our project. For more details, feel free to visit our GitHub repository using the link below.</p>
-      
-        <p><strong>Technologies:</strong> Arduino, 3D printing, Seed Xiao microcontroller</p>
-      
-      
-      <div class="github-link">
-        <a href="https://github.com/ashfaquekhowaja/Campanion_Robot_Project" class="button" target="_blank">View on GitHub</a>
+    <div class="project-card" data-project="0">
+      <div class="project-card-inner">
+        <div class="project-image">
+          
+            
+              <img src="/assets/img/AGV/cover-picture.jpg" alt="Automated Guided Vehicle (AGV)" loading="lazy" />
+            
+          
+          <div class="project-overlay">
+            <div class="project-tags">
+              
+                <span class="tag">#Robotics</span>
+              
+                <span class="tag">#Automation</span>
+              
+                <span class="tag">#Prototype</span>
+              
+            </div>
+            <div class="project-actions">
+              <button class="btn-view" onclick="openProjectModal(0)">
+                <i class="fas fa-eye"></i> View Details
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>Automated Guided Vehicle (AGV)</h3>
+          <p class="project-category">Robotics</p>
+          <p class="project-description">This project was completed as part of our course Innovative Design Theory and Application. We are a team of four memb...</p>
+          <div class="project-meta">
+            <span class="project-dates">April 2025 - June 2025</span>
+            <span class="project-status status-completed">completed</span>
+          </div>
+        </div>
       </div>
-      
-     
-      <div class="project-images">
-        
-          <img src="/assets/img/Project1.jpg" alt="Automated Guided Vehicle (AGV) image" class="news-image" />
-        
-          <img src="/assets/img/Project2.jpg" alt="Automated Guided Vehicle (AGV) image" class="news-image" />
-        
-      </div>
-      
-      
-        <video class="project-video" controls="">
-        <source src="/assets/Video/Video.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-      </video>
-      
-      
-          <figcaption class="video-caption">Testing the left, right, and center movement.</figcaption>
-        
     </div>
-      
-    <hr class="news-divider" />
-     
   
-    <div class="project-box">
-      <h3>Eye Massager</h3>
-      <p class="project-meta">
-        <span class="project-dates">Novemeber 2024 - Present</span> | 
-        <span class="project-status">In Progress</span>
-      </p>
-      <p>I am currently working on an industry project for an eye massager, where I am responsible for PCB design. We have tested multiple versions of the boards, including the LED board, controller board, and power board. After finalizing the first prototype, we are now focused on improving the product's quality. I will share pictures once the project is completed.</p>
-      
-        <p><strong>Technologies:</strong> KiCad, 3D printing, CH32V003 microcontroller</p>
-      
-      
-     
-      
-      
+    <div class="project-card" data-project="1">
+      <div class="project-card-inner">
+        <div class="project-image">
+          
+            
+              <img src="/assets/img/LED-Beauty/cover-image.jpg" alt="LED Beauty Device" loading="lazy" />
+            
+          
+          <div class="project-overlay">
+            <div class="project-tags">
+              
+                <span class="tag">#Product</span>
+              
+                <span class="tag">#Industry project</span>
+              
+                <span class="tag">#LED</span>
+              
+                <span class="tag">#Beauty Tech</span>
+              
+            </div>
+            <div class="project-actions">
+              <button class="btn-view" onclick="openProjectModal(1)">
+                <i class="fas fa-eye"></i> View Details
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="project-content">
+          <h3>LED Beauty Device</h3>
+          <p class="project-category">Product Design</p>
+          <p class="project-description">This product is an LED beauty device designed for MIMETICS's skin-patch, combining multiple wavelength LED light sour...</p>
+          <div class="project-meta">
+            <span class="project-dates">November 2024 - March 2025</span>
+            <span class="project-status status-completed">Completed</span>
+          </div>
+        </div>
+      </div>
     </div>
-      
   
 </div>
+
+<!-- Project Detail Modal -->
+<div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeProjectModal()">&times;</span>
+    <div id="modalContent">
+      <!-- Content will be populated by JavaScript -->
+    </div>
+  </div>
+</div>
+
+<script>
+// Project data for JavaScript
+const projects = [{"title":"Automated Guided Vehicle (AGV)","description":"This project was completed as part of our course Innovative Design Theory and Application. We are a team of four members and developed an initial prototype of an AGV (Automated Guided Vehicle). Given the limited time available during the course, we did our best to build a functional prototype. Below is a video and some pictures of our project. For more details, feel free to visit our GitHub repository using the link below.","year":2025,"start_date":"April 2025","end_date":"June 2025","status":"completed","technologies":["Arduino","3D printing","Seed Xiao microcontroller"],"github":"ashfaquekhowaja/Campanion_Robot_Project","cover_image":"/assets/img/AGV/cover-picture.jpg","images":["/assets/img/AGV/image1.jpg","/assets/img/AGV/image2.jpg"],"video":"Video.mp4","video_caption":"Testing the left, right, and center movement.","team_members":["Ashfaque Khowaja","Muhammad Umaru","Jiang Weitao","Zhu Junxi"],"tags":["#Robotics","#Automation","#Prototype"],"category":"Robotics"},{"title":"LED Beauty Device","description":"This product is an LED beauty device designed for MIMETICS's skin-patch, combining multiple wavelength LED light sources with phototherapy technology to treat eye skin issues. The design thoughtfully caters to individual user needs, offering different light modes with various colors and combinations, to provide targeted beauty benefits and improve the overall user experience.","start_date":"November 2024","end_date":"March 2025","status":"Completed","technologies":["KiCad","3D printing","CH32V003 microcontroller"],"video":"https://www.youtube.com/embed/EJQiy3knZaw?si=NMKzQ8ug_d73hrRt","cover_image":"/assets/img/LED-Beauty/cover-image.jpg","images":["/assets/img/LED-Beauty/image1.jpg","/assets/img/LED-Beauty/image2.jpg","/assets/img/LED-Beauty/image3.jpg","/assets/img/LED-Beauty/image4.jpg","/assets/img/LED-Beauty/image5.jpg","/assets/img/LED-Beauty/image6.jpg"],"team_members":["Ashfaque Khowaja","Weitao Jiang","Yingjie Chang","Jiale Chen","Paul Hamilton","Seungwoo Je (PI)"],"tags":["#Product","#Industry project","#LED","#Beauty Tech"],"category":"Product Design"}];
+
+function openProjectModal(projectIndex) {
+  const project = projects[projectIndex];
+  const modal = document.getElementById('projectModal');
+  const modalContent = document.getElementById('modalContent');
+  
+  modalContent.innerHTML = `
+    <div class="project-detail">
+      <div class="project-detail-header">
+        <div class="project-detail-image">
+          ${project.cover_image ? 
+            `<img src="${project.cover_image.includes('/assets/img/') ? project.cover_image : '/assets/img/' + project.cover_image}" alt="${project.title}">` : 
+            `<div class="project-placeholder"><i class="fas fa-project-diagram"></i></div>`
+          }
+        </div>
+        <div class="project-detail-info">
+          <h1>${project.title}</h1>
+          <p class="project-category">${project.category}</p>
+          <div class="project-tags">
+            ${project.tags.map(tag => `<span class="tag">${tag}</span>`).join('')}
+          </div>
+          <div class="project-meta">
+            <span class="project-dates">${project.start_date} - ${project.end_date}</span>
+            <span class="project-status status-${project.status.toLowerCase()}">${project.status}</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-detail-content">
+        <div class="project-description">
+          <h3>About This Project</h3>
+          <p>${project.description}</p>
+        </div>
+        
+        ${project.technologies ? `
+        <div class="project-technologies">
+          <h3>Technologies Used</h3>
+          <div class="tech-tags">
+            ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
+          </div>
+        </div>
+        ` : ''}
+        
+        ${project.team_members ? `
+        <div class="project-team">
+          <h3>Team Members</h3>
+          <ul class="team-list">
+            ${project.team_members.map(member => `<li>${member}</li>`).join('')}
+          </ul>
+        </div>
+        ` : ''}
+        
+        ${project.images && project.images.length > 0 ? `
+        <div class="project-gallery">
+          <h3>Project Gallery</h3>
+          <div class="gallery-grid">
+            ${project.images.map(img => `
+              <div class="gallery-item">
+                <img src="${img.includes('/assets/img/') ? img : '/assets/img/' + img}" alt="${project.title} image" loading="lazy">
+              </div>
+            `).join('')}
+          </div>
+        </div>
+        ` : ''}
+        
+        ${project.video ? `
+        <div class="project-video-section">
+          <h3>Project Video</h3>
+          ${project.video.includes('youtube.com') || project.video.includes('youtu.be') ? 
+            `<div class="video-container">
+              <iframe src="${project.video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>` :
+            `<video controls class="project-video">
+              <source src="/assets/Video/${project.video}" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>`
+          }
+          ${project.video_caption ? `<p class="video-caption">${project.video_caption}</p>` : ''}
+        </div>
+        ` : ''}
+        
+        ${project.github ? `
+        <div class="project-links">
+          <a href="https://github.com/${project.github}" class="btn-github" target="_blank">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+        </div>
+        ` : ''}
+      </div>
+    </div>
+  `;
+  
+  modal.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeProjectModal() {
+  const modal = document.getElementById('projectModal');
+  modal.style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+// Close modal when clicking outside of it
+window.onclick = function(event) {
+  const modal = document.getElementById('projectModal');
+  if (event.target == modal) {
+    closeProjectModal();
+  }
+}
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'Escape') {
+    closeProjectModal();
+  }
+});
+</script>
 
 
   </div>

@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 <div class="projects-hero">
-  <h1>My Projects</h1>
+  <h1>Projects</h1>
   <p>Explore my portfolio of innovative projects spanning robotics, product design, and technology solutions.</p>
 </div>
 

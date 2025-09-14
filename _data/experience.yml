@@ -1,0 +1,19 @@
+- title: "Teaching Assistant"
+  company: "Responsive Systems, SUSTech"
+  period: "Fall 2024"
+  description: "Assisted undergraduate students in AI hardware and embedded systems course"
+  icon: "fas fa-chalkboard-teacher"
+  type: "teaching"
+  status: "completed"
+
+- title: "Volunteer"
+  company: "Scalable HCI 2025, SUSTech"
+  period: "2025"
+  description: "Volunteered at international symposium"
+  link: "https://scalablehci.com/2025/"
+  link_text: "Scalable HCI 2024"
+  icon: "fas fa-hands-helping"
+  type: "volunteer"
+  status: "completed"
+
+

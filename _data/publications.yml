@@ -1,9 +1,14 @@
+- title: "CerviNet: A Novel Approach for Cervical Cancer Classification Using Pap-Smear Images"
+  authors: "<strong>Ashfaque Khowaja</strong>, Beiji Zou, Xiaoyan Kui"
+  journal: "Journal of Computational Biology"
+  year: 2025
+  link: "https://www.liebertpub.com/doi/10.1177/15578666251379909"
+
 - title: "Enhancing cervical cancer diagnosis: Integrated attention-transformer system with weakly supervised learning"
   authors: "<strong>Ashfaque Khowaja</strong>, Beiji Zou, Xiaoyan Kui"
   journal: "Image and Vision Computing"
   year: 2024
   link: "https://doi.org/10.1016/j.imavis.2024.105193"
-  abstract: "Cervical cancer screening through cytopathological images is challenging due to the complexity of cancer cells, leading to high misdiagnosis rates. This study introduces the Integrated Attention-Transformer System (IATS), a novel framework that enhances accuracy by combining Vision Transformers (ViT), Token-to-Token mechanisms, and SeNet-integrated CNNs. Unlike traditional CNNs, IATS effectively captures both global and local features, improving cancer cell identification. A weighted voting mechanism further refines predictions, reducing misdiagnosis risk. The framework achieves 98.44% accuracy on the Mendeley dataset and 95.88% on SIPaKMeD, outperforming 25 deep learning models and surpassing the best CNN model by 2.5%. These results highlight IATS’s potential to revolutionize cervical cancer screening, with future work focusing on computational efficiency and clinical integration."
 
 - title: "DeepCervixNet: An Advanced Deep Learning Approach for Cervical Cancer Classification in Pap Smear Images"
   authors: "Dhani Bux Talpur, Ali Raza, <strong>Ashfaque Khowaja</strong>, Asadullah Shah"
@@ -25,11 +30,6 @@
   year: 2024
   link: "https://link.springer.com/chapter/10.1007/978-3-031-82024-3_11"
 
-- title: "CerviNet: A Novel Approach for Pap-smear Images Analysis for Cervical Cancer Classification"
-  authors: "<strong>Ashfaque Khowaja</strong>, Beiji Zou, Xiaoyan Kui"
-  conference: "International Symposium on Bioinformatics Research and Applications (ISBRA)"
-  year: 2024
-  link: "https://www.researchgate.net/publication/382361030_CerviNet_A_Novel_Approach_for_Pap-smear_Images_Analysis_for_Cervical_Cancer_Classification"
 
 - title: "Cervix Visionator ELM: A Novel Approach to Early Detection of Cervical Cancer"
   authors: <strong>Ashfaque Khowaja</strong>, Beiji Zou, Xiaoyan Kui"

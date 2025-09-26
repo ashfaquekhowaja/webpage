@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/about</loc>
+<loc>ashfaquekhowaja.com/about</loc>
 </url>
 <url>
-<loc>http://localhost:4000/awards</loc>
+<loc>ashfaquekhowaja.com/awards</loc>
 </url>
 <url>
-<loc>http://localhost:4000/contact/</loc>
+<loc>ashfaquekhowaja.com/contact/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/</loc>
+<loc>ashfaquekhowaja.com/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/news/</loc>
+<loc>ashfaquekhowaja.com/news/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/projects/</loc>
+<loc>ashfaquekhowaja.com/projects/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/research</loc>
+<loc>ashfaquekhowaja.com/research</loc>
 </url>
 <url>
-<loc>http://localhost:4000/assets/CV.pdf</loc>
+<loc>ashfaquekhowaja.com/assets/CV.pdf</loc>
 <lastmod>2025-03-08T21:27:19+08:00</lastmod>
 </url>
 </urlset>

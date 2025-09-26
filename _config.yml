@@ -38,3 +38,12 @@ include:
   - .webp
   - .jpg
   - .png
+
+# Sass configuration to suppress deprecation warnings
+sass:
+  quiet_deps: true
+  style: compressed
+  sourcemap: never
+  load_paths:
+    - _sass
+  sass_dir: _sass

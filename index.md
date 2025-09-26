@@ -139,7 +139,7 @@ title: Home
           <h4>{{ latest_pub.title }}</h4>
           <p class="journal"><em>{{ latest_pub.journal }}</em> ({{ latest_pub.year }})</p>
           <div class="pub-image">
-            <img src="{{ 'assets/img/paper.webp' | relative_url }}" 
+            <img src="{{ 'assets/img/publication-images/latest-pub.webp' | relative_url }}" 
                  alt="Research Publication" 
                  class="news-thumbnail" 
                  loading="lazy">

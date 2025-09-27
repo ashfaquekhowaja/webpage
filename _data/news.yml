@@ -132,6 +132,25 @@
 
 - category: "Extra Curriculum Activities"
   items:
+
+    - title: "Cultural Exchange Event by SUISF 2025"
+      date: 2025-09-27
+      excerpt: "I attended the <strong>Cultural Exchange Event</strong> by <strong>Shenzhen Universiade International Student Federation (SUISF)</strong> at <strong>SUSTech</strong>, where I had the opportunity to connect with people from diverse countries and linguistic backgrounds."
+      images:
+        - path: "assets/img/SUISF1.jpg"
+          alt: "SUISF"
+        - path: "assets/img/SUISF2.jpg"
+          alt: "SUISF"
+        - path: "assets/img/SUISF3.jpg"
+          alt: "SUISF"
+        - path: "assets/img/SUISF4.jpg"
+          alt: "SUISF"
+        - path: "assets/img/SUISF5.jpg"
+          alt: "SUISF"
+        - path: "assets/img/SUISF6.jpg"
+          alt: "SUISF"
+      url: "/news/"
+    
     - title: "4th Global Language Day 2025 at SUSTech"
       date: 2025-03-20
       excerpt: "I attended the <strong>4th Global Language Day</strong> event at <strong>SUSTech</strong>, where I presented <strong>Sindhi</strong>, my mother tongue. I introduced guests to a few Sindhi phrases and had the opportunity to connect with people from diverse countries and linguistic backgrounds."

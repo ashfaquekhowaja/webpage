@@ -35,7 +35,7 @@ title: Home
             🔊
           </span>
         </h1>
-        <p class="hero-subtitle">PhD in Computer Science</p>
+        <p class="hero-subtitle">PhD in Computer Science and Engineering</p>
         <p class="hero-description">Medical Imaging • Deep Learning</p>
         
         <div class="hero-cta">

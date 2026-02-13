@@ -49,7 +49,7 @@ permalink: /about
           <i class="fas fa-user-graduate"></i>
         </div>
         <div class="education-content">
-          <h3>PhD in Computer Science</h3>
+          <h3>PhD in Computer Science and Engineering</h3>
           <div class="education-institution">UNSW Sydney, Australia</div>
           <div class="education-period">Feb 2026 - Present</div>
           <div class="education-status">Current</div>

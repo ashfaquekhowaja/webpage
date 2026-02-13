@@ -35,8 +35,8 @@ title: Home
             🔊
           </span>
         </h1>
-        <p class="hero-subtitle">PhD in Intelligent Manufacturing and Robotics</p>
-        <p class="hero-description">Computer Vision • Embedded Systems • Haptic Technologies</p>
+        <p class="hero-subtitle">PhD in Computer Science</p>
+        <p class="hero-description">Medical Imaging • Deep Learning</p>
         
         <div class="hero-cta">
           <a href="/about" class="btn btn-primary">
@@ -68,22 +68,18 @@ title: Home
     <div class="about-content">
       <div class="about-text">
         <h2>Welcome to My Digital Space</h2>
-        <p>Hi! I am <strong>Ashfaque Khowaja</strong>, a passionate PhD student in the <a href="https://designschool.sustech.edu.cn/" target="_blank">School of Design</a> at <a href="http://www.sustech.edu.cn/en/" target="_blank">Southern University of Science and Technology (SUSTech)</a>. My research journey focuses on the fascinating intersection of computer vision, embedded systems, and haptic technologies.</p>
+        <p>Hi! I am <strong>Ashfaque Khowaja</strong>, a passionate PhD student in Computer Science at <a href="https://www.unsw.edu.au/" target="_blank">UNSW Sydney</a>, where I joined on February 9, 2026. Previously, I was a PhD student in the <a href="https://designschool.sustech.edu.cn/" target="_blank">School of Design</a> at <a href="http://www.sustech.edu.cn/en/" target="_blank">Southern University of Science and Technology (SUSTech)</a>, where I worked under the supervision of <a href="https://immersivedesignresearch.com/seungwoo" target="_blank">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/" target="_blank">Immersive Design Group</a>.</p>
         
-        <p>I am currently working under the supervision of <a href="https://immersivedesignresearch.com/seungwoo" target="_blank">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/" target="_blank">Immersive Design Group</a> at SUSTech, where I explore innovative solutions for medical image processing and human-computer interaction.</p>
+        <p>My research journey focuses on medical imaging and deep learning, exploring innovative solutions for advancing healthcare through cutting-edge AI technologies.</p>
         
         <div class="research-highlights">
           <div class="research-item">
-            <i class="fas fa-eye"></i>
-            <span>Computer Vision</span>
+            <i class="fas fa-x-ray"></i>
+            <span>Medical Imaging</span>
           </div>
           <div class="research-item">
-            <i class="fas fa-microchip"></i>
-            <span>Embedded Systems</span>
-          </div>
-          <div class="research-item">
-            <i class="fas fa-hand-paper"></i>
-            <span>Haptic Technologies</span>
+            <i class="fas fa-brain"></i>
+            <span>Deep Learning</span>
           </div>
         </div>
       </div>

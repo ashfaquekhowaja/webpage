@@ -13,7 +13,7 @@ permalink: /about
       <div class="about-profile-info">
         <h1>About Me</h1>
         <p class="about-subtitle">PhD Student & Researcher</p>
-        <p class="about-description">Passionate about Computer Vision, Embedded Systems, and Haptic Technologies</p>
+        <p class="about-description">Passionate about Medical Imaging and Deep Learning</p>
       </div>
     </div>
   </div>
@@ -27,11 +27,11 @@ permalink: /about
       <h2>My Story</h2>
     </div>
     <div class="section-content">
-      <p>I am a PhD student at <strong><a href="https://www.sustech.edu.cn/" target="_blank">Southern University of Science and Technology (SUSTech)</a></strong>, China, currently working under the supervision of <a href="https://immersivedesignresearch.com/seungwoo" target="_blank">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/" target="_blank">Immersive Design Group</a>. My research focuses on computer vision, embedded systems, and haptic technologies.</p>
+      <p>I am a PhD student in Computer Science at <strong><a href="https://www.unsw.edu.au/" target="_blank">UNSW Sydney</a></strong>, Australia, where I joined on February 9, 2026. Previously, I was a PhD student at <a href="https://www.sustech.edu.cn/" target="_blank">Southern University of Science and Technology (SUSTech)</a>, China, working under the supervision of <a href="https://immersivedesignresearch.com/seungwoo" target="_blank">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/" target="_blank">Immersive Design Group</a>. My research focuses on medical imaging and deep learning.</p>
       
       <p>I earned my Bachelor's degree in Computer Science from <a href="https://www.guet.edu.cn/caaueii_english/2023/0203/c3718a32091/page.htm" target="_blank">Guilin University of Electronic Technology</a>, followed by a Master's degree from <a href="https://en.csu.edu.cn/" target="_blank">Central South University</a>. During my Master's, I conducted research in medical image processing, specifically exploring deep learning techniques for cervical cancer classification.</p>
       
-      <p>Currently, I am researching on <strong>Electric Impedance Tomography (EIT)</strong> and its applications in medical and HCI. Alongside my research, I served as a Teaching Assistant for fall 2024 semester, assisting undergraduate students in AI hardware and embedded systems.</p>
+      <p>During my time at SUSTech, I researched <strong>Electric Impedance Tomography (EIT)</strong> and its applications in medical and HCI. Alongside my research, I served as a Teaching Assistant for fall 2024 semester, assisting undergraduate students in AI hardware and embedded systems.</p>
       
       <p>Beyond my academic and research pursuits, I enjoy creating <a href="https://www.youtube.com/@AshfaqueKhowaja" target="_blank">videos and vlogs</a> about life in China, sharing my experiences and insights with a wider audience.</p>
     </div>
@@ -49,10 +49,22 @@ permalink: /about
           <i class="fas fa-user-graduate"></i>
         </div>
         <div class="education-content">
-          <h3>PhD in Intelligent Manufacturing and Robotics</h3>
-          <div class="education-institution">Southern University of Science and Technology</div>
-          <div class="education-period">Sept 2024 - Present</div>
+          <h3>PhD in Computer Science</h3>
+          <div class="education-institution">UNSW Sydney, Australia</div>
+          <div class="education-period">Feb 2026 - Present</div>
           <div class="education-status">Current</div>
+        </div>
+      </div>
+      
+      <div class="education-item">
+        <div class="education-icon">
+          <i class="fas fa-user-graduate"></i>
+        </div>
+        <div class="education-content">
+          <h3>PhD in Intelligent Manufacturing and Robotics</h3>
+          <div class="education-institution">Southern University of Science and Technology, China</div>
+          <div class="education-period">Sept 2024 - Dec 2025</div>
+          <div class="education-status">Quit</div>
         </div>
       </div>
       

@@ -21,7 +21,7 @@ title: Home
         </div>
         <div class="profile-badge">
           <i class="fas fa-graduation-cap"></i>
-          <span>PhD Student</span>
+          <span>PhD Scholar</span>
         </div>
       </div>
       
@@ -68,7 +68,7 @@ title: Home
     <div class="about-content">
       <div class="about-text">
         <h2>Welcome to My Digital Space</h2>
-        <p>Hi! I am <strong>Ashfaque Khowaja</strong>, a passionate PhD student in Computer Science at <a href="https://www.unsw.edu.au/" target="_blank">UNSW Sydney</a>, where I joined on February 9, 2026. Previously, I was a PhD student in the <a href="https://designschool.sustech.edu.cn/" target="_blank">School of Design</a> at <a href="http://www.sustech.edu.cn/en/" target="_blank">Southern University of Science and Technology (SUSTech)</a>, where I worked under the supervision of <a href="https://immersivedesignresearch.com/seungwoo" target="_blank">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/" target="_blank">Immersive Design Group</a>.</p>
+        <p>Hi! I am <strong>Ashfaque Khowaja</strong>, a passionate PhD scholar in Computer Science at <a href="https://www.unsw.edu.au/" target="_blank">UNSW Sydney</a>, where I joined on February 9, 2026. Previously, I was a PhD scholar in the <a href="https://designschool.sustech.edu.cn/" target="_blank">School of Design</a> at <a href="http://www.sustech.edu.cn/en/" target="_blank">Southern University of Science and Technology (SUSTech)</a>, where I worked under the supervision of <a href="https://immersivedesignresearch.com/seungwoo" target="_blank">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/" target="_blank">Immersive Design Group</a>.</p>
         
         <p>My research journey focuses on medical imaging and deep learning, exploring innovative solutions for advancing healthcare through cutting-edge AI technologies.</p>
         

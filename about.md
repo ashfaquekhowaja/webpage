@@ -12,7 +12,7 @@ permalink: /about
       </div>
       <div class="about-profile-info">
         <h1>About Me</h1>
-        <p class="about-subtitle">PhD Student & Researcher</p>
+        <p class="about-subtitle">PhD Scholar & Researcher</p>
         <p class="about-description">Passionate about Medical Imaging and Deep Learning</p>
       </div>
     </div>
@@ -27,7 +27,7 @@ permalink: /about
       <h2>My Story</h2>
     </div>
     <div class="section-content">
-      <p>I am a PhD student in Computer Science at <strong><a href="https://www.unsw.edu.au/" target="_blank">UNSW Sydney</a></strong>, Australia, where I joined on February 9, 2026. Previously, I was a PhD student at <a href="https://www.sustech.edu.cn/" target="_blank">Southern University of Science and Technology (SUSTech)</a>, China, working under the supervision of <a href="https://immersivedesignresearch.com/seungwoo" target="_blank">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/" target="_blank">Immersive Design Group</a>. My research focuses on medical imaging and deep learning.</p>
+      <p>I am a PhD scholar in Computer Science at <strong><a href="https://www.unsw.edu.au/" target="_blank">UNSW Sydney</a></strong>, Australia, where I joined on February 9, 2026. Previously, I was a PhD scholar at <a href="https://www.sustech.edu.cn/" target="_blank">Southern University of Science and Technology (SUSTech)</a>, China, working under the supervision of <a href="https://immersivedesignresearch.com/seungwoo" target="_blank">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/" target="_blank">Immersive Design Group</a>. My research focuses on medical imaging and deep learning.</p>
       
       <p>I earned my Bachelor's degree in Computer Science from <a href="https://www.guet.edu.cn/caaueii_english/2023/0203/c3718a32091/page.htm" target="_blank">Guilin University of Electronic Technology</a>, followed by a Master's degree from <a href="https://en.csu.edu.cn/" target="_blank">Central South University</a>. During my Master's, I conducted research in medical image processing, specifically exploring deep learning techniques for cervical cancer classification.</p>
       

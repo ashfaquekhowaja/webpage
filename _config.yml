@@ -38,6 +38,7 @@ include:
   - .webp
   - .jpg
   - .png
+  - .pdf
 
 # Sass configuration to suppress deprecation warnings
 sass:

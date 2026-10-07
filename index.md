@@ -17,7 +17,7 @@ title: Home
     <div class="profile-section">
       <div class="profile-image-container">
         <div class="profile-image">
-          <img src="{{ 'assets/img/khowaja.jpg' | relative_url }}" alt="Ashfaque Khowaja">
+          <img src="{{ 'assets/img/profile-photo.webp' | relative_url }}" alt="Ashfaque Khowaja">
         </div>
         <div class="profile-badge">
           <i class="fas fa-graduation-cap"></i>
@@ -36,7 +36,7 @@ title: Home
           </span>
         </h1>
         <p class="hero-subtitle">PhD in Computer Science and Engineering</p>
-        <p class="hero-description">Medical Imaging • Deep Learning</p>
+        <p class="hero-description">Alzheimer's &amp; Dementia • Exposome • Multimodal Data</p>
         
         <div class="hero-cta">
           <a href="/about" class="btn btn-primary">
@@ -70,16 +70,20 @@ title: Home
         <h2>Welcome to My Digital Space</h2>
         <p>Hi! I am <strong>Ashfaque Khowaja</strong>, a passionate PhD scholar in Computer Science at <a href="https://www.unsw.edu.au/" target="_blank">UNSW Sydney</a>, where I joined on February 9, 2026. Previously, I was a PhD scholar in the <a href="https://designschool.sustech.edu.cn/" target="_blank">School of Design</a> at <a href="http://www.sustech.edu.cn/en/" target="_blank">Southern University of Science and Technology (SUSTech)</a>, where I worked under the supervision of <a href="https://immersivedesignresearch.com/seungwoo" target="_blank">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/" target="_blank">Immersive Design Group</a>.</p>
         
-        <p>My research journey focuses on medical imaging and deep learning, exploring innovative solutions for advancing healthcare through cutting-edge AI technologies.</p>
+        <p>My current research focuses on Alzheimer's disease and dementia, integrating the exposome with multimodal data to better understand the factors that shape brain health. This builds on my background in medical imaging and deep learning.</p>
         
         <div class="research-highlights">
           <div class="research-item">
-            <i class="fas fa-x-ray"></i>
-            <span>Medical Imaging</span>
+            <i class="fas fa-brain"></i>
+            <span>Alzheimer's &amp; Dementia</span>
           </div>
           <div class="research-item">
-            <i class="fas fa-brain"></i>
-            <span>Deep Learning</span>
+            <i class="fas fa-earth-americas"></i>
+            <span>Exposome</span>
+          </div>
+          <div class="research-item">
+            <i class="fas fa-layer-group"></i>
+            <span>Multimodal Data</span>
           </div>
         </div>
       </div>
@@ -107,7 +111,7 @@ title: Home
             <i class="fab fa-twitter"></i>
             <span>Twitter</span>
           </a>
-          <a href="https://scholar.google.com/citations?user=YOUR_PROFILE_ID" class="social-link scholar" aria-label="Google Scholar">
+          <a href="https://scholar.google.com/citations?user=P9J0bO4AAAAJ&hl=en" class="social-link scholar" aria-label="Google Scholar">
             <i class="fas fa-graduation-cap"></i>
             <span>Scholar</span>
           </a>

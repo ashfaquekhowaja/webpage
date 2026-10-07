@@ -1,22 +1,37 @@
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} | {{ site.title }}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
-    <link rel="icon" href="{{ 'assets/img/favicon.jpeg' | relative_url }}" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title and page.title != "" %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0f17" media="(prefers-color-scheme: dark)">
 
 <script>
-    // Prevent FOUC
-    (function() {
-      const savedTheme = localStorage.getItem('theme');
-      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', initialTheme);
-    })();
-  </script>
+  // Set theme before first paint to prevent a flash of the wrong theme
+  (function() {
+    var savedTheme = null;
+    try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
+    var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+    document.documentElement.classList.add('js');
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="icon" href="{{ 'assets/img/favicon.jpeg' | relative_url }}" type="image/x-icon">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND6YYE0T6N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ND6YYE0T6N');
+</script>
 
 <script type="application/ld+json">
   {
@@ -28,17 +43,8 @@
     "sameAs": [
       "https://scholar.google.com/citations?user=P9J0bO4AAAAJ&hl=en",
       "https://www.linkedin.com/in/ashfaquekhowaja",
-      "https://github.com/ashfaquekhowaja"
+      "https://github.com/ashfaquekhowaja",
+      "https://orcid.org/0009-0007-0352-3316"
     ]
   }
-  </script>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ND6YYE0T6N');
 </script>
-
-  </head>

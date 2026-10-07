@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> | Ashfaque Khowaja</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="icon" href="/assets/img/favicon.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ashfaque Khowaja</title>
+<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0f17" media="(prefers-color-scheme: dark)">
 
 <script>
-    // Prevent FOUC
-    (function() {
-      const savedTheme = localStorage.getItem('theme');
-      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', initialTheme);
-    })();
-  </script>
+  // Set theme before first paint to prevent a flash of the wrong theme
+  (function() {
+    var savedTheme = null;
+    try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
+    var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+    document.documentElement.classList.add('js');
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/assets/img/favicon.jpeg" type="image/x-icon">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND6YYE0T6N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ND6YYE0T6N');
+</script>
 
 <script type="application/ld+json">
   {
@@ -31,116 +46,85 @@
     "sameAs": [
       "https://scholar.google.com/citations?user=P9J0bO4AAAAJ&hl=en",
       "https://www.linkedin.com/in/ashfaquekhowaja",
-      "https://github.com/ashfaquekhowaja"
+      "https://github.com/ashfaquekhowaja",
+      "https://orcid.org/0009-0007-0352-3316"
     ]
   }
-  </script>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ND6YYE0T6N');
 </script>
 
-  </head>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND6YYE0T6N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ND6YYE0T6N');
-</script>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container">
-      <nav class="navbar">
-        <!-- Title on the left -->
-        <div class="navbar-brand">
-          <a href="/">Ashfaque Khowaja</a>
-        </div>
-  
-        <!-- Hamburger menu button (mobile only) -->
-        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+  <div class="container">
+    <nav class="navbar" aria-label="Main">
+      <a class="navbar-brand" href="/">
+        <span class="brand-mark" aria-hidden="true">AK</span>
+        <span class="brand-name">Ashfaque Khowaja</span>
+      </a>
+
+      <div class="navbar-menu" id="navbar-menu">
+        <ul class="nav-links">
+          
+            
+            <li>
+              <a href="/" >Home</a>
+            </li>
+          
+            
+            <li>
+              <a href="/about" >About Me</a>
+            </li>
+          
+            
+            <li>
+              <a href="/awards" class="active" aria-current="page">Awards</a>
+            </li>
+          
+            
+            <li>
+              <a href="/research" >Research</a>
+            </li>
+          
+            
+            <li>
+              <a href="/projects" >Projects</a>
+            </li>
+          
+            
+            <li>
+              <a href="/news" >News</a>
+            </li>
+          
+            
+            <li>
+              <a href="/contact" >Contact Me</a>
+            </li>
+          
+        </ul>
+      </div>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navbar-menu">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+  <main id="main" class="site-main">
+    <article class="page-content">
   
-        <!-- Navigation links and theme toggle -->
-        <div class="navbar-menu">
-          <ul class="nav-links">
-            
-              <li>
-                <a href="/" >
-                  Home
-                </a>
-              </li>
-            
-              <li>
-                <a href="/about" >
-                  About Me
-                </a>
-              </li>
-            
-              <li>
-                <a href="/awards" class="active">
-                  Awards
-                </a>
-              </li>
-            
-              <li>
-                <a href="/research" >
-                  Research
-                </a>
-              </li>
-            
-              <li>
-                <a href="/projects" >
-                  Projects
-                </a>
-              </li>
-            
-              <li>
-                <a href="/news" >
-                  News
-                </a>
-              </li>
-            
-              <li>
-                <a href="/contact" >
-                  Contact Me
-                </a>
-              </li>
-            
-          <li>
-          <span class="theme-toggle" role="button" aria-label="Toggle dark mode" tabindex="0">
-            🌙
-            <span class="sr-only">Toggle theme</span>
-          </span>
-        </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <script src="/assets/js/main.js"  defer></script>
 
-  <main class="container">
-    <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title"></h1>
-  </header>
-
-  <div class="post-content">
-    <div class="awards-hero">
+  <div class="awards-hero">
   <div class="awards-hero-content">
     <h1>Awards &amp; Scholarships</h1>
     <p>Throughout my academic journey, I have been honored with several scholarships and awards in recognition of my academic excellence and research contributions. These achievements reflect my dedication and commitment to learning, innovation, and academic success.</p>
@@ -149,6 +133,18 @@
 
 <div class="awards-container">
   <div class="awards-timeline">
+    
+    <div class="award-card">
+      <div class="award-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <div class="award-content">
+        <div class="award-year">2026</div>
+        <h3 class="award-title">Tuition Fee Scholarship (TFS)</h3>
+        <div class="award-organization">UNSW Sydney</div>
+        <p class="award-description">Awarded a Tuition Fee Scholarship (TFS) with a monthly stipend to pursue a PhD in Computer Science and Engineering.</p>
+      </div>
+    </div>
     
     <div class="award-card">
       <div class="award-icon">
@@ -225,43 +221,74 @@
   </div>
 </div>
 
-  </div>
-
 </article>
+
   </main>
-  
+
   <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 Ashfaque Khowaja</p>
-    <div class="social-links">
-      <!-- Academic Profiles -->
-      <a href="https://scholar.google.com/citations?user=YOUR_PROFILE_ID" aria-label="Google Scholar">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-      <a href="https://orcid.org/YOUR_ORCID_ID" aria-label="ORCID">
-        <i class="ai ai-orcid"></i>
-      </a>
-      
-      <!-- Contact -->
-      <a href="mailto:khowaja.ashfaqali@hotmail.com" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      
-      <!-- Social Media -->
-      <a href="https://github.com/ashfaquekhowaja" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/ashfaquekhowaja/" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.youtube.com/@AshfaqueKhowaja" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://x.com/AshfaqueKhowaja" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="navbar-brand" href="/">
+          <span class="brand-mark" aria-hidden="true">AK</span>
+          <span class="brand-name">Ashfaque Khowaja</span>
+        </a>
+        <p>PhD Scholar · Alzheimer's &amp; Dementia · Exposome · Multimodal Data</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        
+          <a href="/">Home</a>
+        
+          <a href="/about">About Me</a>
+        
+          <a href="/awards">Awards</a>
+        
+          <a href="/research">Research</a>
+        
+          <a href="/projects">Projects</a>
+        
+          <a href="/news">News</a>
+        
+          <a href="/contact">Contact Me</a>
+        
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ashfaque Khowaja</p>
+      <div class="social-links">
+        <!-- Academic Profiles -->
+        <a href="https://scholar.google.com/citations?user=P9J0bO4AAAAJ&hl=en" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        <a href="https://orcid.org/0009-0007-0352-3316" aria-label="ORCID">
+          <i class="ai ai-orcid"></i>
+        </a>
+
+        <!-- Contact -->
+        <a href="mailto:khowaja.ashfaqali@hotmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <!-- Social Media -->
+        <a href="https://github.com/ashfaquekhowaja" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ashfaquekhowaja/" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.youtube.com/@AshfaqueKhowaja" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://x.com/AshfaqueKhowaja" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
     </div>
   </div>
 </footer>
+
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

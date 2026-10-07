@@ -1,33 +1,51 @@
 <footer class="site-footer">
   <div class="container">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: "Ashfaque Khowaja" }}</p>
-    <div class="social-links">
-      <!-- Academic Profiles -->
-      <a href="https://scholar.google.com/citations?user=YOUR_PROFILE_ID" aria-label="Google Scholar">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-      <a href="https://orcid.org/YOUR_ORCID_ID" aria-label="ORCID">
-        <i class="ai ai-orcid"></i>
-      </a>
-      
-      <!-- Contact -->
-      <a href="mailto:khowaja.ashfaqali@hotmail.com" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      
-      <!-- Social Media -->
-      <a href="https://github.com/ashfaquekhowaja" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/ashfaquekhowaja/" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.youtube.com/@AshfaqueKhowaja" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://x.com/AshfaqueKhowaja" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="navbar-brand" href="/">
+          <span class="brand-mark" aria-hidden="true">AK</span>
+          <span class="brand-name">{{ site.title | default: "Ashfaque Khowaja" }}</span>
+        </a>
+        <p>PhD Scholar · Alzheimer's &amp; Dementia · Exposome · Multimodal Data</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        {% for item in site.data.navigation.main %}
+          <a href="{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: "Ashfaque Khowaja" }}</p>
+      <div class="social-links">
+        <!-- Academic Profiles -->
+        <a href="https://scholar.google.com/citations?user=P9J0bO4AAAAJ&hl=en" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        <a href="https://orcid.org/0009-0007-0352-3316" aria-label="ORCID">
+          <i class="ai ai-orcid"></i>
+        </a>
+
+        <!-- Contact -->
+        <a href="mailto:khowaja.ashfaqali@hotmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <!-- Social Media -->
+        <a href="https://github.com/ashfaquekhowaja" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ashfaquekhowaja/" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.youtube.com/@AshfaqueKhowaja" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://x.com/AshfaqueKhowaja" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
     </div>
   </div>
 </footer>

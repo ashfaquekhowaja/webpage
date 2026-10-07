@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> | Ashfaque Khowaja</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="icon" href="/assets/img/favicon.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ashfaque Khowaja</title>
+<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0f17" media="(prefers-color-scheme: dark)">
 
 <script>
-    // Prevent FOUC
-    (function() {
-      const savedTheme = localStorage.getItem('theme');
-      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', initialTheme);
-    })();
-  </script>
+  // Set theme before first paint to prevent a flash of the wrong theme
+  (function() {
+    var savedTheme = null;
+    try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
+    var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+    document.documentElement.classList.add('js');
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/assets/img/favicon.jpeg" type="image/x-icon">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND6YYE0T6N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ND6YYE0T6N');
+</script>
 
 <script type="application/ld+json">
   {
@@ -31,116 +46,85 @@
     "sameAs": [
       "https://scholar.google.com/citations?user=P9J0bO4AAAAJ&hl=en",
       "https://www.linkedin.com/in/ashfaquekhowaja",
-      "https://github.com/ashfaquekhowaja"
+      "https://github.com/ashfaquekhowaja",
+      "https://orcid.org/0009-0007-0352-3316"
     ]
   }
-  </script>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ND6YYE0T6N');
 </script>
 
-  </head>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND6YYE0T6N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ND6YYE0T6N');
-</script>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container">
-      <nav class="navbar">
-        <!-- Title on the left -->
-        <div class="navbar-brand">
-          <a href="/">Ashfaque Khowaja</a>
-        </div>
-  
-        <!-- Hamburger menu button (mobile only) -->
-        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+  <div class="container">
+    <nav class="navbar" aria-label="Main">
+      <a class="navbar-brand" href="/">
+        <span class="brand-mark" aria-hidden="true">AK</span>
+        <span class="brand-name">Ashfaque Khowaja</span>
+      </a>
+
+      <div class="navbar-menu" id="navbar-menu">
+        <ul class="nav-links">
+          
+            
+            <li>
+              <a href="/" >Home</a>
+            </li>
+          
+            
+            <li>
+              <a href="/about" >About Me</a>
+            </li>
+          
+            
+            <li>
+              <a href="/awards" >Awards</a>
+            </li>
+          
+            
+            <li>
+              <a href="/research" >Research</a>
+            </li>
+          
+            
+            <li>
+              <a href="/projects" >Projects</a>
+            </li>
+          
+            
+            <li>
+              <a href="/news" class="active" aria-current="page">News</a>
+            </li>
+          
+            
+            <li>
+              <a href="/contact" >Contact Me</a>
+            </li>
+          
+        </ul>
+      </div>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navbar-menu">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+  <main id="main" class="site-main">
+    <article class="page-content">
   
-        <!-- Navigation links and theme toggle -->
-        <div class="navbar-menu">
-          <ul class="nav-links">
-            
-              <li>
-                <a href="/" >
-                  Home
-                </a>
-              </li>
-            
-              <li>
-                <a href="/about" >
-                  About Me
-                </a>
-              </li>
-            
-              <li>
-                <a href="/awards" >
-                  Awards
-                </a>
-              </li>
-            
-              <li>
-                <a href="/research" >
-                  Research
-                </a>
-              </li>
-            
-              <li>
-                <a href="/projects" >
-                  Projects
-                </a>
-              </li>
-            
-              <li>
-                <a href="/news" >
-                  News
-                </a>
-              </li>
-            
-              <li>
-                <a href="/contact" >
-                  Contact Me
-                </a>
-              </li>
-            
-          <li>
-          <span class="theme-toggle" role="button" aria-label="Toggle dark mode" tabindex="0">
-            🌙
-            <span class="sr-only">Toggle theme</span>
-          </span>
-        </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <script src="/assets/js/main.js"  defer></script>
 
-  <main class="container">
-    <article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title"></h1>
-  </header>
-
-  <div class="post-content">
-    <div class="news-hero">
+  <div class="news-hero">
   <h1>News &amp; Updates</h1>
   <p>Stay updated with my latest research activities, conference presentations, and academic journey.</p>
 </div>
@@ -409,13 +393,40 @@
           <div class="news-image">
             
               
-                <img src="/assets/img/SUISF1.jpg" alt="SUISF" loading="lazy" />
+                <img src="/assets/img/ISLA/ISLA1.webp" alt="ISLA ambassadors group photo" loading="lazy" />
               
             
             <div class="news-overlay">
               <div class="news-category-badge">Extra Curriculum Activities</div>
               <div class="news-actions">
                 <button class="btn-view-news" onclick="openNewsModal('extra-curriculum-activities', 0)">
+                  <i class="fas fa-eye"></i> Read More
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="news-content">
+            <h3>Joined the City of Sydney ISLA Program 2026</h3>
+            <p class="news-date">September 05, 2026</p>
+            <p class="news-excerpt">I joined the City of Sydney's International Student Leadership and Ambassador (ISLA) Program as an International Stud...</p>
+            <div class="news-meta">
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="news-card" data-category="extra-curriculum-activities" data-news="1">
+        <div class="news-card-inner">
+          <div class="news-image">
+            
+              
+                <img src="/assets/img/SUISF1.jpg" alt="SUISF" loading="lazy" />
+              
+            
+            <div class="news-overlay">
+              <div class="news-category-badge">Extra Curriculum Activities</div>
+              <div class="news-actions">
+                <button class="btn-view-news" onclick="openNewsModal('extra-curriculum-activities', 1)">
                   <i class="fas fa-eye"></i> Read More
                 </button>
               </div>
@@ -431,7 +442,7 @@
         </div>
       </div>
     
-      <div class="news-card" data-category="extra-curriculum-activities" data-news="1">
+      <div class="news-card" data-category="extra-curriculum-activities" data-news="2">
         <div class="news-card-inner">
           <div class="news-image">
             
@@ -442,7 +453,7 @@
             <div class="news-overlay">
               <div class="news-category-badge">Extra Curriculum Activities</div>
               <div class="news-actions">
-                <button class="btn-view-news" onclick="openNewsModal('extra-curriculum-activities', 1)">
+                <button class="btn-view-news" onclick="openNewsModal('extra-curriculum-activities', 2)">
                   <i class="fas fa-eye"></i> Read More
                 </button>
               </div>
@@ -458,7 +469,7 @@
         </div>
       </div>
     
-      <div class="news-card" data-category="extra-curriculum-activities" data-news="2">
+      <div class="news-card" data-category="extra-curriculum-activities" data-news="3">
         <div class="news-card-inner">
           <div class="news-image">
             
@@ -469,7 +480,7 @@
             <div class="news-overlay">
               <div class="news-category-badge">Extra Curriculum Activities</div>
               <div class="news-actions">
-                <button class="btn-view-news" onclick="openNewsModal('extra-curriculum-activities', 2)">
+                <button class="btn-view-news" onclick="openNewsModal('extra-curriculum-activities', 3)">
                   <i class="fas fa-eye"></i> Read More
                 </button>
               </div>
@@ -485,7 +496,7 @@
         </div>
       </div>
     
-      <div class="news-card" data-category="extra-curriculum-activities" data-news="3">
+      <div class="news-card" data-category="extra-curriculum-activities" data-news="4">
         <div class="news-card-inner">
           <div class="news-image">
             
@@ -496,7 +507,7 @@
             <div class="news-overlay">
               <div class="news-category-badge">Extra Curriculum Activities</div>
               <div class="news-actions">
-                <button class="btn-view-news" onclick="openNewsModal('extra-curriculum-activities', 3)">
+                <button class="btn-view-news" onclick="openNewsModal('extra-curriculum-activities', 4)">
                   <i class="fas fa-eye"></i> Read More
                 </button>
               </div>
@@ -527,7 +538,7 @@
 
 <script>
 // News data for JavaScript
-const newsData = [{"category":"Research and Academic Activities","items":[{"title":"Attended CHI 2025","date":"2025-05-02","excerpt":"I attended <strong>CHI 2025</strong> in <strong>Yokohama</strong>. It was an incredible experience connecting with researchers and exploring the latest innovations in human-computer interaction.","images":[{"path":"assets/img/CHI2.webp","alt":"CHI 2025"},{"path":"assets/img/CHI1.webp","alt":"CHI 2025"},{"path":"assets/img/CHI3.webp","alt":"CHI 2025"},{"path":"assets/img/CHI4.webp","alt":"CHI 2025"},{"path":"assets/img/CHI5.webp","alt":"CHI 2025"},{"path":"assets/img/CHI6.webp","alt":"CHI 2025"}],"url":"/news/"},{"title":"Visited PCB Manufacturing Facility","date":"2025-03-01","excerpt":"I visited <strong>Jialichuang (JLC)</strong>, a leading PCB manufacturer in <strong>Zhuhai, Guangdong, China</strong>, for a full-day tour of their facilities. The visit provided an in-depth look at their step-by-step PCB production process, including fabrication, quality control, and <strong>Surface Mount Technology (SMT) assembly</strong>, offering valuable insights into large-scale PCB manufacturing.","images":[{"path":"assets/img/JLC1.webp","alt":"PCB production line"},{"path":"assets/img/JLC2.webp","alt":"Quality control"},{"path":"assets/img/JLC3.webp","alt":"PCB production line"},{"path":"assets/img/JLC4.webp","alt":"Quality control"}],"url":"/news/"},{"title":"Scalable HCI 2025","date":"2025-01-09","excerpt":"I volunteered for <strong>Scalable HCI</strong> from <strong>6th to 9th January 2025</strong> at the <strong>School of Design, SUSTech</strong>, assisting with event organization and engaging with researchers in <strong>human-computer interaction</strong>.","images":[{"path":"assets/img/HCI2.webp","alt":"Scalable HCI"},{"path":"assets/img/HCI1.webp","alt":"Scalable HCI"},{"path":"assets/img/HCI3.webp","alt":"Scalable HCI"},{"path":"assets/img/HCI4.webp","alt":"Scalable HCI"}],"url":"/news/"},{"title":"Chinese CHI 2024","date":"2024-11-23","excerpt":"I attended the <strong>12th International Symposium of Chinese CHI</strong> at <strong>SUSTech, Shenzhen</strong>, where I listened to various talks and explored the latest research in the field of HCI in China.","images":[{"path":"assets/img/ChineseCHI1.webp","alt":"ChineseCHI"},{"path":"assets/img/ChineseCHI2.webp","alt":"ChineseCHI"},{"path":"assets/img/ChineseCHI3.webp","alt":"ChineseCHI"},{"path":"assets/img/ChineseCHI4.webp","alt":"ChineseCHI"}],"url":"/news/"},{"title":"KiCon Asia 2024","date":"2024-11-16","excerpt":"I attended a one-day workshop followed by the two-day <strong>KiCad Asia 2024 Conference</strong> in <strong>Shenzhen</strong>. It was a great opportunity to connect with professionals in electronics and PCB design. I also gained valuable insights into KiCad and its upcoming <strong>version 9.0</strong>.","images":[{"path":"assets/img/Kicon1.webp","alt":"KiCad workshop"},{"path":"assets/img/Kicon2.webp","alt":"KiCad workshop"},{"path":"assets/img/kicon3.webp","alt":"KiCad workshop"},{"path":"assets/img/kicon4.webp","alt":"KiCad workshop"}],"url":"/news/"},{"title":"South Korea Visit 2024","date":"2024-11-07","excerpt":"From <strong>October 31 to November 6, 2024</strong>, I was in <strong>South Korea</strong>, where I visited a research center in <strong>Daejeon</strong>, attended the <strong>2024 Design 3.0 Forum</strong>, participated in a workshop titled <strong>Listening Through the Body</strong>, visited <strong>KAIST</strong>, and engaged with researchers at <strong>KAIST</strong> to explore potential future collaborations. I also attended the <strong>2024 KSDS Fall International Conference</strong>.","images":[{"path":"assets/img/Korea4.webp","alt":"Korean Trip"},{"path":"assets/img/Korea2.webp","alt":"Korean Trip"},{"path":"assets/img/Korea3.webp","alt":"Korean Trip"},{"path":"assets/img/Korea1.webp","alt":"Korean Trip"},{"path":"assets/img/Korea5.webp","alt":"Korean Trip"},{"path":"assets/img/Korea6.webp","alt":"Korean Trip"}],"url":"/news/"},{"title":"ISBRA Conference 2024","date":"2024-07-21","excerpt":"I presented my second conference paper at the <strong>20th International Symposium on Bioinformatics Research and Applications (ISBRA 2024)</strong>, a <strong>CCF-C</strong> ranked conference, held in <strong>Kunming, China</strong>.","images":null,"url":"/news/"},{"title":"Global Youth Camp 2024","date":"2024-07-03","excerpt":"Before formally joining <strong>SUSTech</strong> in <strong>September 2024</strong>, I participated in the <strong>2024 Global Youth Summer Camp</strong> at <strong>SUSTech</strong> from <strong>July 1 to July 3</strong>. During the camp, I had the opportunity to interact with current and prospective students, visit various labs and explore the campus to learn about the research environment and campus life. Additionally, we visited <strong>Mindray</strong>, a leading medical equipment manufacturer in <strong>Shenzhen</strong>.","images":[{"path":"assets/img/Camp1.webp","alt":"SUSTech Summer Camp"},{"path":"assets/img/Camp2.webp","alt":"SUSTech Summer Camp"},{"path":"assets/img/Camp3.webp","alt":"SUSTech Summer Camp"},{"path":"assets/img/Camp4.webp","alt":"SUSTech Summer Camp"}],"url":"/news/"},{"title":"International Conference on Control, Robotics, and Cybernetics (CRC 2023)","date":"2023-12-24","excerpt":"I presented my first conference paper at the <strong>8th International Conference on Control, Robotics, and Cybernetics (CRC 2023)</strong>, held in <strong>Changsha, China</strong>","images":[{"path":"assets/img/CRC4.webp","alt":"CRC"},{"path":"assets/img/CRC2.webp","alt":"CRC"},{"path":"assets/img/CRC3.webp","alt":"CRC"},{"path":"assets/img/CRC1.webp","alt":"CRC"}],"url":"/news/"}]},{"category":"Extra Curriculum Activities","items":[{"title":"Cultural Exchange Event by SUISF 2025","date":"2025-09-27","excerpt":"I attended the <strong>Cultural Exchange Event</strong> by <strong>Shenzhen Universiade International Student Federation (SUISF)</strong> at <strong>SUSTech</strong>, where I had the opportunity to connect with people from diverse countries and linguistic backgrounds.","images":[{"path":"assets/img/SUISF1.jpg","alt":"SUISF"},{"path":"assets/img/SUISF2.jpg","alt":"SUISF"},{"path":"assets/img/SUISF3.jpg","alt":"SUISF"},{"path":"assets/img/SUISF4.jpg","alt":"SUISF"},{"path":"assets/img/SUISF5.jpg","alt":"SUISF"},{"path":"assets/img/SUISF6.jpg","alt":"SUISF"}],"url":"/news/"},{"title":"4th Global Language Day 2025 at SUSTech","date":"2025-03-20","excerpt":"I attended the <strong>4th Global Language Day</strong> event at <strong>SUSTech</strong>, where I presented <strong>Sindhi</strong>, my mother tongue. I introduced guests to a few Sindhi phrases and had the opportunity to connect with people from diverse countries and linguistic backgrounds.","images":[{"path":"assets/img/Lday1.webp","alt":"Sindhi language"},{"path":"assets/img/Lday2.webp","alt":"Sindhi language"},{"path":"assets/img/Lday5.webp","alt":"Sindhi language"}],"url":"/news/"},{"title":"Mooncake Making Activity 2024","date":"2024-09-15","excerpt":"I participated in the <strong>Mooncake Making Activity</strong> for the <strong>Mid-Autumn Festival</strong> at <strong>SUSTech</strong>, celebrating the cultural tradition and engaging with fellow attendees.","images":[{"path":"assets/img/Moon1.webp","alt":"Mooncake"},{"path":"assets/img/Moon2.webp","alt":"Mooncake"},{"path":"assets/img/Moon3.webp","alt":"Mooncake"},{"path":"assets/img/Moon4.webp","alt":"Mooncake"}],"url":"/news/"},{"title":"International Cultural Day 2023","date":"2023-12-16","excerpt":"I attended my very first large social gathering after three years of the Covid-19 lockdown in China. The event, the <strong>International Cultural Day</strong>, was a celebration of global diversity, featuring over <strong>50 country stalls</strong>. We proudly represented our country's culture by showcasing traditional foods and clothing to guests and fellow students.","images":[{"path":"assets/img/Cultural_Day1.webp","alt":"Cultural Day"},{"path":"assets/img/Cultural_Day2.webp","alt":"Cultural Day"},{"path":"assets/img/Cultural_Day3.webp","alt":"Cultural Day"},{"path":"assets/img/Cultural_Day4.webp","alt":"Cultural Day"}],"url":"/news/"}]}];
+const newsData = [{"category":"Research and Academic Activities","items":[{"title":"Attended CHI 2025","date":"2025-05-02","excerpt":"I attended <strong>CHI 2025</strong> in <strong>Yokohama</strong>. It was an incredible experience connecting with researchers and exploring the latest innovations in human-computer interaction.","images":[{"path":"assets/img/CHI2.webp","alt":"CHI 2025"},{"path":"assets/img/CHI1.webp","alt":"CHI 2025"},{"path":"assets/img/CHI3.webp","alt":"CHI 2025"},{"path":"assets/img/CHI4.webp","alt":"CHI 2025"},{"path":"assets/img/CHI5.webp","alt":"CHI 2025"},{"path":"assets/img/CHI6.webp","alt":"CHI 2025"}],"url":"/news/"},{"title":"Visited PCB Manufacturing Facility","date":"2025-03-01","excerpt":"I visited <strong>Jialichuang (JLC)</strong>, a leading PCB manufacturer in <strong>Zhuhai, Guangdong, China</strong>, for a full-day tour of their facilities. The visit provided an in-depth look at their step-by-step PCB production process, including fabrication, quality control, and <strong>Surface Mount Technology (SMT) assembly</strong>, offering valuable insights into large-scale PCB manufacturing.","images":[{"path":"assets/img/JLC1.webp","alt":"PCB production line"},{"path":"assets/img/JLC2.webp","alt":"Quality control"},{"path":"assets/img/JLC3.webp","alt":"PCB production line"},{"path":"assets/img/JLC4.webp","alt":"Quality control"}],"url":"/news/"},{"title":"Scalable HCI 2025","date":"2025-01-09","excerpt":"I volunteered for <strong>Scalable HCI</strong> from <strong>6th to 9th January 2025</strong> at the <strong>School of Design, SUSTech</strong>, assisting with event organization and engaging with researchers in <strong>human-computer interaction</strong>.","images":[{"path":"assets/img/HCI2.webp","alt":"Scalable HCI"},{"path":"assets/img/HCI1.webp","alt":"Scalable HCI"},{"path":"assets/img/HCI3.webp","alt":"Scalable HCI"},{"path":"assets/img/HCI4.webp","alt":"Scalable HCI"}],"url":"/news/"},{"title":"Chinese CHI 2024","date":"2024-11-23","excerpt":"I attended the <strong>12th International Symposium of Chinese CHI</strong> at <strong>SUSTech, Shenzhen</strong>, where I listened to various talks and explored the latest research in the field of HCI in China.","images":[{"path":"assets/img/ChineseCHI1.webp","alt":"ChineseCHI"},{"path":"assets/img/ChineseCHI2.webp","alt":"ChineseCHI"},{"path":"assets/img/ChineseCHI3.webp","alt":"ChineseCHI"},{"path":"assets/img/ChineseCHI4.webp","alt":"ChineseCHI"}],"url":"/news/"},{"title":"KiCon Asia 2024","date":"2024-11-16","excerpt":"I attended a one-day workshop followed by the two-day <strong>KiCad Asia 2024 Conference</strong> in <strong>Shenzhen</strong>. It was a great opportunity to connect with professionals in electronics and PCB design. I also gained valuable insights into KiCad and its upcoming <strong>version 9.0</strong>.","images":[{"path":"assets/img/Kicon1.webp","alt":"KiCad workshop"},{"path":"assets/img/Kicon2.webp","alt":"KiCad workshop"},{"path":"assets/img/kicon3.webp","alt":"KiCad workshop"},{"path":"assets/img/kicon4.webp","alt":"KiCad workshop"}],"url":"/news/"},{"title":"South Korea Visit 2024","date":"2024-11-07","excerpt":"From <strong>October 31 to November 6, 2024</strong>, I was in <strong>South Korea</strong>, where I visited a research center in <strong>Daejeon</strong>, attended the <strong>2024 Design 3.0 Forum</strong>, participated in a workshop titled <strong>Listening Through the Body</strong>, visited <strong>KAIST</strong>, and engaged with researchers at <strong>KAIST</strong> to explore potential future collaborations. I also attended the <strong>2024 KSDS Fall International Conference</strong>.","images":[{"path":"assets/img/Korea4.webp","alt":"Korean Trip"},{"path":"assets/img/Korea2.webp","alt":"Korean Trip"},{"path":"assets/img/Korea3.webp","alt":"Korean Trip"},{"path":"assets/img/Korea1.webp","alt":"Korean Trip"},{"path":"assets/img/Korea5.webp","alt":"Korean Trip"},{"path":"assets/img/Korea6.webp","alt":"Korean Trip"}],"url":"/news/"},{"title":"ISBRA Conference 2024","date":"2024-07-21","excerpt":"I presented my second conference paper at the <strong>20th International Symposium on Bioinformatics Research and Applications (ISBRA 2024)</strong>, a <strong>CCF-C</strong> ranked conference, held in <strong>Kunming, China</strong>.","images":null,"url":"/news/"},{"title":"Global Youth Camp 2024","date":"2024-07-03","excerpt":"Before formally joining <strong>SUSTech</strong> in <strong>September 2024</strong>, I participated in the <strong>2024 Global Youth Summer Camp</strong> at <strong>SUSTech</strong> from <strong>July 1 to July 3</strong>. During the camp, I had the opportunity to interact with current and prospective students, visit various labs and explore the campus to learn about the research environment and campus life. Additionally, we visited <strong>Mindray</strong>, a leading medical equipment manufacturer in <strong>Shenzhen</strong>.","images":[{"path":"assets/img/Camp1.webp","alt":"SUSTech Summer Camp"},{"path":"assets/img/Camp2.webp","alt":"SUSTech Summer Camp"},{"path":"assets/img/Camp3.webp","alt":"SUSTech Summer Camp"},{"path":"assets/img/Camp4.webp","alt":"SUSTech Summer Camp"}],"url":"/news/"},{"title":"International Conference on Control, Robotics, and Cybernetics (CRC 2023)","date":"2023-12-24","excerpt":"I presented my first conference paper at the <strong>8th International Conference on Control, Robotics, and Cybernetics (CRC 2023)</strong>, held in <strong>Changsha, China</strong>","images":[{"path":"assets/img/CRC4.webp","alt":"CRC"},{"path":"assets/img/CRC2.webp","alt":"CRC"},{"path":"assets/img/CRC3.webp","alt":"CRC"},{"path":"assets/img/CRC1.webp","alt":"CRC"}],"url":"/news/"}]},{"category":"Extra Curriculum Activities","items":[{"title":"Joined the City of Sydney ISLA Program 2026","date":"2026-09-05","excerpt":"I joined the <strong>City of Sydney</strong>'s <a href='https://www.cityofsydney.nsw.gov.au/community-activities-initiatives/international-student-leadership-ambassador-program' target='_blank'>International Student Leadership and Ambassador (ISLA) Program</a> as an <strong>International Student Ambassador</strong>. The program began with an introduction session covering the program briefing and support services, where I met fellow international student ambassadors.","images":[{"path":"assets/img/ISLA/ISLA1.webp","alt":"ISLA ambassadors group photo"},{"path":"assets/img/ISLA/ISLA2.webp","alt":"ISLA ambassadors group photo"},{"path":"assets/img/ISLA/ISLA3.webp","alt":"ISLA ambassadors in ISLA t-shirts"},{"path":"assets/img/ISLA/ISLA4.webp","alt":"ISLA introduction session"},{"path":"assets/img/ISLA/ISLA5.webp","alt":"ISLA program welcome presentation"},{"path":"assets/img/ISLA/ISLA6.webp","alt":"ISLA program requirements briefing"},{"path":"assets/img/ISLA/ISLA7.webp","alt":"ISLA upcoming volunteering opportunities"}],"url":"/news/"},{"title":"Cultural Exchange Event by SUISF 2025","date":"2025-09-27","excerpt":"I attended the <strong>Cultural Exchange Event</strong> by <strong>Shenzhen Universiade International Student Federation (SUISF)</strong> at <strong>SUSTech</strong>, where I had the opportunity to connect with people from diverse countries and linguistic backgrounds.","images":[{"path":"assets/img/SUISF1.jpg","alt":"SUISF"},{"path":"assets/img/SUISF2.jpg","alt":"SUISF"},{"path":"assets/img/SUISF3.jpg","alt":"SUISF"},{"path":"assets/img/SUISF4.jpg","alt":"SUISF"},{"path":"assets/img/SUISF5.jpg","alt":"SUISF"},{"path":"assets/img/SUISF6.jpg","alt":"SUISF"}],"url":"/news/"},{"title":"4th Global Language Day 2025 at SUSTech","date":"2025-03-20","excerpt":"I attended the <strong>4th Global Language Day</strong> event at <strong>SUSTech</strong>, where I presented <strong>Sindhi</strong>, my mother tongue. I introduced guests to a few Sindhi phrases and had the opportunity to connect with people from diverse countries and linguistic backgrounds.","images":[{"path":"assets/img/Lday1.webp","alt":"Sindhi language"},{"path":"assets/img/Lday2.webp","alt":"Sindhi language"},{"path":"assets/img/Lday5.webp","alt":"Sindhi language"}],"url":"/news/"},{"title":"Mooncake Making Activity 2024","date":"2024-09-15","excerpt":"I participated in the <strong>Mooncake Making Activity</strong> for the <strong>Mid-Autumn Festival</strong> at <strong>SUSTech</strong>, celebrating the cultural tradition and engaging with fellow attendees.","images":[{"path":"assets/img/Moon1.webp","alt":"Mooncake"},{"path":"assets/img/Moon2.webp","alt":"Mooncake"},{"path":"assets/img/Moon3.webp","alt":"Mooncake"},{"path":"assets/img/Moon4.webp","alt":"Mooncake"}],"url":"/news/"},{"title":"International Cultural Day 2023","date":"2023-12-16","excerpt":"I attended my very first large social gathering after three years of the Covid-19 lockdown in China. The event, the <strong>International Cultural Day</strong>, was a celebration of global diversity, featuring over <strong>50 country stalls</strong>. We proudly represented our country's culture by showcasing traditional foods and clothing to guests and fellow students.","images":[{"path":"assets/img/Cultural_Day1.webp","alt":"Cultural Day"},{"path":"assets/img/Cultural_Day2.webp","alt":"Cultural Day"},{"path":"assets/img/Cultural_Day3.webp","alt":"Cultural Day"},{"path":"assets/img/Cultural_Day4.webp","alt":"Cultural Day"}],"url":"/news/"}]}];
 
 // Flatten news data for easier access
 const allNews = [];
@@ -638,43 +649,74 @@ document.addEventListener('keydown', function(event) {
 </script>
 
 
-  </div>
-
 </article>
+
   </main>
-  
+
   <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 Ashfaque Khowaja</p>
-    <div class="social-links">
-      <!-- Academic Profiles -->
-      <a href="https://scholar.google.com/citations?user=YOUR_PROFILE_ID" aria-label="Google Scholar">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-      <a href="https://orcid.org/YOUR_ORCID_ID" aria-label="ORCID">
-        <i class="ai ai-orcid"></i>
-      </a>
-      
-      <!-- Contact -->
-      <a href="mailto:khowaja.ashfaqali@hotmail.com" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      
-      <!-- Social Media -->
-      <a href="https://github.com/ashfaquekhowaja" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/ashfaquekhowaja/" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.youtube.com/@AshfaqueKhowaja" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://x.com/AshfaqueKhowaja" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="navbar-brand" href="/">
+          <span class="brand-mark" aria-hidden="true">AK</span>
+          <span class="brand-name">Ashfaque Khowaja</span>
+        </a>
+        <p>PhD Scholar · Alzheimer's &amp; Dementia · Exposome · Multimodal Data</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        
+          <a href="/">Home</a>
+        
+          <a href="/about">About Me</a>
+        
+          <a href="/awards">Awards</a>
+        
+          <a href="/research">Research</a>
+        
+          <a href="/projects">Projects</a>
+        
+          <a href="/news">News</a>
+        
+          <a href="/contact">Contact Me</a>
+        
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ashfaque Khowaja</p>
+      <div class="social-links">
+        <!-- Academic Profiles -->
+        <a href="https://scholar.google.com/citations?user=P9J0bO4AAAAJ&hl=en" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        <a href="https://orcid.org/0009-0007-0352-3316" aria-label="ORCID">
+          <i class="ai ai-orcid"></i>
+        </a>
+
+        <!-- Contact -->
+        <a href="mailto:khowaja.ashfaqali@hotmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <!-- Social Media -->
+        <a href="https://github.com/ashfaquekhowaja" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ashfaquekhowaja/" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.youtube.com/@AshfaqueKhowaja" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://x.com/AshfaqueKhowaja" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
     </div>
   </div>
 </footer>
+
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

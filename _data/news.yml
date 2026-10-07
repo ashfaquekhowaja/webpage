@@ -133,6 +133,27 @@
 - category: "Extra Curriculum Activities"
   items:
 
+    - title: "Joined the City of Sydney ISLA Program 2026"
+      date: 2026-09-05
+      excerpt: "I joined the <strong>City of Sydney</strong>'s <a href='https://www.cityofsydney.nsw.gov.au/community-activities-initiatives/international-student-leadership-ambassador-program' target='_blank'>International Student Leadership and Ambassador (ISLA) Program</a> as an <strong>International Student Ambassador</strong>. The program began with an introduction session covering the program briefing and support services, where I met fellow international student ambassadors."
+      images:
+        - path: "assets/img/ISLA/ISLA1.webp"
+          alt: "ISLA ambassadors group photo"
+        - path: "assets/img/ISLA/ISLA2.webp"
+          alt: "ISLA ambassadors group photo"
+        - path: "assets/img/ISLA/ISLA3.webp"
+          alt: "ISLA ambassadors in ISLA t-shirts"
+        - path: "assets/img/ISLA/ISLA4.webp"
+          alt: "ISLA introduction session"
+        - path: "assets/img/ISLA/ISLA5.webp"
+          alt: "ISLA program welcome presentation"
+        - path: "assets/img/ISLA/ISLA6.webp"
+          alt: "ISLA program requirements briefing"
+        - path: "assets/img/ISLA/ISLA7.webp"
+          alt: "ISLA upcoming volunteering opportunities"
+      url: "/news/"
+
+
     - title: "Cultural Exchange Event by SUISF 2025"
       date: 2025-09-27
       excerpt: "I attended the <strong>Cultural Exchange Event</strong> by <strong>Shenzhen Universiade International Student Federation (SUISF)</strong> at <strong>SUSTech</strong>, where I had the opportunity to connect with people from diverse countries and linguistic backgrounds."

@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
 <head>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home | Ashfaque Khowaja</title>
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="icon" href="/assets/img/favicon.jpeg" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Ashfaque Khowaja</title>
+<meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0c0f17" media="(prefers-color-scheme: dark)">
 
 <script>
-    // Prevent FOUC
-    (function() {
-      const savedTheme = localStorage.getItem('theme');
-      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      const initialTheme = savedTheme || (systemPrefersDark ? 'dark' : 'light');
-      document.documentElement.setAttribute('data-theme', initialTheme);
-    })();
-  </script>
+  // Set theme before first paint to prevent a flash of the wrong theme
+  (function() {
+    var savedTheme = null;
+    try { savedTheme = localStorage.getItem('theme'); } catch (e) {}
+    var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', savedTheme || (systemPrefersDark ? 'dark' : 'light'));
+    document.documentElement.classList.add('js');
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" href="/assets/img/favicon.jpeg" type="image/x-icon">
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ND6YYE0T6N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ND6YYE0T6N');
+</script>
 
 <script type="application/ld+json">
   {
@@ -31,108 +46,81 @@
     "sameAs": [
       "https://scholar.google.com/citations?user=P9J0bO4AAAAJ&hl=en",
       "https://www.linkedin.com/in/ashfaquekhowaja",
-      "https://github.com/ashfaquekhowaja"
+      "https://github.com/ashfaquekhowaja",
+      "https://orcid.org/0009-0007-0352-3316"
     ]
   }
-  </script>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ND6YYE0T6N');
 </script>
 
-  </head>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ND6YYE0T6N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-ND6YYE0T6N');
-</script>
-
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header">
-    <div class="container">
-      <nav class="navbar">
-        <!-- Title on the left -->
-        <div class="navbar-brand">
-          <a href="/">Ashfaque Khowaja</a>
-        </div>
-  
-        <!-- Hamburger menu button (mobile only) -->
-        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+  <div class="container">
+    <nav class="navbar" aria-label="Main">
+      <a class="navbar-brand" href="/">
+        <span class="brand-mark" aria-hidden="true">AK</span>
+        <span class="brand-name">Ashfaque Khowaja</span>
+      </a>
+
+      <div class="navbar-menu" id="navbar-menu">
+        <ul class="nav-links">
+          
+            
+            <li>
+              <a href="/" class="active" aria-current="page">Home</a>
+            </li>
+          
+            
+            <li>
+              <a href="/about" >About Me</a>
+            </li>
+          
+            
+            <li>
+              <a href="/awards" >Awards</a>
+            </li>
+          
+            
+            <li>
+              <a href="/research" >Research</a>
+            </li>
+          
+            
+            <li>
+              <a href="/projects" >Projects</a>
+            </li>
+          
+            
+            <li>
+              <a href="/news" >News</a>
+            </li>
+          
+            
+            <li>
+              <a href="/contact" >Contact Me</a>
+            </li>
+          
+        </ul>
+      </div>
+
+      <div class="navbar-actions">
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </button>
+        <button class="hamburger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="navbar-menu">
           <span class="hamburger-box">
             <span class="hamburger-inner"></span>
           </span>
         </button>
-  
-        <!-- Navigation links and theme toggle -->
-        <div class="navbar-menu">
-          <ul class="nav-links">
-            
-              <li>
-                <a href="/" class="active">
-                  Home
-                </a>
-              </li>
-            
-              <li>
-                <a href="/about" >
-                  About Me
-                </a>
-              </li>
-            
-              <li>
-                <a href="/awards" >
-                  Awards
-                </a>
-              </li>
-            
-              <li>
-                <a href="/research" >
-                  Research
-                </a>
-              </li>
-            
-              <li>
-                <a href="/projects" >
-                  Projects
-                </a>
-              </li>
-            
-              <li>
-                <a href="/news" >
-                  News
-                </a>
-              </li>
-            
-              <li>
-                <a href="/contact" >
-                  Contact Me
-                </a>
-              </li>
-            
-          <li>
-          <span class="theme-toggle" role="button" aria-label="Toggle dark mode" tabindex="0">
-            🌙
-            <span class="sr-only">Toggle theme</span>
-          </span>
-        </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <script src="/assets/js/main.js"  defer></script>
+      </div>
+    </nav>
+  </div>
+</header>
 
-  <main class="container">
+
+  <main id="main" class="site-main">
     <div class="home">
   <!-- Hero Section -->
 <section class="home-hero">
@@ -148,7 +136,7 @@
     <div class="profile-section">
       <div class="profile-image-container">
         <div class="profile-image">
-          <img src="/assets/img/khowaja.jpg" alt="Ashfaque Khowaja" />
+          <img src="/assets/img/profile-photo.webp" alt="Ashfaque Khowaja" />
         </div>
         <div class="profile-badge">
           <i class="fas fa-graduation-cap"></i>
@@ -164,7 +152,7 @@
           </span>
         </h1>
         <p class="hero-subtitle">PhD in Computer Science and Engineering</p>
-        <p class="hero-description">Medical Imaging • Deep Learning</p>
+        <p class="hero-description">Alzheimer's &amp; Dementia • Exposome • Multimodal Data</p>
         
         <div class="hero-cta">
           <a href="/about" class="btn btn-primary">
@@ -198,16 +186,20 @@
         <h2>Welcome to My Digital Space</h2>
         <p>Hi! I am <strong>Ashfaque Khowaja</strong>, a passionate PhD scholar in Computer Science at <a href="https://www.unsw.edu.au/" target="_blank">UNSW Sydney</a>, where I joined on February 9, 2026. Previously, I was a PhD scholar in the <a href="https://designschool.sustech.edu.cn/" target="_blank">School of Design</a> at <a href="http://www.sustech.edu.cn/en/" target="_blank">Southern University of Science and Technology (SUSTech)</a>, where I worked under the supervision of <a href="https://immersivedesignresearch.com/seungwoo" target="_blank">Prof. Seungwoo Je</a> at the <a href="https://immersivedesignresearch.com/" target="_blank">Immersive Design Group</a>.</p>
         
-        <p>My research journey focuses on medical imaging and deep learning, exploring innovative solutions for advancing healthcare through cutting-edge AI technologies.</p>
+        <p>My current research focuses on Alzheimer's disease and dementia, integrating the exposome with multimodal data to better understand the factors that shape brain health. This builds on my background in medical imaging and deep learning.</p>
         
         <div class="research-highlights">
           <div class="research-item">
-            <i class="fas fa-x-ray"></i>
-            <span>Medical Imaging</span>
+            <i class="fas fa-brain"></i>
+            <span>Alzheimer's &amp; Dementia</span>
           </div>
           <div class="research-item">
-            <i class="fas fa-brain"></i>
-            <span>Deep Learning</span>
+            <i class="fas fa-earth-americas"></i>
+            <span>Exposome</span>
+          </div>
+          <div class="research-item">
+            <i class="fas fa-layer-group"></i>
+            <span>Multimodal Data</span>
           </div>
         </div>
       </div>
@@ -235,7 +227,7 @@
             <i class="fab fa-twitter"></i>
             <span>Twitter</span>
           </a>
-          <a href="https://scholar.google.com/citations?user=YOUR_PROFILE_ID" class="social-link scholar" aria-label="Google Scholar">
+          <a href="https://scholar.google.com/citations?user=P9J0bO4AAAAJ&amp;hl=en" class="social-link scholar" aria-label="Google Scholar">
             <i class="fas fa-graduation-cap"></i>
             <span>Scholar</span>
           </a>
@@ -351,39 +343,71 @@
   <!-- Omit posts section -->
 </div>
   </main>
-  
+
   <footer class="site-footer">
   <div class="container">
-    <p>&copy; 2026 Ashfaque Khowaja</p>
-    <div class="social-links">
-      <!-- Academic Profiles -->
-      <a href="https://scholar.google.com/citations?user=YOUR_PROFILE_ID" aria-label="Google Scholar">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-      <a href="https://orcid.org/YOUR_ORCID_ID" aria-label="ORCID">
-        <i class="ai ai-orcid"></i>
-      </a>
-      
-      <!-- Contact -->
-      <a href="mailto:khowaja.ashfaqali@hotmail.com" aria-label="Email">
-        <i class="fas fa-envelope"></i>
-      </a>
-      
-      <!-- Social Media -->
-      <a href="https://github.com/ashfaquekhowaja" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/ashfaquekhowaja/" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://www.youtube.com/@AshfaqueKhowaja" aria-label="YouTube">
-        <i class="fab fa-youtube"></i>
-      </a>
-      <a href="https://x.com/AshfaqueKhowaja" aria-label="Twitter">
-        <i class="fab fa-twitter"></i>
-      </a>
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="navbar-brand" href="/">
+          <span class="brand-mark" aria-hidden="true">AK</span>
+          <span class="brand-name">Ashfaque Khowaja</span>
+        </a>
+        <p>PhD Scholar · Alzheimer's &amp; Dementia · Exposome · Multimodal Data</p>
+      </div>
+
+      <nav class="footer-nav" aria-label="Footer">
+        
+          <a href="/">Home</a>
+        
+          <a href="/about">About Me</a>
+        
+          <a href="/awards">Awards</a>
+        
+          <a href="/research">Research</a>
+        
+          <a href="/projects">Projects</a>
+        
+          <a href="/news">News</a>
+        
+          <a href="/contact">Contact Me</a>
+        
+      </nav>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 Ashfaque Khowaja</p>
+      <div class="social-links">
+        <!-- Academic Profiles -->
+        <a href="https://scholar.google.com/citations?user=P9J0bO4AAAAJ&hl=en" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+        <a href="https://orcid.org/0009-0007-0352-3316" aria-label="ORCID">
+          <i class="ai ai-orcid"></i>
+        </a>
+
+        <!-- Contact -->
+        <a href="mailto:khowaja.ashfaqali@hotmail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+
+        <!-- Social Media -->
+        <a href="https://github.com/ashfaquekhowaja" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ashfaquekhowaja/" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://www.youtube.com/@AshfaqueKhowaja" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://x.com/AshfaqueKhowaja" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
     </div>
   </div>
 </footer>
+
+  <script src="/assets/js/main.js" defer></script>
 </body>
 </html>

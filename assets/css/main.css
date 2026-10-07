@@ -34,6 +34,8 @@
   --grid-line: rgba(21, 24, 33, 0.05);
   --header-bg: rgba(251, 250, 247, 0.78);
   --overlay: rgba(12, 15, 23, 0.6);
+  --spot: rgba(47, 75, 216, 0.07);
+  --network: 47, 75, 216;
 
   --shadow-sm: 0 1px 2px rgba(21, 24, 33, 0.04), 0 1px 3px rgba(21, 24, 33, 0.06);
   --shadow-md: 0 4px 12px rgba(21, 24, 33, 0.06), 0 2px 4px rgba(21, 24, 33, 0.04);
@@ -76,6 +78,8 @@
   --grid-line: rgba(255, 255, 255, 0.04);
   --header-bg: rgba(12, 15, 23, 0.75);
   --overlay: rgba(4, 6, 12, 0.75);
+  --spot: rgba(129, 151, 255, 0.1);
+  --network: 129, 151, 255;
 
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.3);
@@ -2714,5 +2718,319 @@ button {
 
   .stat-item {
     padding: 26px 12px;
+  }
+}
+
+/* 10. Delight — decorative motion and effects
+   ========================================================================== */
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 300;
+  height: 3px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--warm));
+  transform: scaleX(0);
+  transform-origin: left;
+  pointer-events: none;
+}
+
+/* Neural network canvas */
+.hero-network {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Greeting */
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 6px 16px 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  font-weight: 500;
+  box-shadow: var(--shadow-sm);
+}
+
+.wave {
+  display: inline-block;
+  font-size: 1.15rem;
+  transform-origin: 70% 70%;
+  animation: wave 2.6s ease-in-out 1s infinite;
+}
+
+/* Animated gradient name */
+.hero-name {
+  display: inline-block;
+  padding-bottom: 0.08em;
+  background: linear-gradient(110deg, var(--text) 0%, var(--text) 28%, var(--accent) 52%, var(--accent-2) 72%, var(--text) 100%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: name-shimmer 9s ease-in-out infinite alternate;
+}
+
+/* Hero entrance */
+.hero-text > * {
+  animation: fadeInUp 0.8s var(--ease) both;
+}
+
+.hero-text > :nth-child(1) { animation-delay: 0.05s; }
+.hero-text > :nth-child(2) { animation-delay: 0.15s; }
+.hero-text > :nth-child(3) { animation-delay: 0.28s; }
+.hero-text > :nth-child(4) { animation-delay: 0.4s; }
+.hero-text > :nth-child(5) { animation-delay: 0.52s; }
+
+.profile-image-container {
+  animation: pop-in 1s var(--ease) 0.2s both;
+}
+
+/* Orbiting icons around the photo */
+.profile-orbit {
+  position: absolute;
+  inset: -34px;
+  border-radius: 50%;
+  border: 1px dashed var(--border-strong);
+  animation: spin 40s linear infinite;
+  pointer-events: none;
+}
+
+.orbit-item {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.orbit-item-1 { top: 25%; left: 93.3%; }
+.orbit-item-2 { top: 25%; left: 6.7%; }
+.orbit-item-3 { top: 93.3%; left: 75%; }
+
+.orbit-item i {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  font-size: 1.05rem;
+  animation: spin 40s linear infinite reverse;
+}
+
+.orbit-item-1 i { color: var(--accent); }
+.orbit-item-2 i { color: var(--accent-2); }
+.orbit-item-3 i { color: var(--warm); }
+
+.profile-image {
+  z-index: 1;
+}
+
+.profile-badge {
+  z-index: 2;
+}
+
+.profile-image::after {
+  content: "";
+  position: absolute;
+  inset: 8%;
+  z-index: -1;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  filter: blur(48px);
+  opacity: 0.45;
+}
+
+/* Marquee strip */
+.home-marquee {
+  position: relative;
+  padding: 22px 0;
+  border-block: 1px solid var(--border);
+  background: var(--surface);
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+.home-about {
+  padding-top: 72px;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+}
+
+.home-marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-list {
+  display: flex;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.marquee-list li {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  font-weight: 500;
+  font-style: italic;
+  color: var(--text-soft);
+  white-space: nowrap;
+}
+
+.marquee-list li::before {
+  content: "\f19c";
+  margin-right: 14px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-size: 0.75em;
+  color: var(--accent);
+}
+
+.marquee-list li::after {
+  content: "\2726";
+  margin: 0 32px;
+  font-style: normal;
+  font-size: 0.8em;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Accent underline under page and section titles */
+.page-content > [class$="-hero"] h1::after,
+.section-title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+}
+
+/* Cursor-following spotlight on cards */
+.js .spotlight {
+  background-image: radial-gradient(480px circle at var(--mx, -1000px) var(--my, -1000px), var(--spot), transparent 45%);
+}
+
+/* Shine sweep on primary buttons */
+.btn-primary,
+.submit-btn {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.btn-primary::after,
+.submit-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  z-index: -1;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.35), transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s var(--ease);
+}
+
+.btn-primary:hover::after,
+.submit-btn:hover::after {
+  left: 130%;
+}
+
+.stat-item {
+  transition: background-color 0.3s ease;
+}
+
+.stat-item:hover {
+  background: var(--surface-2);
+}
+
+/* Stat number pops when it finishes counting */
+.stat-number.counted {
+  animation: stat-pop 0.5s var(--ease);
+}
+
+@keyframes stat-pop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.18); }
+  100% { transform: scale(1); }
+}
+
+@keyframes wave {
+  0%, 60%, 100% { transform: rotate(0deg); }
+  10%, 30% { transform: rotate(16deg); }
+  20%, 40% { transform: rotate(-8deg); }
+}
+
+@keyframes name-shimmer {
+  from { background-position: 0% 50%; }
+  to { background-position: 100% 50%; }
+}
+
+@keyframes pop-in {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: none; }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes marquee {
+  to { transform: translateX(-50%); }
+}
+
+@media (max-width: 960px) {
+  .hero-text > .hero-eyebrow {
+    margin-inline: auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .profile-orbit {
+    inset: -24px;
+  }
+
+  .orbit-item i {
+    width: 38px;
+    height: 38px;
+    font-size: 0.9rem;
+  }
+
+  .home-hero {
+    padding-top: 64px;
+  }
+
+  .home-about {
+    padding-top: 48px;
+  }
+
+  .marquee-list li::after {
+    margin: 0 20px;
   }
 }

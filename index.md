@@ -6,6 +6,7 @@ title: Home
 <!-- Hero Section -->
 <section class="home-hero">
   <div class="hero-background">
+    <canvas class="hero-network" aria-hidden="true"></canvas>
     <div class="hero-shapes">
       <div class="shape shape-1"></div>
       <div class="shape shape-2"></div>
@@ -16,6 +17,11 @@ title: Home
   <div class="hero-content">
     <div class="profile-section">
       <div class="profile-image-container">
+        <div class="profile-orbit" aria-hidden="true">
+          <span class="orbit-item orbit-item-1"><i class="fas fa-brain"></i></span>
+          <span class="orbit-item orbit-item-2"><i class="fas fa-earth-americas"></i></span>
+          <span class="orbit-item orbit-item-3"><i class="fas fa-layer-group"></i></span>
+        </div>
         <div class="profile-image">
           <img src="{{ 'assets/img/profile-photo.webp' | relative_url }}" alt="Ashfaque Khowaja">
         </div>
@@ -26,8 +32,9 @@ title: Home
       </div>
       
       <div class="hero-text">
+        <p class="hero-eyebrow"><span class="wave" aria-hidden="true">👋</span> Hello, I'm</p>
         <h1 class="hero-title">
-          {{ site.title }}
+          <span class="hero-name">{{ site.title }}</span>
           <span id="pronounce-btn"
                 role="button"
                 aria-label="Hear pronunciation"
@@ -59,6 +66,21 @@ title: Home
   <div class="scroll-indicator">
     <div class="scroll-arrow"></div>
     <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- Marquee Strip -->
+<section class="home-marquee" aria-label="Universities">
+  <div class="marquee-track">
+    {% assign marquee_items = "UNSW Sydney|SUSTech|Central South University|Guilin University of Electronic Technology" | split: "|" %}
+    <ul class="marquee-list">
+      {% for item in marquee_items %}<li>{{ item }}</li>{% endfor %}
+      {% for item in marquee_items %}<li aria-hidden="true">{{ item }}</li>{% endfor %}
+    </ul>
+    <ul class="marquee-list" aria-hidden="true">
+      {% for item in marquee_items %}<li>{{ item }}</li>{% endfor %}
+      {% for item in marquee_items %}<li>{{ item }}</li>{% endfor %}
+    </ul>
   </div>
 </section>
 

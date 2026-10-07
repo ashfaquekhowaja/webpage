@@ -143,6 +143,70 @@ title: Home
   </div>
 </section>
 
+<!-- Research Focus Section -->
+<section class="home-focus">
+  <div class="container">
+    <div class="focus-header">
+      <p class="focus-eyebrow">Research Focus</p>
+      <h2 class="section-title">From the Exposome to Brain Health</h2>
+      <p class="focus-lead">Integrating the many exposures that shape our lives as multimodal data, to better understand Alzheimer's disease and dementia.</p>
+    </div>
+
+    <div class="focus-diagram">
+      <svg class="focus-flows" aria-hidden="true"></svg>
+
+      <div class="focus-column focus-sources">
+        <h3 class="focus-label">The Exposome</h3>
+        <div class="focus-source" style="--c: var(--accent-2)">
+          <i class="fas fa-wind" aria-hidden="true"></i>
+          <div><strong>Environmental</strong><span>Air quality, green space</span></div>
+        </div>
+        <div class="focus-source" style="--c: var(--warm)">
+          <i class="fas fa-person-running" aria-hidden="true"></i>
+          <div><strong>Lifestyle</strong><span>Diet, activity, sleep</span></div>
+        </div>
+        <div class="focus-source" style="--c: #c2417a">
+          <i class="fas fa-people-group" aria-hidden="true"></i>
+          <div><strong>Social</strong><span>Education, social ties</span></div>
+        </div>
+        <div class="focus-source" style="--c: var(--accent)">
+          <i class="fas fa-dna" aria-hidden="true"></i>
+          <div><strong>Biological</strong><span>Genetics, biomarkers</span></div>
+        </div>
+      </div>
+
+      <div class="focus-column focus-middle">
+        <h3 class="focus-label">Integration</h3>
+        <div class="focus-hub">
+          <span class="hub-ring hub-ring-1" aria-hidden="true"></span>
+          <span class="hub-ring hub-ring-2" aria-hidden="true"></span>
+          <span class="hub-pulse" aria-hidden="true"></span>
+          <span class="hub-pulse hub-pulse-2" aria-hidden="true"></span>
+          <div class="hub-core">
+            <i class="fas fa-layer-group" aria-hidden="true"></i>
+            <strong>Multimodal Data</strong>
+            <span>Integration</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="focus-column focus-end">
+        <h3 class="focus-label">Outcome</h3>
+        <div class="focus-target">
+          <div class="target-brain" aria-hidden="true">
+            <i class="fas fa-brain"></i>
+          </div>
+          <strong>Alzheimer's &amp; Dementia</strong>
+          <span>Understanding the factors that shape brain health</span>
+          <svg class="target-wave" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden="true">
+            <polyline points="0,20 30,20 40,20 46,8 52,32 58,4 64,30 70,20 100,20 110,20 116,12 122,28 128,20 160,20 168,20 174,6 180,34 186,20 200,20" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Highlights Section -->
 <section class="home-highlights">
   <div class="container">

@@ -370,3 +370,80 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!running) draw();
   }).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 });
+
+
+// Research focus diagram: curved data flows from the exposome into the hub, then to the outcome
+document.addEventListener('DOMContentLoaded', function() {
+  const diagram = document.querySelector('.focus-diagram');
+  if (!diagram) return;
+
+  const svg = diagram.querySelector('.focus-flows');
+  const sources = diagram.querySelectorAll('.focus-source');
+  const hub = diagram.querySelector('.hub-core');
+  const target = diagram.querySelector('.focus-target');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const ns = 'http://www.w3.org/2000/svg';
+
+  function curve(x1, y1, x2, y2) {
+    const dx = (x2 - x1) / 2;
+    return 'M' + x1 + ',' + y1 + ' C' + (x1 + dx) + ',' + y1 + ' ' + (x2 - dx) + ',' + y2 + ' ' + x2 + ',' + y2;
+  }
+
+  function addFlow(d, color, delay) {
+    const path = document.createElementNS(ns, 'path');
+    path.setAttribute('d', d);
+    path.setAttribute('class', 'flow-line');
+    path.setAttribute('stroke', color);
+    svg.appendChild(path);
+
+    if (reduceMotion) return;
+
+    [0, 1.4].forEach(offset => {
+      const dot = document.createElementNS(ns, 'circle');
+      dot.setAttribute('r', '4');
+      dot.setAttribute('class', 'flow-dot');
+      dot.setAttribute('fill', color);
+      dot.style.color = color;
+      const motion = document.createElementNS(ns, 'animateMotion');
+      motion.setAttribute('dur', '2.8s');
+      motion.setAttribute('repeatCount', 'indefinite');
+      motion.setAttribute('begin', (-(delay + offset)) + 's');
+      motion.setAttribute('path', d);
+      dot.appendChild(motion);
+      svg.appendChild(dot);
+    });
+  }
+
+  function build() {
+    svg.innerHTML = '';
+    if (getComputedStyle(svg).display === 'none') return;
+
+    const box = diagram.getBoundingClientRect();
+    const hubRect = hub.getBoundingClientRect();
+    const hubX = hubRect.left - box.left;
+    const hubY = hubRect.top - box.top + hubRect.height / 2;
+    const hubR = hubRect.right - box.left;
+
+    sources.forEach((source, i) => {
+      const r = source.getBoundingClientRect();
+      // The icon's computed colour is the resolved --c value
+      const color = getComputedStyle(source.querySelector('i')).color;
+      addFlow(curve(r.right - box.left, r.top - box.top + r.height / 2, hubX, hubY), color, i * 0.6);
+    });
+
+    const t = target.getBoundingClientRect();
+    const accent = getComputedStyle(document.documentElement).getPropertyValue('--accent').trim();
+    addFlow(curve(hubR, hubY, t.left - box.left, t.top - box.top + t.height / 2), accent, 0.3);
+  }
+
+  build();
+  if ('ResizeObserver' in window) {
+    new ResizeObserver(build).observe(diagram);
+  } else {
+    window.addEventListener('resize', build);
+  }
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(build);
+
+  // Rebuild so colours follow the light/dark theme
+  new MutationObserver(build).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+});

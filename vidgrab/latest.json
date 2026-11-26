@@ -1,0 +1,7 @@
+{
+    "versionCode":  3,
+    "versionName":  "1.2",
+    "apkUrl":  "https://github.com/ashfaquekhowaja/Video-Download/releases/download/v1.2/VidGrab-1.2.apk",
+    "sha256":  "89bcd311ff7a75dd6dd64f0fac683d5d70e561d79f5cacbda80a91b40baeb702",
+    "notes":  "Downloads keep going in the background. VidGrab can now update itself."
+}
